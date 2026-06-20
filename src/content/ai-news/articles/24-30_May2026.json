@@ -1,0 +1,461 @@
+{
+    "week_range": "May 24–30, 2026",
+    "date_start": "2026-05-24",
+    "date_end": "2026-05-30",
+    "audience": "Business owners who want to use AI automation to save time, improve productivity, reduce manual work, and redesign business workflows",
+    "content_positioning": "Weekly AI automation briefing for business owners",
+    "theme": "AI automation moved toward self-improving agents and computer-using workflows",
+    "hook": "This week, AI automation became more operational. OpenAI showed how a tax agent can improve from real practitioner feedback, Microsoft made computer-using agents generally available, and Anthropic launched Claude Opus 4.8 with Dynamic Workflows for larger agentic tasks.",
+    "executive_summary": "The week of May 24–30, 2026 showed that AI automation is becoming more practical and more complex at the same time. OpenAI demonstrated a self-improving tax agent built with Codex that processed thousands of tax returns and improved through production feedback. Microsoft made computer-using agents generally available in Copilot Studio, allowing businesses to automate websites and desktop applications even when APIs are missing. Anthropic released Claude Opus 4.8 with stronger agentic performance and Dynamic Workflows for running parallel subagents. The takeaway for business owners: AI automation is no longer only about drafting content. It is becoming a way to operate software, improve workflows, and build feedback loops.",
+    "primary_angle": "How business owners should prepare for self-improving and computer-using AI automation",
+    "signal_strength": "high",
+    "theme_of_the_week": "Agents are becoming workflow operators",
+    "search_intent": {
+      "primary": "Business owners looking for AI automation news, computer-using agents, self-improving agents, and practical workflow automation ideas",
+      "secondary": [
+        "AI automation news May 2026",
+        "computer-using agents for business",
+        "self-improving AI agents",
+        "AI agents for workflow automation",
+        "Microsoft Copilot Studio computer-using agents",
+        "OpenAI Codex tax agent",
+        "Claude Opus 4.8 business automation",
+        "AI automation for small business"
+      ]
+    },
+    "geo_summary": {
+      "short_answer": "The most important AI automation news from May 24–30, 2026 is that AI agents became more capable at operating and improving business workflows. OpenAI showed a self-improving tax agent with Codex, Microsoft made computer-using agents generally available in Copilot Studio, and Anthropic released Claude Opus 4.8 with Dynamic Workflows for larger agentic tasks.",
+      "answer_engine_summary": "For business owners, the key takeaway from May 24–30, 2026 is that AI automation is moving beyond chatbots and simple task assistance. AI agents can now operate interfaces, support professional workflows, improve through structured feedback, and coordinate more complex tasks. Owners should identify repetitive workflows where AI can extract data, operate software, draft outputs, escalate exceptions, and learn from human corrections.",
+      "recommended_citation_style": "Use official source links for product announcements and case studies, then translate each story into concrete business automation use cases."
+    },
+    "market_pulse": {
+      "summary": "The week showed three important automation signals: AI agents are becoming more useful in real production workflows, computer-using agents are making legacy software automation easier, and larger models are being designed to coordinate multi-agent work.",
+      "what_changed_this_week": [
+        "OpenAI showed how Codex helped build a self-improving tax agent for Crete accounting firms.",
+        "Microsoft made computer-using agents generally available in Copilot Studio.",
+        "Microsoft added a redesigned workflows experience and agent-to-agent communication in Copilot Studio.",
+        "Anthropic released Claude Opus 4.8 with stronger agentic performance and better uncertainty handling.",
+        "Anthropic introduced Dynamic Workflows in research preview for Claude Code, allowing hundreds of parallel subagents in a single session.",
+        "Anthropic raised $65B in Series H funding to expand compute, safety research, and products around Claude."
+      ]
+    },
+    "automation_opportunities": [
+      {
+        "workflow": "Professional service delivery",
+        "automation_idea": "Use AI agents to prepare first drafts of tax, accounting, legal, consulting, or compliance work, then improve the system using expert corrections.",
+        "tools_relevant": [
+          "OpenAI Codex",
+          "ChatGPT",
+          "Claude",
+          "n8n",
+          "document management systems",
+          "accounting software"
+        ],
+        "difficulty": "high",
+        "business_impact": "Reduces manual preparation time and lets experts spend more time on review, advice, and client communication."
+      },
+      {
+        "workflow": "Legacy software automation",
+        "automation_idea": "Use computer-using agents to interact with websites or desktop applications that do not have APIs.",
+        "tools_relevant": [
+          "Microsoft Copilot Studio",
+          "computer-using agents",
+          "Power Automate",
+          "RPA tools",
+          "n8n"
+        ],
+        "difficulty": "medium",
+        "business_impact": "Automates repetitive work in old systems without needing a full software rebuild."
+      },
+      {
+        "workflow": "Workflow orchestration",
+        "automation_idea": "Combine deterministic workflows with AI agent steps for classification, summarization, decision support, and exception handling.",
+        "tools_relevant": [
+          "Microsoft Copilot Studio",
+          "n8n",
+          "Zapier",
+          "Make",
+          "Work IQ",
+          "MCP servers"
+        ],
+        "difficulty": "medium",
+        "business_impact": "Turns disconnected automations into structured end-to-end processes."
+      },
+      {
+        "workflow": "Software migrations and internal tool development",
+        "automation_idea": "Use coding agents to migrate codebases, refactor systems, build internal tools, and automate technical maintenance.",
+        "tools_relevant": [
+          "Claude Code",
+          "Claude Opus 4.8",
+          "OpenAI Codex",
+          "Cursor",
+          "GitHub"
+        ],
+        "difficulty": "medium",
+        "business_impact": "Reduces technical bottlenecks and speeds up internal automation projects."
+      },
+      {
+        "workflow": "Agent improvement loop",
+        "automation_idea": "Capture human corrections, failed cases, and edge cases so AI workflows improve over time.",
+        "tools_relevant": [
+          "Codex",
+          "evals",
+          "audit logs",
+          "feedback forms",
+          "production traces",
+          "n8n"
+        ],
+        "difficulty": "high",
+        "business_impact": "Builds automation systems that become more reliable instead of repeating the same mistakes."
+      }
+    ],
+    "stories": [
+      {
+        "id": "openai-codex-self-improving-tax-agent",
+        "headline": "OpenAI showed how Codex can power self-improving tax agents",
+        "published_date": "2026-05-27",
+        "company": "OpenAI, Thrive Holdings, Crete",
+        "category": "Self-Improving Business Automation",
+        "automation_relevance": "This is one of the clearest examples of AI automation moving into real professional services. The system does not only prepare tax work; it improves by turning practitioner corrections into structured signals and Codex-driven improvements.",
+        "what_happened": "OpenAI published a case study explaining how OpenAI and Thrive Holdings built Tax AI for Crete accounting firms using Codex. The system processed 7,000 tax returns in a pilot across more than 30 accounting firms, saved practitioners about one third of their preparation time, drafted returns with up to 97% accuracy, and increased throughput by about 50%.",
+        "why_it_matters": "This matters because it shows a practical blueprint for AI agents in expert workflows: capture human corrections, convert them into evaluations, and use coding agents to improve the product over time.",
+        "business_relevance": "Business owners in accounting, legal, consulting, insurance, real estate, finance, healthcare admin, and operations should pay attention. The model is not limited to tax. Any document-heavy workflow with expert review can potentially use a similar improvement loop.",
+        "automation_use_cases": [
+          "Prepare first drafts of tax, compliance, or professional documents.",
+          "Extract data from messy client files and source documents.",
+          "Capture expert corrections as structured feedback.",
+          "Create evals from production mistakes.",
+          "Use coding agents to improve internal automation workflows over time."
+        ],
+        "impact_level": "act_now_for_document_heavy_businesses",
+        "risks": [
+          "Professional-service automation requires expert review.",
+          "Client data must be handled with strict privacy and access controls.",
+          "Self-improving systems need evals, audit logs, and controlled deployment."
+        ],
+        "owner_takeaway": "The best AI automations will not be static. Build workflows that learn from human review and improve over time.",
+        "sources": [
+          {
+            "title": "Building self-improving tax agents with Codex",
+            "publisher": "OpenAI",
+            "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/"
+          }
+        ]
+      },
+      {
+        "id": "microsoft-computer-using-agents-general-availability",
+        "headline": "Microsoft made computer-using agents generally available in Copilot Studio",
+        "published_date": "2026-05-26",
+        "company": "Microsoft",
+        "category": "Computer-Using Agents and UI Automation",
+        "automation_relevance": "Computer-using agents can interact with websites and desktop applications through the user interface, which is useful for automating older systems, vendor portals, and workflows that lack APIs.",
+        "what_happened": "Microsoft announced May 2026 Copilot Studio updates, including general availability of computer-using agents, a redesigned workflows experience, Work IQ extensibility, and agent-to-agent communication. Microsoft said these agents can interact directly with websites and desktop applications through the UI and can help automate processes that previously depended on brittle scripts or manual workarounds.",
+        "why_it_matters": "Many businesses cannot automate important workflows because their tools are old, disconnected, or do not expose APIs. Computer-using agents create a new automation path by operating the interface more like a human user.",
+        "business_relevance": "This is relevant for any business with repetitive admin work across portals, CRMs, spreadsheets, desktop apps, accounting tools, logistics systems, HR systems, or industry-specific software.",
+        "automation_use_cases": [
+          "Enter data into legacy systems.",
+          "Process requests from unstructured emails.",
+          "Navigate vendor portals and download documents.",
+          "Operate internal desktop tools that do not have APIs.",
+          "Escalate exceptions to humans through structured workflows."
+        ],
+        "impact_level": "act_now_for_microsoft_365_businesses",
+        "risks": [
+          "UI automation can still fail when screens change or permissions are unclear.",
+          "Agents need secure credential management.",
+          "Important actions should include approval steps and audit logs."
+        ],
+        "owner_takeaway": "If a workflow is still manual because the software has no API, computer-using agents may finally make it automatable.",
+        "sources": [
+          {
+            "title": "New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences",
+            "publisher": "Microsoft",
+            "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/"
+          }
+        ]
+      },
+      {
+        "id": "anthropic-claude-opus-48-dynamic-workflows",
+        "headline": "Anthropic released Claude Opus 4.8 with Dynamic Workflows",
+        "published_date": "2026-05-28",
+        "company": "Anthropic",
+        "category": "Multi-Agent Workflow Automation",
+        "automation_relevance": "Claude Opus 4.8 and Dynamic Workflows point toward larger-scale agentic automation, where one AI system can plan work, coordinate parallel subagents, verify outputs, and handle bigger coding or knowledge-work tasks.",
+        "what_happened": "Anthropic released Claude Opus 4.8. The company said early testers found it stronger for agentic tasks, computer use, coding, analysis, legal workflows, and enterprise knowledge work. Anthropic also introduced Dynamic Workflows in research preview, allowing Claude Code to run hundreds of parallel subagents in a single session for larger tasks.",
+        "why_it_matters": "This shows that AI agents are moving from single-step assistants to systems that can coordinate more complex work across many subtasks.",
+        "business_relevance": "Business owners should think about larger workflows that are too complex for one prompt but still repeatable enough to structure: migrations, research projects, document review, reporting systems, and internal tool development.",
+        "automation_use_cases": [
+          "Run codebase-scale migrations.",
+          "Analyze large sets of documents with subagents.",
+          "Coordinate research, writing, and review tasks.",
+          "Break complex internal projects into parallel AI-assisted workstreams.",
+          "Use stronger models for high-risk workflows where uncertainty handling matters."
+        ],
+        "impact_level": "watch_closely",
+        "risks": [
+          "More parallel agents can create more coordination risk.",
+          "Complex workflows need clear task boundaries and validation.",
+          "Higher-capability models may increase cost if used without workflow discipline."
+        ],
+        "owner_takeaway": "As AI agents become more powerful, your job is to design the workflow: goal, inputs, subtasks, review steps, and acceptance criteria.",
+        "sources": [
+          {
+            "title": "Introducing Claude Opus 4.8",
+            "publisher": "Anthropic",
+            "url": "https://www.anthropic.com/news/claude-opus-4-8"
+          }
+        ]
+      },
+      {
+        "id": "anthropic-series-h-enterprise-demand",
+        "headline": "Anthropic raised $65B to scale Claude and enterprise AI demand",
+        "published_date": "2026-05-28",
+        "company": "Anthropic",
+        "category": "Enterprise AI Infrastructure",
+        "automation_relevance": "Large funding rounds are not automation features by themselves, but they signal where demand is going: more compute, more Claude products, more enterprise workflows, and more AI deployment capacity.",
+        "what_happened": "Anthropic announced a $65B Series H funding round at a $965B post-money valuation. Anthropic said the funding would support safety and interpretability research, compute expansion, and scaling products and partnerships customers rely on.",
+        "why_it_matters": "AI automation depends on reliable model access, compute capacity, product maturity, and vendor stability. Large enterprise demand can shape which automation platforms businesses trust and adopt.",
+        "business_relevance": "For business owners, this is a signal that Claude is becoming a major enterprise automation platform, especially around coding, agents, knowledge work, and business workflows.",
+        "automation_use_cases": [
+          "Evaluate Claude as part of your AI automation stack.",
+          "Compare Claude against ChatGPT and Microsoft Copilot on the same workflow.",
+          "Use Claude for document-heavy business processes.",
+          "Plan for multi-vendor AI automation rather than relying on one provider."
+        ],
+        "impact_level": "watch_closely",
+        "risks": [
+          "Funding does not guarantee product fit for your business.",
+          "Vendor lock-in can become a problem if workflows are built around one platform.",
+          "Usage limits, pricing, and availability can change as demand grows."
+        ],
+        "owner_takeaway": "The AI automation stack is becoming strategic infrastructure. Test tools based on workflow performance, not brand momentum.",
+        "sources": [
+          {
+            "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+            "publisher": "Anthropic",
+            "url": "https://www.anthropic.com/news/series-h"
+          }
+        ]
+      }
+    ],
+    "tools_to_test": [
+      {
+        "name": "Microsoft Copilot Studio computer-using agents",
+        "category": "UI and legacy software automation",
+        "best_for": "Businesses that need to automate workflows across websites, desktop apps, portals, and tools without APIs",
+        "time_to_test": "1–2 hours",
+        "suggested_test": "Pick one repetitive task in a web portal or desktop app and test whether an agent can complete the task with human approval.",
+        "automation_value": "Helps automate software that traditional API-based workflows cannot reach."
+      },
+      {
+        "name": "OpenAI Codex",
+        "category": "Self-improving workflow development",
+        "best_for": "Businesses building internal tools, document-processing systems, tax/accounting workflows, and automation products",
+        "time_to_test": "1–2 hours",
+        "suggested_test": "Use Codex to improve an existing automation based on known errors or repeated manual corrections.",
+        "automation_value": "Turns feedback and edge cases into product improvements."
+      },
+      {
+        "name": "Claude Opus 4.8",
+        "category": "High-complexity agentic work",
+        "best_for": "Document-heavy analysis, coding, research, legal, finance, operations, and complex multi-step tasks",
+        "time_to_test": "1 hour",
+        "suggested_test": "Give Claude a complex business document and ask it to produce a decision memo, risks, missing information, and action plan.",
+        "automation_value": "Improves reliability on complex knowledge-work automation."
+      },
+      {
+        "name": "n8n",
+        "category": "Workflow automation orchestration",
+        "best_for": "Connecting AI agents to Gmail, Google Sheets, CRMs, Notion, Slack, databases, and MCP servers",
+        "time_to_test": "1 hour",
+        "suggested_test": "Create a workflow where a new customer email is summarized, classified, routed, and drafted for human approval.",
+        "automation_value": "Turns AI outputs into connected business processes."
+      }
+    ],
+    "strategic_insight": {
+      "title": "The real story: AI agents are becoming operators, not just assistants",
+      "content": "The biggest shift this week is that AI automation is becoming operational. OpenAI’s tax-agent case study shows how AI can improve from real production feedback. Microsoft’s computer-using agents show how AI can operate software interfaces. Anthropic’s Dynamic Workflows show how agents can coordinate larger parallel tasks. Together, these announcements point to a future where AI does not just generate text; it executes, reviews, improves, and coordinates work.",
+      "operator_take": "Business owners should stop thinking about AI automation as a one-time setup. The new model is a loop: automate the task, capture human corrections, improve the workflow, measure results, and repeat."
+    },
+    "weekly_action_plan": [
+      {
+        "action": "Find one workflow that still depends on manual software use",
+        "example": "Copying data between a portal and spreadsheet, downloading reports, updating CRM records, processing invoices, or handling service requests"
+      },
+      {
+        "action": "Define whether it needs API automation or computer-use automation",
+        "example": "If the tool has an API, use n8n or Zapier. If it has no API, test a computer-using agent or RPA-style workflow."
+      },
+      {
+        "action": "Capture human corrections",
+        "example": "When employees fix AI outputs, save the correction reason so the workflow can improve later."
+      },
+      {
+        "action": "Add evaluation checkpoints",
+        "example": "Track accuracy, time saved, exception rate, and how often a human needs to intervene."
+      },
+      {
+        "action": "Create clear approval rules",
+        "example": "AI can prepare, classify, and draft, but a human must approve customer messages, financial outputs, system changes, or legal/compliance decisions."
+      }
+    ],
+    "beginner_term": {
+      "term": "Computer-using agent",
+      "simple_explanation": "A computer-using agent is an AI system that can interact with software interfaces such as websites or desktop applications, similar to how a person clicks, reads screens, fills forms, and completes steps.",
+      "business_example": "If your business uses an old supplier portal with no API, a computer-using agent could log in, download a report, extract the data, and prepare a summary for a human to review."
+    },
+    "recommended_article_angle": {
+      "title": "This Week in AI Automation: Agents Are Becoming Workflow Operators",
+      "subtitle": "From OpenAI’s self-improving tax agent to Microsoft’s computer-using agents and Claude Opus 4.8, the week of May 24–30 showed how AI automation is moving into real business operations.",
+      "tone": "clear, practical, executive, automation-focused, non-technical",
+      "positioning": "Explain every AI news story through the lens of business automation, workflow operation, software interaction, human review, and continuous improvement."
+    },
+    "seo": {
+      "meta_title": "AI Automation News for Business Owners: May 24–30, 2026",
+      "meta_description": "A practical AI automation briefing for business owners covering OpenAI Codex self-improving tax agents, Microsoft Copilot Studio computer-using agents, Claude Opus 4.8, Dynamic Workflows, and AI workflow automation.",
+      "slug": "ai-automation-news-business-owners-may-24-30-2026",
+      "primary_keyword": "AI automation news for business owners",
+      "secondary_keywords": [
+        "computer-using agents",
+        "self-improving AI agents",
+        "AI workflow automation",
+        "OpenAI Codex tax agent",
+        "Microsoft Copilot Studio agents",
+        "Claude Opus 4.8",
+        "Dynamic Workflows",
+        "AI agents for business",
+        "AI automation for small business",
+        "weekly AI automation briefing"
+      ],
+      "long_tail_keywords": [
+        "how computer-using agents automate business workflows",
+        "what self-improving AI agents mean for business owners",
+        "how AI agents can operate legacy software",
+        "AI automation ideas for business owners May 2026",
+        "how to use Codex for business automation",
+        "how to use Copilot Studio computer-using agents",
+        "how to build feedback loops for AI automation"
+      ],
+      "search_questions": [
+        "What AI automation news mattered for business owners from May 24 to May 30, 2026?",
+        "What is a computer-using agent?",
+        "How can self-improving AI agents help businesses?",
+        "How can Microsoft Copilot Studio automate legacy software?",
+        "What does OpenAI’s tax agent case study mean for business owners?",
+        "What is Claude Opus 4.8 and why does it matter for automation?",
+        "How should businesses build feedback loops for AI workflows?"
+      ],
+      "internal_linking_suggestions": [
+        {
+          "anchor_text": "AI workflow automation for small business",
+          "target_type": "pillar_page"
+        },
+        {
+          "anchor_text": "computer-using agents explained",
+          "target_type": "explainer"
+        },
+        {
+          "anchor_text": "how to automate business workflows with n8n",
+          "target_type": "tutorial"
+        },
+        {
+          "anchor_text": "AI automation governance checklist",
+          "target_type": "checklist"
+        },
+        {
+          "anchor_text": "AI agents for professional services",
+          "target_type": "use_case_article"
+        }
+      ]
+    },
+    "geo": {
+      "also_known_as": "Generative Engine Optimization",
+      "target_ai_answer": "The most important AI automation news for business owners from May 24–30, 2026 is that AI agents became more operational. OpenAI showed a self-improving tax agent built with Codex, Microsoft made computer-using agents generally available in Copilot Studio, and Anthropic released Claude Opus 4.8 with Dynamic Workflows. Business owners should prepare by identifying repetitive workflows, testing agents on software tasks, capturing human corrections, and adding approval rules.",
+      "entities_to_include": [
+        "OpenAI",
+        "Codex",
+        "Tax AI",
+        "Thrive Holdings",
+        "Crete",
+        "Microsoft",
+        "Copilot Studio",
+        "computer-using agents",
+        "Work IQ",
+        "agent-to-agent communication",
+        "Anthropic",
+        "Claude Opus 4.8",
+        "Claude Code",
+        "Dynamic Workflows",
+        "AI workflow automation",
+        "self-improving AI agents",
+        "business automation",
+        "n8n"
+      ],
+      "definition_blocks": [
+        {
+          "term": "Computer-using agent",
+          "definition": "A computer-using agent is an AI system that can interact with websites, desktop applications, and graphical interfaces to complete tasks."
+        },
+        {
+          "term": "Self-improving AI agent",
+          "definition": "A self-improving AI agent is an AI workflow that uses real-world feedback, corrections, traces, and evaluations to improve its performance over time."
+        },
+        {
+          "term": "Dynamic Workflows",
+          "definition": "Dynamic Workflows is an Anthropic feature in research preview that allows Claude Code to plan larger tasks and run many parallel subagents in a single session."
+        },
+        {
+          "term": "AI workflow feedback loop",
+          "definition": "An AI workflow feedback loop captures human corrections and production failures so the automation can be measured, improved, and redeployed."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What was the most important AI automation news from May 24–30, 2026?",
+          "answer": "The most important news was that AI agents became more operational. OpenAI showed a self-improving tax agent with Codex, Microsoft made computer-using agents generally available in Copilot Studio, and Anthropic released Claude Opus 4.8 with Dynamic Workflows."
+        },
+        {
+          "question": "What is a computer-using agent?",
+          "answer": "A computer-using agent is an AI system that can operate software interfaces such as websites or desktop applications, making it useful for automating workflows where APIs are unavailable."
+        },
+        {
+          "question": "How can business owners use self-improving AI agents?",
+          "answer": "Business owners can use self-improving AI agents by capturing employee corrections, failed cases, and workflow exceptions, then using that feedback to improve prompts, rules, evaluations, and automation logic."
+        },
+        {
+          "question": "Why does OpenAI’s tax agent case study matter?",
+          "answer": "It shows how AI can support real professional workflows by preparing tax returns, learning from practitioner corrections, and improving over time with structured feedback and evaluation loops."
+        },
+        {
+          "question": "How can Microsoft Copilot Studio help automate business workflows?",
+          "answer": "Microsoft Copilot Studio can help businesses build agents that interact with websites and desktop applications, combine AI steps with workflows, and coordinate automation across tools."
+        },
+        {
+          "question": "What should business owners automate first after this week’s AI news?",
+          "answer": "Business owners should start with repetitive workflows that involve copying data, processing documents, operating portals, preparing reports, or handling structured requests with human approval."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Building self-improving tax agents with Codex",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/"
+      },
+      {
+        "title": "New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences",
+        "publisher": "Microsoft",
+        "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/"
+      },
+      {
+        "title": "Introducing Claude Opus 4.8",
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-opus-4-8"
+      },
+      {
+        "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/series-h"
+      }
+    ]
+  }

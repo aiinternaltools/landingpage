@@ -1,0 +1,91 @@
+{
+  "status": "draft",
+  "week_range": "Month Day–Day, YYYY",
+  "date_start": "YYYY-MM-DD",
+  "date_end": "YYYY-MM-DD",
+  "hook": "One-sentence hook for the week.",
+  "executive_summary": "2–3 sentences for the executive summary audio and TTS. Plain language for business owners.",
+  "signal_strength": "high",
+  "theme_of_the_week": "Single theme headline for the market pulse card.",
+  "market_pulse": {
+    "summary": "Short paragraph on what shifted this week.",
+    "what_changed_this_week": [
+      "Bullet one — concrete change from the week.",
+      "Bullet two — another change.",
+      "Bullet three — optional third change."
+    ]
+  },
+  "stories": [
+    {
+      "id": "story-slug-id",
+      "headline": "Story headline",
+      "published_date": "YYYY-MM-DD",
+      "company": "Company name",
+      "category": "Category",
+      "what_happened": "What happened, in plain language.",
+      "why_it_matters": "Why it matters for business owners.",
+      "business_relevance": "How this applies to typical SMB workflows.",
+      "impact_level": "act_now",
+      "practical_use_cases": [
+        "Practical use case one.",
+        "Practical use case two."
+      ],
+      "risks": [
+        "Risk or caveat one.",
+        "Risk or caveat two."
+      ],
+      "owner_takeaway": "One-line takeaway for the owner.",
+      "sources": [
+        {
+          "title": "Source article title",
+          "publisher": "Publisher",
+          "url": "https://example.com/article"
+        }
+      ]
+    }
+  ],
+  "tools_to_test": [
+    {
+      "name": "Tool name",
+      "category": "Category",
+      "best_for": "Who should test this.",
+      "time_to_test": "30 minutes",
+      "suggested_test": "A concrete test to run this week.",
+      "business_value": "What value you expect if it works."
+    }
+  ],
+  "strategic_insight": {
+    "title": "Strategic insight headline",
+    "content": "2–4 sentences on the bigger pattern across the week.",
+    "operator_take": "What to do differently starting this week."
+  },
+  "weekly_action_plan": [
+    {
+      "action": "Action step one",
+      "example": "Concrete example for step one."
+    },
+    {
+      "action": "Action step two",
+      "example": "Concrete example for step two."
+    }
+  ],
+  "beginner_term": {
+    "term": "Term name",
+    "simple_explanation": "Plain-language definition.",
+    "business_example": "How this shows up in a real business."
+  },
+  "recommended_article_angle": {
+    "title": "Article hero title",
+    "subtitle": "Article hero subtitle — week range and positioning."
+  },
+  "seo": {
+    "meta_title": "Page title for search — include week range",
+    "meta_description": "Meta description for search and social previews.",
+    "slug": "ai-news-your-edition-slug",
+    "keywords": [
+      "AI news",
+      "AI for business owners",
+      "weekly AI briefing"
+    ]
+  }
+}
