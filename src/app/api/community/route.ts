@@ -2,10 +2,10 @@ import {
   communityInterests,
   communityRoles,
   type CommunitySignupPayload,
-} from "@/content/community";
+} from "@/content/community.en";
 
 const roleValues = new Set(communityRoles.map((r) => r.value));
-const interestSet = new Set<string>(communityInterests);
+const interestSet = new Set(communityInterests.map((i) => i.id));
 
 function isValidPayload(body: unknown): body is CommunitySignupPayload {
   if (!body || typeof body !== "object") return false;
@@ -16,7 +16,7 @@ function isValidPayload(body: unknown): body is CommunitySignupPayload {
   if (typeof b.role !== "string" || !roleValues.has(b.role as CommunitySignupPayload["role"]))
     return false;
   if (!Array.isArray(b.interests)) return false;
-  if (!b.interests.every((i) => typeof i === "string" && interestSet.has(i)))
+  if (!b.interests.every((i) => typeof i === "string" && interestSet.has(i as CommunitySignupPayload["interests"][number])))
     return false;
   if (b.challenge !== undefined && typeof b.challenge !== "string") return false;
   return true;

@@ -1,17 +1,19 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import { Link } from "@/i18n/navigation";
+import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher";
+import type { NavbarProps, NavLinkKey } from "@/components/layout/nav-types";
 import { SiteLogo } from "@/components/layout/SiteLogo";
 
-const links = [
-  { href: "/community", label: "Community" },
-  { href: "/ai-news", label: "AI News" },
-  { href: "/#use-cases", label: "Use Cases" },
-  { href: "/contact", label: "Contact" },
-] as const;
+const links: { href: string; key: NavLinkKey }[] = [
+  { href: "/community", key: "community" },
+  { href: "/ai-news", key: "aiNews" },
+  { href: "/#use-cases", key: "useCases" },
+  { href: "/contact", key: "contact" },
+];
 
-export function Navbar() {
+export function Navbar({ labels, locale }: NavbarProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -25,15 +27,16 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-10">
-          {links.map(({ href, label }) => (
+          {links.map(({ href, key }) => (
             <Link
               key={href}
               href={href}
               className="text-sm text-nav-muted transition-colors hover:text-nav-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
             >
-              {label}
+              {labels[key]}
             </Link>
           ))}
+          <LocaleSwitcher labels={labels.languageSwitcher} locale={locale} />
         </nav>
 
         <button
@@ -41,10 +44,10 @@ export function Navbar() {
           className="flex h-9 w-9 items-center justify-center rounded-md border border-nav-border text-nav-foreground md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           aria-expanded={open}
           aria-controls="mobile-nav"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? labels.closeMenu : labels.openMenu}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="sr-only">Menu</span>
+          <span className="sr-only">{labels.menu}</span>
           <svg
             width="20"
             height="20"
@@ -69,18 +72,26 @@ export function Navbar() {
           className="border-t border-nav-border bg-nav-background px-5 py-5 md:hidden"
         >
           <ul className="flex flex-col gap-3">
-            {links.map(({ href, label }) => (
+            {links.map(({ href, key }) => (
               <li key={href}>
                 <Link
                   href={href}
                   className="block py-1 text-sm text-nav-muted hover:text-nav-foreground"
                   onClick={() => setOpen(false)}
                 >
-                  {label}
+                  {labels[key]}
                 </Link>
               </li>
             ))}
           </ul>
+          <div className="mt-4 border-t border-nav-border pt-4">
+            <LocaleSwitcher
+              labels={labels.languageSwitcher}
+              locale={locale}
+              variant="mobile"
+              onSelect={() => setOpen(false)}
+            />
+          </div>
         </nav>
       ) : null}
     </header>

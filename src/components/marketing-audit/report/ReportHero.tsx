@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import type { MarketingAuditReport } from "@/lib/marketing-audit/types";
 
 type ReportHeroProps = {
@@ -11,6 +14,7 @@ function scoreTone(score: number): string {
 }
 
 export function ReportHero({ report }: ReportHeroProps) {
+  const t = useTranslations("marketingAudit");
   const overall = report.audit.scores.overall;
   const hostname = (() => {
     try {
@@ -25,7 +29,7 @@ export function ReportHero({ report }: ReportHeroProps) {
       <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div className="min-w-0 flex-1">
           <p className="text-xs font-semibold uppercase tracking-widest text-accent">
-            Audit complete
+            {t("report.hero.auditComplete")}
           </p>
           <h2 className="mt-2 truncate text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
             {hostname}
@@ -33,20 +37,20 @@ export function ReportHero({ report }: ReportHeroProps) {
           <p className="mt-1 truncate text-sm text-muted">{report.targetUrl}</p>
           <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
             <div>
-              <dt className="inline">Generated: </dt>
+              <dt className="inline">{t("report.hero.generated")} </dt>
               <dd className="inline text-foreground">
                 {new Date(report.generatedAt).toLocaleString()}
               </dd>
             </div>
             <div>
-              <dt className="inline">Pages audited: </dt>
+              <dt className="inline">{t("report.hero.pagesAudited")} </dt>
               <dd className="inline text-foreground">
                 {report.discovery.pagesSelected} of {report.discovery.totalDiscovered}{" "}
-                discovered
+                {t("report.hero.discovered")}
               </dd>
             </div>
             <div>
-              <dt className="inline">Discovery: </dt>
+              <dt className="inline">{t("report.hero.discovery")} </dt>
               <dd className="inline capitalize text-foreground">
                 {report.discovery.method.replace("+", " + ")}
               </dd>
@@ -58,7 +62,7 @@ export function ReportHero({ report }: ReportHeroProps) {
           <div
             className="relative flex h-28 w-28 items-center justify-center rounded-full border-4 border-accent/30 bg-accent-muted sm:h-32 sm:w-32"
             role="img"
-            aria-label={`Overall score ${overall} out of 100`}
+            aria-label={t("report.hero.overallScoreAria", { score: overall })}
           >
             <span
               className={`text-4xl font-bold tabular-nums sm:text-5xl ${scoreTone(overall)}`}
@@ -67,7 +71,7 @@ export function ReportHero({ report }: ReportHeroProps) {
             </span>
           </div>
           <p className="mt-2 text-xs font-medium uppercase tracking-wide text-muted">
-            Overall score
+            {t("report.hero.overallScore")}
           </p>
         </div>
       </div>

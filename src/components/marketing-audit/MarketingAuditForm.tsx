@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
 const EXAMPLE_URLS = [
@@ -23,6 +24,8 @@ export function MarketingAuditForm({
   onSubmit,
   compact = false,
 }: MarketingAuditFormProps) {
+  const t = useTranslations("marketingAudit");
+
   return (
     <form
       className={compact ? "w-full" : "px-5 py-8 sm:px-8 sm:py-10"}
@@ -32,14 +35,14 @@ export function MarketingAuditForm({
       }}
     >
       <label htmlFor="audit-url" className="sr-only">
-        Website URL
+        {t("form.urlLabel")}
       </label>
       <div className="flex flex-col gap-3 sm:flex-row">
         <input
           id="audit-url"
           type="url"
           inputMode="url"
-          placeholder="https://your-site.com"
+          placeholder={t("form.urlPlaceholder")}
           value={targetUrl}
           onChange={(e) => onUrlChange(e.target.value)}
           disabled={loading}
@@ -48,14 +51,14 @@ export function MarketingAuditForm({
           required
         />
         <Button type="submit" variant="primary" className="shrink-0" disabled={loading}>
-          {loading ? "Auditing…" : "Run audit"}
+          {loading ? t("form.auditing") : t("form.runAudit")}
         </Button>
       </div>
 
       {!compact ? (
         <>
           <div className="mt-4 flex flex-wrap items-center gap-2">
-            <span className="text-xs text-muted">Try:</span>
+            <span className="text-xs text-muted">{t("form.tryLabel")}</span>
             {EXAMPLE_URLS.map((url) => (
               <button
                 key={url}
@@ -74,10 +77,7 @@ export function MarketingAuditForm({
               </button>
             ))}
           </div>
-          <p className="mt-3 text-xs leading-relaxed text-muted">
-            Discovers pages via sitemap, crawl & path probing — then audits the top 5
-            marketing pages.
-          </p>
+          <p className="mt-3 text-xs leading-relaxed text-muted">{t("form.helperText")}</p>
         </>
       ) : null}
     </form>

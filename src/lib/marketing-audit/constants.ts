@@ -1,7 +1,52 @@
 import { MAX_PAGES } from "@/lib/audit-core/constants";
+import type { Locale } from "@/i18n/routing";
+import en from "../../../messages/en.json";
+import ro from "../../../messages/ro.json";
 import type { AuditArea } from "./types";
 
 export { MAX_PAGES };
+
+const messagesByLocale = { en, ro } as const;
+
+const AREA_COLORS: Record<AuditArea, string> = {
+  contentMessaging: "#0284c7",
+  conversionCro: "#34d399",
+  seoDiscoverability: "#a78bfa",
+  competitivePositioning: "#fbbf24",
+  brandTrustGrowth: "#f472b6",
+};
+
+const AREA_IDS: AuditArea[] = [
+  "contentMessaging",
+  "conversionCro",
+  "seoDiscoverability",
+  "competitivePositioning",
+  "brandTrustGrowth",
+];
+
+export type AuditAreaMeta = {
+  id: AuditArea;
+  label: string;
+  shortLabel: string;
+  description: string;
+  color: string;
+};
+
+export function getAuditConstants(locale: Locale) {
+  const auditAreas =
+    messagesByLocale[locale]?.marketingAudit.report.auditAreas ??
+    messagesByLocale.en.marketingAudit.report.auditAreas;
+
+  const areas: AuditAreaMeta[] = AREA_IDS.map((id) => ({
+    id,
+    label: auditAreas[id].label,
+    shortLabel: auditAreas[id].shortLabel,
+    description: auditAreas[id].description,
+    color: AREA_COLORS[id],
+  }));
+
+  return { areas, maxPages: MAX_PAGES };
+}
 
 export const PRIORITY_PATH_PATTERNS: Array<{ pattern: RegExp; score: number }> = [
   { pattern: /^\/$/, score: 100 },
@@ -15,46 +60,5 @@ export const PRIORITY_PATH_PATTERNS: Array<{ pattern: RegExp; score: number }> =
   { pattern: /^\/(customers?|case-stud(?:y|ies)|testimonials?)(\/|$)/i, score: 65 },
 ];
 
-export const AUDIT_AREAS: Array<{
-  id: AuditArea;
-  label: string;
-  shortLabel: string;
-  description: string;
-  color: string;
-}> = [
-  {
-    id: "contentMessaging",
-    label: "Content & Messaging",
-    shortLabel: "Content",
-    description: "Headlines, value props, and clarity of message.",
-    color: "#0284c7",
-  },
-  {
-    id: "conversionCro",
-    label: "Conversion & CRO",
-    shortLabel: "CRO",
-    description: "CTAs, forms, friction, and conversion paths.",
-    color: "#34d399",
-  },
-  {
-    id: "seoDiscoverability",
-    label: "SEO & Discoverability",
-    shortLabel: "SEO",
-    description: "Keywords, structure, and organic visibility signals.",
-    color: "#a78bfa",
-  },
-  {
-    id: "competitivePositioning",
-    label: "Competitive Positioning",
-    shortLabel: "Positioning",
-    description: "Differentiation and competitive framing.",
-    color: "#fbbf24",
-  },
-  {
-    id: "brandTrustGrowth",
-    label: "Brand Trust & Growth",
-    shortLabel: "Trust",
-    description: "Credibility, social proof, and trust signals.",
-    color: "#f472b6",
-  },
-];
+/** @deprecated Prefer getAuditConstants(locale).areas */
+export const AUDIT_AREAS = getAuditConstants("en").areas;

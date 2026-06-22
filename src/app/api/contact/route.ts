@@ -1,12 +1,12 @@
 import {
   contactUseCaseCustomId,
-  contactUseCaseOptions,
+  contactUseCaseOptionsEn,
   type ContactFormPayload,
   type ContactUseCaseId,
-} from "@/content/contact";
+} from "@/content/index";
 
 const useCaseValues = new Set<string>(
-  contactUseCaseOptions.map((option) => option.value),
+  contactUseCaseOptionsEn.map((option) => option.value),
 );
 
 function isValidPayload(body: unknown): body is ContactFormPayload {
@@ -38,7 +38,7 @@ export async function POST(request: Request) {
   }
 
   const useCase = body.useCase as ContactUseCaseId;
-  const selectedOption = contactUseCaseOptions.find((option) => option.value === useCase);
+  const selectedOption = contactUseCaseOptionsEn.find((option) => option.value === useCase);
 
   const payload: ContactFormPayload = {
     name: body.name.trim(),

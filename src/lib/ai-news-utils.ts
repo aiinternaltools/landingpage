@@ -1,34 +1,66 @@
 import type { AiNewsBriefingStory, AiNewsSource } from "@/content/ai-news/types";
+import type { Locale } from "@/i18n/routing";
 
-export function formatArticleDate(isoDate: string): string {
+const DATE_LOCALE: Record<Locale, string> = {
+  en: "en-US",
+  ro: "ro-RO",
+};
+
+const IMPACT_KEYS: Record<
+  string,
+  { key: string; tone: "act" | "watch" | "neutral"; fallback: string }
+> = {
+  act_now: { key: "actNow", tone: "act", fallback: "Act now" },
+  watch_closely: { key: "watchClosely", tone: "watch", fallback: "Watch closely" },
+  act_now_for_finance_teams_watch_closely_for_others: {
+    key: "actNowFinanceWatchOthers",
+    tone: "act",
+    fallback: "Act now (finance) · Watch (others)",
+  },
+};
+
+export function formatArticleDate(isoDate: string, locale: Locale = "en"): string {
   const d = new Date(`${isoDate}T12:00:00`);
-  return d.toLocaleDateString("en-US", {
+  return d.toLocaleDateString(DATE_LOCALE[locale], {
     month: "long",
     day: "numeric",
     year: "numeric",
   });
 }
 
-export function formatImpactLevel(level: string): {
+export function formatImpactLevel(
+  level: string,
+  t?: (key: string) => string,
+): {
   label: string;
   tone: "act" | "watch" | "neutral";
 } {
-  const map: Record<string, { label: string; tone: "act" | "watch" | "neutral" }> = {
-    act_now: { label: "Act now", tone: "act" },
-    watch_closely: { label: "Watch closely", tone: "watch" },
-    act_now_for_finance_teams_watch_closely_for_others: {
-      label: "Act now (finance) · Watch (others)",
-      tone: "act",
-    },
-  };
-  if (map[level]) return map[level];
+  const mapped = IMPACT_KEYS[level];
+  if (mapped) {
+    return {
+      label: t ? t(mapped.key) : mapped.fallback,
+      tone: mapped.tone,
+    };
+  }
   return {
     label: level.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
     tone: "neutral",
   };
 }
 
-export function formatSignalStrength(strength: string): string {
+const SIGNAL_KEYS: Record<string, string> = {
+  high: "signalStrength.high",
+  medium: "signalStrength.medium",
+  moderate: "signalStrength.moderate",
+  low: "signalStrength.low",
+};
+
+export function formatSignalStrength(
+  strength: string,
+  t?: (key: string) => string,
+): string {
+  const s = strength.toLowerCase();
+  if (t && SIGNAL_KEYS[s]) return t(SIGNAL_KEYS[s]);
   return strength.charAt(0).toUpperCase() + strength.slice(1);
 }
 

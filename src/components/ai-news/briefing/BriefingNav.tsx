@@ -1,10 +1,14 @@
-import { ARTICLE_TEMPLATE_NAV } from "@/components/ai-news/briefing/article-template-sections";
+import { getTranslations } from "next-intl/server";
+import { getArticleNav } from "@/components/ai-news/briefing/article-template-sections";
 
 type BriefingNavProps = {
   className?: string;
 };
 
-export function BriefingNav({ className = "" }: BriefingNavProps) {
+export async function BriefingNav({ className = "" }: BriefingNavProps) {
+  const t = await getTranslations("aiNews");
+  const nav = getArticleNav(t);
+
   return (
     <nav
       aria-label="Jump to section"
@@ -12,7 +16,7 @@ export function BriefingNav({ className = "" }: BriefingNavProps) {
     >
       <div className="mx-auto w-full min-w-0 max-w-4xl overflow-hidden px-4 sm:px-6 lg:px-8">
         <ul className="scrollbar-none scroll-fade-x flex w-full max-w-full gap-1 overflow-x-auto overscroll-x-contain py-2 touch-pan-x sm:py-2.5">
-          {ARTICLE_TEMPLATE_NAV.map(({ id, label }) => (
+          {nav.map(({ id, label }) => (
             <li key={id} className="shrink-0">
               <a
                 href={`#${id}`}

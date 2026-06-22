@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import {
   Bar,
   BarChart,
@@ -9,7 +10,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { REPORT_AUDIT_AREAS } from "@/components/marketing-audit/report/report-template-sections";
+import { getReportAuditAreas } from "@/components/marketing-audit/report/report-template-sections";
+import type { Locale } from "@/i18n/routing";
 import type { AuditScores } from "@/lib/marketing-audit/types";
 
 type ScoreBarsChartProps = {
@@ -17,21 +19,23 @@ type ScoreBarsChartProps = {
 };
 
 export function ScoreBarsChart({ scores }: ScoreBarsChartProps) {
+  const t = useTranslations("marketingAudit");
+  const locale = useLocale() as Locale;
   const data = [
-    ...REPORT_AUDIT_AREAS.map((area) => ({
+    ...getReportAuditAreas(locale).map((area) => ({
       name: area.shortLabel,
       score: scores[area.id],
       fill: area.color,
     })),
     {
-      name: "Overall",
+      name: t("report.charts.overall"),
       score: scores.overall,
       fill: "#0284c7",
     },
   ];
 
   return (
-    <div className="h-72 w-full" aria-label="Bar chart of audit scores">
+    <div className="h-72 w-full" aria-label={t("report.charts.barsAria")}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}

@@ -1,10 +1,12 @@
 import { MAX_PAGES } from "@/lib/audit-core/constants";
+import type { Locale } from "@/i18n/routing";
+import en from "../../../messages/en.json";
+import ro from "../../../messages/ro.json";
 import type { AutomationArea } from "./types";
 
 export { MAX_PAGES };
 
-export const SCOPE_NOTE =
-  "This audit is based only on what we could learn from your public website. We cannot see your internal processes, private systems, or how your team works day to day — suggestions describe practical opportunities inferred from your online presence.";
+const messagesByLocale = { en, ro } as const;
 
 /** Internal implementation guidance — never surfaced in the client report UI. */
 export const IMPLEMENTATION_GUIDANCE = `Internal implementation (store in connectionHint only — never in user-visible fields):
@@ -33,6 +35,56 @@ export const REPORT_CONSULTING_CTA = {
   pdfHref: "https://pixelplot.ai/contact",
 } as const;
 
+const AREA_COLORS: Record<AutomationArea, string> = {
+  leadCaptureFollowUp: "#0284c7",
+  onboardingDelivery: "#34d399",
+  supportKnowledge: "#a78bfa",
+  contentOperations: "#fbbf24",
+  reportingHandoffs: "#f472b6",
+};
+
+const AREA_IDS: AutomationArea[] = [
+  "leadCaptureFollowUp",
+  "onboardingDelivery",
+  "supportKnowledge",
+  "contentOperations",
+  "reportingHandoffs",
+];
+
+export type AutomationAreaMeta = {
+  id: AutomationArea;
+  label: string;
+  shortLabel: string;
+  description: string;
+  color: string;
+};
+
+export function getScopeNote(locale: Locale): string {
+  return (
+    messagesByLocale[locale]?.automationAudit.scopeNote ??
+    messagesByLocale.en.automationAudit.scopeNote
+  );
+}
+
+export function getAuditConstants(locale: Locale) {
+  const auditAreas =
+    messagesByLocale[locale]?.automationAudit.report.auditAreas ??
+    messagesByLocale.en.automationAudit.report.auditAreas;
+
+  const areas: AutomationAreaMeta[] = AREA_IDS.map((id) => ({
+    id,
+    label: auditAreas[id].label,
+    shortLabel: auditAreas[id].shortLabel,
+    description: auditAreas[id].description,
+    color: AREA_COLORS[id],
+  }));
+
+  return { areas, maxPages: MAX_PAGES, scopeNote: getScopeNote(locale) };
+}
+
+/** @deprecated Prefer getScopeNote(locale) */
+export const SCOPE_NOTE = getScopeNote("en");
+
 export const AUTOMATION_PRIORITY_PATH_PATTERNS: Array<{
   pattern: RegExp;
   score: number;
@@ -49,49 +101,8 @@ export const AUTOMATION_PRIORITY_PATH_PATTERNS: Array<{
   { pattern: /^\/(customers?|case-stud(?:y|ies)|testimonials?)(\/|$)/i, score: 65 },
 ];
 
-export const AUTOMATION_AREAS: Array<{
-  id: AutomationArea;
-  label: string;
-  shortLabel: string;
-  description: string;
-  color: string;
-}> = [
-  {
-    id: "leadCaptureFollowUp",
-    label: "Lead Capture & Follow-up",
-    shortLabel: "Leads",
-    description: "Getting new customers and following up with them.",
-    color: "#0284c7",
-  },
-  {
-    id: "onboardingDelivery",
-    label: "Onboarding & Delivery",
-    shortLabel: "Onboarding",
-    description: "Signup, onboarding, delivery, and client handoffs.",
-    color: "#34d399",
-  },
-  {
-    id: "supportKnowledge",
-    label: "Support & Knowledge",
-    shortLabel: "Support",
-    description: "FAQ, help content, and answering customer questions.",
-    color: "#a78bfa",
-  },
-  {
-    id: "contentOperations",
-    label: "Content Operations",
-    shortLabel: "Content",
-    description: "Publishing content and keeping channels in sync.",
-    color: "#fbbf24",
-  },
-  {
-    id: "reportingHandoffs",
-    label: "Reporting & Handoffs",
-    shortLabel: "Reporting",
-    description: "Reports, alerts, and keeping teams aligned.",
-    color: "#f472b6",
-  },
-];
+/** @deprecated Prefer getAuditConstants(locale).areas */
+export const AUTOMATION_AREAS = getAuditConstants("en").areas;
 
 export type ToolFingerprint = {
   id: string;

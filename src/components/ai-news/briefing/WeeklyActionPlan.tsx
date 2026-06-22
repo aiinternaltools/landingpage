@@ -1,14 +1,16 @@
+import { getTranslations } from "next-intl/server";
 import type { AiNewsWeeklyAction } from "@/content/ai-news/types";
 import { BriefingSection } from "@/components/ai-news/briefing/BriefingSection";
-import { ARTICLE_TEMPLATE_SECTIONS } from "@/components/ai-news/briefing/article-template-sections";
+import { getArticleSections } from "@/components/ai-news/briefing/article-template-sections";
 
 type WeeklyActionPlanProps = {
   items: AiNewsWeeklyAction[];
   band?: boolean;
 };
 
-export function WeeklyActionPlan({ items, band }: WeeklyActionPlanProps) {
-  const { actionPlan } = ARTICLE_TEMPLATE_SECTIONS;
+export async function WeeklyActionPlan({ items, band }: WeeklyActionPlanProps) {
+  const t = await getTranslations("aiNews");
+  const { actionPlan } = getArticleSections(t);
 
   return (
     <BriefingSection
@@ -34,7 +36,9 @@ export function WeeklyActionPlan({ items, band }: WeeklyActionPlanProps) {
                 {item.action}
               </p>
               <p className="mt-1.5 text-sm leading-relaxed text-muted break-words">
-                <span className="font-medium text-foreground/80">Example: </span>
+                <span className="font-medium text-foreground/80">
+                  {t("article.example")}{" "}
+                </span>
                 {item.example}
               </p>
             </div>

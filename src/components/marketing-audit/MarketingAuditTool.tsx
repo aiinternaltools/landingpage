@@ -1,16 +1,18 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AuditWorkspace } from "@/components/marketing-audit/AuditWorkspace";
 import { MarketingAuditForm } from "@/components/marketing-audit/MarketingAuditForm";
 import { MarketingAuditProgress } from "@/components/marketing-audit/MarketingAuditProgress";
 import { MarketingAuditReport } from "@/components/marketing-audit/report/MarketingAuditReport";
 import { ReportScoreTeaser } from "@/components/marketing-audit/report/ReportScoreTeaser";
-import { REPORT_TEMPLATE_SECTIONS } from "@/components/marketing-audit/report/report-template-sections";
+import { getReportTemplateSections } from "@/components/marketing-audit/report/report-template-sections";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageBackdrop } from "@/components/ui/PageBackdrop";
+import type { Locale } from "@/i18n/routing";
 import type { MarketingAuditReport as Report } from "@/lib/marketing-audit/types";
 
 type AuditPhase = "input" | "running" | "teaser" | "report" | "error";
@@ -27,6 +29,8 @@ function getHostname(url: string): string {
 }
 
 export function MarketingAuditTool() {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("marketingAudit");
   const [targetUrl, setTargetUrl] = useState("");
   const [phase, setPhase] = useState<AuditPhase>("input");
   const [activeStep, setActiveStep] = useState(0);
@@ -79,14 +83,14 @@ export function MarketingAuditTool() {
       const res = await fetch("/api/marketing-audit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ targetUrl: url }),
+        body: JSON.stringify({ targetUrl: url, locale }),
       });
 
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
         throw new Error(
-          typeof data.error === "string" ? data.error : "Audit request failed"
+          typeof data.error === "string" ? data.error : t("auditRequestFailed")
         );
       }
 
@@ -99,7 +103,7 @@ export function MarketingAuditTool() {
         setPhase("report");
       }, TEASER_DURATION_MS);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Audit failed");
+      setError(err instanceof Error ? err.message : t("auditFailed"));
       setPhase("error");
     } finally {
       clearProgressTimer();
@@ -115,7 +119,7 @@ export function MarketingAuditTool() {
     setPhase("input");
   };
 
-  const hero = REPORT_TEMPLATE_SECTIONS.hero;
+  const hero = getReportTemplateSections(t).hero;
   const showHero = phase === "input" && !hasAuditedOnce;
 
   return (
@@ -144,9 +148,7 @@ export function MarketingAuditTool() {
         </div>
 
         {hasAuditedOnce && phase === "input" ? (
-          <p className="mb-4 text-center text-sm text-muted">
-            Enter a URL to run another audit
-          </p>
+          <p className="mb-4 text-center text-sm text-muted">{t("anotherAuditHint")}</p>
         ) : null}
 
         <AuditWorkspace phase={phase}>
@@ -205,7 +207,7 @@ export function MarketingAuditTool() {
                   className="text-xs"
                   onClick={() => startNewAudit()}
                 >
-                  Clear and start over
+                  {t("clearAndStartOver")}
                 </Button>
               </div>
             </div>

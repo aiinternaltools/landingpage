@@ -1,0 +1,865 @@
+{
+  "metadata": {
+    "siteTitleDefault": "AI Internal Tools — Automatizare AI pentru afaceri operaționale",
+    "siteTitleTemplate": "%s · aiinternaltools.com",
+    "siteDescription": "Sisteme AI practice și automatizări pentru echipe operaționale: automatizare de fluxuri, agenți, instrumente interne și asistenți de cunoștințe. Încearcă demo-uri, apoi definește un proiect personalizat.",
+    "home": {
+      "title": "AI Internal Tools — Automatizare AI pentru afaceri operaționale",
+      "description": "Sisteme AI practice și automatizări pentru echipe operaționale: automatizare de fluxuri, agenți, instrumente interne și asistenți de cunoștințe. Încearcă demo-uri, apoi definește un proiect personalizat."
+    },
+    "about": {
+      "title": "Despre",
+      "description": "Andrei Alexandru Gabriel — React, Next.js, TypeScript, Supabase, Vercel; AI aplicat (integrări LLM, agenți, RAG), n8n și automatizare de fluxuri. Background în QA aeronautic, doctorat în mentenanță predictivă."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contactează-ne pentru un flux de lucru de pe site sau solicită o automatizare personalizată — îți răspundem cu pașii următori clari."
+    },
+    "community": {
+      "title": "Listă de așteptare Comunitate",
+      "description": "Intră pe lista de așteptare pentru un hub cu instrumente AI aplicate, șabloane și peers. Primii 1.000 de membri fondatori primesc acces gratuit plus Audit Marketing și Audit Automatizare la lansare."
+    },
+    "login": {
+      "title": "Autentificare",
+      "description": "Autentifică-te pentru a accesa demo-uri de automatizare cu credite demo limitate (în curând)."
+    },
+    "aiNews": {
+      "title": "Știri AI",
+      "description": "Știri AI săptămânale pentru antreprenori — semnal filtrat, concluzii practice pentru operațiuni, marketing, productivitate și avantaj competitiv."
+    },
+    "marketingAudit": {
+      "title": "Audit de marketing",
+      "description": "Audit de marketing bazat pe AI pentru site-ul tău. Descoperă paginile cheie, evaluează mesajele, CRO, SEO, poziționarea și încrederea — cu recomandări acționabile."
+    },
+    "automationAudit": {
+      "title": "Audit de automatizare",
+      "description": "Scanare AI a oportunităților de automatizare. Deduce modelul de business, detectează integrările vizibile și recomandă automatizări de fluxuri de lucru."
+    },
+    "useCases": {
+      "title": "Cazuri de utilizare",
+      "description": "Fluxuri de lucru pe care le automatizăm cel mai des pentru echipe operaționale — de la social media la automatizări personalizate adaptate stack-ului tău.",
+      "aiSocialMediaAssistant": {
+        "title": "Asistent AI pentru social media",
+        "description": "Transformă ideile din Google Sheets în postări aliniate brandului. AI generează conținut pe canal, tu aprobi și programezi, apoi postările apar automat pe LinkedIn, Instagram, Facebook și X."
+      }
+    }
+  },
+  "nav": {
+    "community": "Comunitate",
+    "aiNews": "Știri AI",
+    "useCases": "Cazuri de utilizare",
+    "contact": "Contact",
+    "marketingAudit": "Audit marketing",
+    "automationAudit": "Audit automatizare",
+    "about": "Despre",
+    "home": "Acasă",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "menu": "Meniu",
+    "languageSwitcher": {
+      "label": "Limbă",
+      "en": "Eng",
+      "ro": "Ro"
+    }
+  },
+  "footer": {
+    "tagline": "Automatizare AI pentru afaceri operaționale — demo-uri, instrumente interne și fluxuri de lucru personalizate.",
+    "copyright": "© {year} AI Internal Tools. Toate drepturile rezervate.",
+    "links": {
+      "community": "Comunitate",
+      "marketingAudit": "Audit marketing",
+      "automationAudit": "Audit automatizare",
+      "aiNews": "Știri AI",
+      "useCases": "Cazuri de utilizare",
+      "contact": "Contact"
+    }
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "Automatizare AI pentru echipe operaționale",
+      "titleBefore": "Transformă munca manuală în",
+      "titleAccent": "procese automate cu AI",
+      "description": "Proiectăm și implementăm automatizări cu AI care elimină munca repetitivă și simplifică operațiunile zilnice.",
+      "bookCall": "Programează un call",
+      "getInTouch": "Contactează-ne",
+      "stats": {
+        "fasterOperations": {
+          "value": "3X",
+          "label": "Operațiuni mai rapide"
+        },
+        "errorReduction": {
+          "value": "99%",
+          "label": "Reducere a erorilor"
+        },
+        "timeSaved": {
+          "value": "70%",
+          "label": "Timp economisit"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Cum funcționează",
+      "subtitle": "De la prima discuție până la automatizarea live — un parcurs clar, pas cu pas",
+      "steps": {
+        "discovery": {
+          "number": "01",
+          "title": "Discuție inițială",
+          "body": "30 de minute. Ne explicați cum funcționează procesele manuale de azi. Identificăm ce se poate automatiza și schițăm fluxul potrivit."
+        },
+        "build": {
+          "number": "02",
+          "title": "Proiectare și implementare",
+          "body": "Proiectăm automatizarea, o conectăm la sistemele tale (API-uri, webhook-uri, AI), testăm totul și verificăm că merge în practică."
+        },
+        "live": {
+          "number": "03",
+          "title": "Lansare și monitorizare",
+          "body": "În câteva zile, automatizarea rulează deja. Monitorizăm performanța, instruim echipa și rămânem alături când apar noi nevoi."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Cazuri de utilizare",
+      "subtitle": "Fluxuri de lucru pe care le automatizăm cel mai des pentru echipe operaționale",
+      "discoverWorkflow": "Descoperă fluxul de lucru",
+      "discoverWorkflowAria": "Descoperă fluxul de lucru: {title}",
+      "customBadge": "Automatizare personalizată",
+      "customHeading": "Fluxul tău nu apare în listă?",
+      "customCta": "Solicită automatizare personalizată"
+    },
+    "toolCategories": {
+      "eyebrow": "Cazuri de utilizare",
+      "title": "Alege fluxul de lucru care îți consumă timp.",
+      "categories": {
+        "leadRouting": {
+          "title": "Rutare lead-uri",
+          "description": "Scorare, îmbogățire, atribuire și actualizare câmpuri CRM."
+        },
+        "knowledgeAssistants": {
+          "title": "Asistenți de cunoștințe",
+          "description": "Răspunsuri rapide bazate pe SOP-uri și documentația ta."
+        },
+        "documentWorkflows": {
+          "title": "Fluxuri documente",
+          "description": "Pachete construite din șabloane, reguli și date CRM."
+        },
+        "dashboards": {
+          "title": "Dashboard-uri",
+          "description": "Agregări și rezumate scurte pe care leadership-ul le poate parcurge rapid."
+        },
+        "supportCopilots": {
+          "title": "Copiloți suport",
+          "description": "Triere, draft răspunsuri și sugestii pentru pașii următori."
+        },
+        "crossToolHandoffs": {
+          "title": "Transferuri între instrumente",
+          "description": "Task-uri, tichete și actualizări declanșate automat."
+        }
+      },
+      "ctaHeading": "Ai nevoie de un flux de lucru ca acesta?",
+      "ctaDescription": "Descrie procesul. Mapăm ce să automatizăm mai întâi.",
+      "ctaButton": "Solicită automatizare"
+    },
+    "solutionSection": {
+      "eyebrow": "Cum funcționează",
+      "title": "De la proces haotic la sistem funcțional.",
+      "description": "Începe mic, demonstrează valoarea rapid, apoi integrează-l în modul în care echipa ta lucrează deja.",
+      "steps": {
+        "map": {
+          "number": "01",
+          "title": "Mapare",
+          "body": "Identifică fluxul repetabil și instrumentele implicate."
+        },
+        "prototype": {
+          "number": "02",
+          "title": "Prototip",
+          "body": "Testează modelul de automatizare cu un demo funcțional."
+        },
+        "ship": {
+          "number": "03",
+          "title": "Lansare",
+          "body": "Construiește agentul, aplicația sau integrarea în jurul stack-ului tău."
+        }
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Despre",
+    "contact": "Contact",
+    "languages": "Limbi",
+    "requestAutomation": "Solicită automatizare",
+    "encodeBootcampProject": "Proiect bootcamp Encode",
+    "stackEyebrow": "Stack",
+    "coreStackTitle": "Stack principal de aplicație",
+    "coreStackIntro": "Configurație tipică de livrare (inclusiv produse precum PixelPlot pe Vercel). Modelele și integrările contează mai mult decât listarea fiecărui nume de model.",
+    "selectedRoles": "Roluri selectate",
+    "recognition": "Recunoaștere",
+    "announcementLink": "Anunț →",
+    "education": "Educație",
+    "projectRepoLink": "Repo proiect →",
+    "publications": "Publicații",
+    "publicationsIntro": "Lucrări peer-reviewed și articole.",
+    "also": "De asemenea",
+    "alsoIntro": "Cercetare, domeniu și lucru on-chain dincolo de stack-ul web + AI de mai sus.",
+    "letsTalk": "Hai să vorbim",
+    "letsTalkDescription": "Descrie un flux de lucru; îți voi sugera ce să automatizezi mai întâi.",
+    "contactButton": "Contact",
+    "demosButton": "Demo-uri",
+    "homeButton": "Acasă"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Ești interesat de unul dintre fluxurile noastre sau ai nevoie de ceva construit în jurul instrumentelor tale? Alege ce se potrivește mai jos și lasă câteva detalii — îți răspundem cu pașii următori clari.",
+    "backHome": "← Acasă"
+  },
+  "contactForm": {
+    "name": "Nume",
+    "email": "Email",
+    "company": "Companie",
+    "companyOptional": "(opțional)",
+    "optional": "(opțional)",
+    "heading": "Spune-ne ce ai nevoie",
+    "description": "Alege un flux de lucru de pe site sau selectează ceva personalizat, apoi adaugă orice context care ne ajută să înțelegem configurația ta.",
+    "useCaseLabel": "Flux de lucru",
+    "useCasePlaceholder": "Selectează un flux de lucru…",
+    "messageLabel": "Detalii suplimentare",
+    "messageLabelCustom": "Descrie fluxul tău de lucru",
+    "messagePlaceholder": "Instrumentele pe care le folosești, ce ar trebui să declanșeze automatizarea, cum arată „gata\"…",
+    "messagePlaceholderUseCase": "Opțional — dimensiunea echipei, termen limită sau orice specific afacerii tale…",
+    "formSubmit": "Trimite mesajul",
+    "formSubmitting": "Se trimite…",
+    "successTitle": "Mesaj trimis",
+    "successDescription": "Mulțumim pentru mesaj. Vom analiza nota ta și te vom contacta în curând.",
+    "validationCustomWorkflow": "Te rugăm să descrii fluxul de lucru când selectezi ceva personalizat.",
+    "useCaseOptions": {
+      "socialMedia": "Asistent AI pentru social media",
+      "custom": "Ceva personalizat"
+    }
+  },
+  "community": {
+    "eyebrow": "Listă de așteptare · Primii 1.000 primesc un bonus de onboarding",
+    "heroTitleBefore": "Instrumente și fluxuri AI pentru operatori",
+    "heroTitleAfter": "— nu slide-uri",
+    "heroDescription": "Construim un hub pentru membri cu instrumente AI aplicate, șabloane și conexiuni între operatori. Intră pe lista de așteptare — primii 1.000 primesc acces gratuit plus Audit Marketing și Audit Automatizare incluse la lansare.",
+    "cta": "Intră pe lista de așteptare",
+    "backHome": "Înapoi acasă",
+    "benefitsHeading": "Ce primesc membrii fondatori",
+    "benefitsSubheading": "Instrumente, ghiduri și peers",
+    "benefitsIntro": "Membrii fondatori primesc hub-ul plus două instrumente de audit din prima zi. Intră pe lista de așteptare acum pentru a-ți asigura unul dintre primele {limit} locuri.",
+    "joinBadge": "Hub în lansare · {limit} locuri fondator · 2 instrumente de audit incluse",
+    "joinHeading": "Intră pe lista de așteptare",
+    "joinDescription": "Hub-ul nu este încă live. Rezervă-ți locul și te anunțăm prin email când se deschide accesul. Membrii fondatori primesc acces gratuit la hub și un bonus de onboarding: acces complet la instrumentele Audit Marketing și Audit Automatizare.",
+    "trustItems": {
+      "noCreditCard": "Fără card bancar",
+      "firstFree": "Bonus onboarding: 2 instrumente AI de audit",
+      "leaveAnytime": "Poți pleca oricând"
+    },
+    "waitlistFormLabel": "Formular listă de așteptare",
+    "preferEmail": "Preferi email?",
+    "getInTouch": "Contactează-ne",
+    "benefits": {
+      "tools": "Audit Marketing și Audit Automatizare incluse — scanează site-ul și primești rapoarte acționabile (bonus fondator)",
+      "curated": "Ghidaj curat, fără hype sau spam de instrumente",
+      "examples": "Implementări reale în business — nu teorie",
+      "templates": "Fluxuri de lucru și șabloane de automatizare gata de folosit",
+      "networking": "Conectează-te cu operatori care rezolvă probleme similare"
+    }
+  },
+  "communityForm": {
+    "name": "Nume",
+    "email": "Email",
+    "roleLabel": "Rol / tip de business",
+    "rolePlaceholder": "Selectează rolul…",
+    "interestsLabel": "Interese",
+    "interestsOptional": "Opțional",
+    "interestsSelected": "{count} selectate",
+    "challengeLabel": "Cea mai mare provocare AI",
+    "challengeOptional": "(opțional)",
+    "challengePlaceholder": "ex. suprasarcină administrativă, raportare manuală…",
+    "formSubmit": "Alătură-te listei de așteptare",
+    "formSubmitting": "Se înscrie…",
+    "successTitle": "Ești pe lista de așteptare",
+    "successDescription": "Mulțumim pentru înscriere. Ești în linie pentru acces de fondator și bonusul de onboarding Audit Marketing + Audit Automatizare — te anunțăm prin email de îndată ce se deschide hub-ul.",
+    "roles": {
+      "entrepreneur": "Antreprenor",
+      "freelancer": "Freelancer",
+      "manager": "Manager",
+      "consultant": "Consultant",
+      "other": "Altul"
+    },
+    "interests": {
+      "auditTools": "Să încerc instrumentele de audit",
+      "understandAi": "Să înțeleg mai bine AI",
+      "saveTime": "Să economisesc timp în business",
+      "automateProcesses": "Să automatizez procese",
+      "discoverTools": "Să descopăr instrumente utile",
+      "templatesWorkflows": "Să primesc șabloane / fluxuri de lucru",
+      "practicalExamples": "Să văd exemple practice",
+      "networking": "Networking",
+      "consulting": "Consultanță / implementare AI",
+      "courses": "Cursuri / ateliere"
+    }
+  },
+  "login": {
+    "title": "Acces demo",
+    "description": "Autentificarea pentru laboratorul demo nu este încă configurată. Obiectivul este simplu: creezi un cont, primești o alocare mică de credite demo, testezi instrumente proof-of-concept selectate, apoi treci la o automatizare personalizată dacă ai nevoie de ea în producție.",
+    "note": "Autentificarea va folosi probabil Supabase ulterior; această rută este rezervată pentru acel flux.",
+    "requestAutomation": "Solicită automatizare personalizată",
+    "backHome": "Înapoi acasă"
+  },
+  "aiNews": {
+    "index": {
+      "eyebrow": "Briefing săptămânal",
+      "titleBefore": "Știri AI",
+      "titleAfter": "pentru antreprenori",
+      "description": "În fiecare săptămână filtrăm zgomotul și explicăm ce contează în AI — de ce contează și cum îl poți folosi pentru a îmbunătăți operațiunile, marketingul, productivitatea, luarea deciziilor și avantajul competitiv.",
+      "focusAreas": {
+        "operations": "Operațiuni și automatizare",
+        "marketing": "Marketing și creștere",
+        "productivity": "Productivitate",
+        "decisionMaking": "Luarea deciziilor",
+        "competitiveAdvantage": "Avantaj competitiv"
+      },
+      "scrollToTimeline": "Derulează la cronologia edițiilor",
+      "timeline": "Cronologie",
+      "editionTimelineTitle": "Cronologia edițiilor",
+      "editionTimelineDescription": "Urmărește cum a evoluat semnalul AI de la o săptămână la alta.",
+      "joinWaitlist": "Alătură-te listei de așteptare",
+      "emptyTitle": "Prima ediție în curând",
+      "emptyDescriptionBefore": "Adaugă un fișier JSON săptămânal în",
+      "emptyDescriptionMiddle": "(vezi",
+      "emptyDescriptionAfter": "pentru schema), apoi reconstruiește.",
+      "emptySchemaExample": "3-9_May2026.json",
+      "emptyReadmeBefore": "Vezi",
+      "emptyReadmeAfter": "pentru formatul JSON.",
+      "articlesPath": "src/content/ai-news/articles/",
+      "readmePath": "src/content/ai-news/README.md"
+    },
+    "notFound": {
+      "title": "Ediție negăsită",
+      "description": "Acest briefing săptămânal nu există sau nu este încă publicat.",
+      "backToAiNews": "Înapoi la Știri AI",
+      "home": "Acasă"
+    },
+    "timeline": {
+      "signalEvolution": "Evoluția semnalului săptămânal",
+      "signalEvolutionDescription": "Fiecare nod este o ediție — lungimea barei reflectă puterea semnalului în acea săptămână.",
+      "signalLow": "Scăzut",
+      "signalMed": "Med",
+      "signalHigh": "Ridicat",
+      "signalSuffix": "semnal",
+      "latest": "Cel mai recent",
+      "audioAvailable": "Audio disponibil",
+      "readBriefing": "Citește briefing-ul",
+      "newestAtTop": "Cele mai noi sus ·",
+      "oneEdition": "1 ediție",
+      "editionsCount": "{count} ediții",
+      "audio": "Audio"
+    },
+    "article": {
+      "allEditions": "Toate edițiile",
+      "articleIntroAria": "Introducere articol",
+      "executiveBriefingPrefix": "Briefing executiv AI ·",
+      "signalLabel": "Semnal: {strength}",
+      "scrollForBriefing": "Derulează pentru briefing-ul complet ↓",
+      "operatorsTake": "Perspectiva operatorului",
+      "whatToDoDifferently": "Ce să faci diferit",
+      "sourcesNotProvided": "Sursele nu sunt furnizate pentru această ediție.",
+      "noToolsListed": "Niciun instrument listat pentru această ediție.",
+      "timeToTest": "Timp de testare: {time}",
+      "listen": "Ascultă",
+      "defaultAudioTitle": "Rezumat audio săptămânal",
+      "downloadAudio": "Descarcă audio",
+      "bestFor": "Ideal pentru:",
+      "suggestedTest": "Test sugerat",
+      "businessValue": "Valoare de business:",
+      "example": "Exemplu:",
+      "businessExample": "Exemplu de business",
+      "themeOfTheWeek": "Tema săptămânii",
+      "summary": "Rezumat",
+      "whatChangedThisWeek": "Ce s-a schimbat săptămâna aceasta",
+      "storyNumber": "Povestea {number}",
+      "ownerTakeaway": "Concluzie pentru antreprenor",
+      "whyItMatters": "De ce contează pentru antreprenori",
+      "readFullStory": "Citește povestea completă",
+      "whatHappened": "Ce s-a întâmplat",
+      "practicalUseCases": "Cazuri de utilizare practice",
+      "risksToWatch": "Riscuri de urmărit",
+      "showLess": "Arată mai puțin",
+      "previousStory": "Povestea anterioară",
+      "nextStory": "Povestea următoare",
+      "storiesTablist": "Povești AI săptămânale",
+      "storyOf": "Povestea {current} din {total}",
+      "previous": "← Anterior",
+      "next": "Următor →",
+      "executiveSummaryShort": "Rezumat executiv 2 min",
+      "executiveSummaryDuration": "2 min",
+      "executiveSummaryLabel": "Rezumat executiv",
+      "generatingAudio": "Se generează audio…",
+      "pauseSummary": "Pauză rezumat 2 minute",
+      "resumeSummary": "Continuă rezumatul de 2 minute",
+      "playSummary": "Redă rezumatul executiv de 2 minute",
+      "listening": "Se ascultă…",
+      "playbackFailed": "Redarea a eșuat",
+      "couldNotGenerateAudio": "Nu s-a putut genera audio",
+      "couldNotPlaySummary": "Nu s-a putut reda rezumatul"
+    },
+    "sections": {
+      "nav": {
+        "pulse": "Puls",
+        "stories": "Povești",
+        "tools": "Instrumente",
+        "operatorsTake": "Perspectiva operatorului",
+        "actionPlan": "Plan de acțiune",
+        "beginner": "Termen",
+        "sources": "Surse"
+      },
+      "marketPulse": {
+        "title": "Pulsul pieței AI",
+        "description": "Ce s-a schimbat săptămâna aceasta — și de ce contează pentru operatori."
+      },
+      "stories": {
+        "title": "Cele mai importante povești AI ale săptămânii",
+        "description": "Fiecare poveste este filtrată pentru impact de business — nu hype."
+      },
+      "tools": {
+        "title": "Instrumente AI de testat săptămâna aceasta",
+        "description": "Un meniu scurt de testare — alege unul care se potrivește unui flux de lucru pe care îl rulezi deja."
+      },
+      "actionPlan": {
+        "title": "Ce ar trebui să faci săptămâna aceasta",
+        "description": "Pași concreți pe care îi poți executa fără o echipă tehnică."
+      },
+      "beginner": {
+        "title": "Termenul AI al săptămânii"
+      },
+      "sources": {
+        "title": "Surse"
+      },
+      "cta": {
+        "title": "Vrei să aplici asta în business-ul tău?",
+        "description": "Ajut antreprenorii să transforme știrile AI în automatizări și fluxuri de lucru care se lansează.",
+        "buttonLabel": "Programează un call"
+      }
+    },
+    "impact": {
+      "actNow": "Acționează acum",
+      "watchClosely": "Urmărește atent",
+      "actNowFinanceWatchOthers": "Acționează acum (finanțe) · Urmărește (alții)"
+    },
+    "signalStrength": {
+      "high": "Ridicat",
+      "medium": "Mediu",
+      "moderate": "Moderat",
+      "low": "Scăzut"
+    }
+  },
+  "marketingAudit": {
+    "hero": {
+      "eyebrow": "Audit de marketing",
+      "title": "Raport audit site",
+      "description": "Analiză bazată pe AI a principalelor tale pagini de marketing."
+    },
+    "anotherAuditHint": "Introdu un URL pentru a rula un alt audit",
+    "clearAndStartOver": "Șterge și începe de la capăt",
+    "auditRequestFailed": "Cererea de audit a eșuat",
+    "auditFailed": "Audit eșuat",
+    "apiErrors": {
+      "invalidJson": "JSON invalid",
+      "targetUrlRequired": "targetUrl este obligatoriu",
+      "invalidUrl": "URL invalid sau blocat",
+      "openAiNotConfigured": "OPENAI_API_KEY nu este configurat",
+      "noPageContent": "Nu s-a putut prelua conținut de pagină pentru audit",
+      "auditFailed": "Audit eșuat"
+    },
+    "form": {
+      "urlLabel": "URL site web",
+      "urlPlaceholder": "https://site-ul-tau.com",
+      "runAudit": "Rulează auditul",
+      "auditing": "Se auditează…",
+      "tryLabel": "Încearcă:",
+      "helperText": "Descoperă pagini prin sitemap, crawl și sondare de căi — apoi auditează top 5 pagini de marketing."
+    },
+    "progress": {
+      "ariaLabel": "Progres audit",
+      "runningAudit": "Audit în curs",
+      "durationHint": "Durează de obicei 45–90 de secunde. Păstrează acest tab deschis.",
+      "steps": {
+        "discovering": {
+          "label": "Descoperire pagini",
+          "detail": "Sitemap, crawl și căi comune"
+        },
+        "selecting": {
+          "label": "Selectare top 5",
+          "detail": "Clasificare după importanța de marketing"
+        },
+        "fetching": {
+          "label": "Preluare HTML",
+          "detail": "Până la 5 pagini în paralel"
+        },
+        "auditing": {
+          "label": "Audit de marketing în curs",
+          "detail": "Scoruri și constatări AI"
+        },
+        "summary": {
+          "label": "Generare rezumat",
+          "detail": "Recapitulare executivă și acțiuni"
+        }
+      }
+    },
+    "teaser": {
+      "ariaLabel": "Audit finalizat. Scor general {score} din 100.",
+      "complete": "Audit finalizat",
+      "buildingReport": "Se construiește raportul…",
+      "scoreOutOf": "/100"
+    },
+    "report": {
+      "nav": {
+        "summary": "Rezumat",
+        "scores": "Scoruri",
+        "findings": "Constatări",
+        "quickWins": "Câștiguri rapide",
+        "actions": "Acțiuni",
+        "pages": "Pagini"
+      },
+      "sections": {
+        "executiveSummary": {
+          "title": "Rezumat executiv",
+          "description": "Concluzia principală pentru fondatori și operatori ocupați."
+        },
+        "scoreOverview": {
+          "title": "Prezentare scoruri",
+          "description": "Performanță pe cinci dimensiuni de marketing plus scorul general."
+        },
+        "findings": {
+          "title": "Constatări detaliate",
+          "description": "Observații bazate pe dovezi pentru fiecare zonă de audit."
+        },
+        "quickWins": {
+          "title": "Câștiguri rapide",
+          "description": "Îmbunătățiri cu impact mare pe care le poți implementa săptămâna aceasta."
+        },
+        "recommendations": {
+          "title": "Recomandări prioritizate",
+          "description": "Pașii următori clasificați după impactul așteptat."
+        },
+        "pagesAudited": {
+          "title": "Pagini auditate",
+          "description": "Cele cinci pagini cu prioritate maximă incluse în acest audit."
+        }
+      },
+      "emptyStates": {
+        "executiveSummary": "Nu s-a generat un rezumat executiv pentru acest audit.",
+        "findings": "Nu s-au identificat constatări pentru această zonă.",
+        "quickWins": "Nu s-au identificat câștiguri rapide.",
+        "recommendations": "Nu s-au generat recomandări prioritizate."
+      },
+      "impact": {
+        "high": "Ridicat",
+        "medium": "Mediu",
+        "low": "Scăzut",
+        "impactSuffix": "Impact {impact}"
+      },
+      "auditAreas": {
+        "contentMessaging": {
+          "label": "Conținut și mesaje",
+          "shortLabel": "Conținut",
+          "description": "Titluri, propuneri de valoare și claritatea mesajului."
+        },
+        "conversionCro": {
+          "label": "Conversie și CRO",
+          "shortLabel": "CRO",
+          "description": "CTA-uri, formulare, fricțiune și căi de conversie."
+        },
+        "seoDiscoverability": {
+          "label": "SEO și vizibilitate",
+          "shortLabel": "SEO",
+          "description": "Cuvinte cheie, structură și semnale de vizibilitate organică."
+        },
+        "competitivePositioning": {
+          "label": "Poziționare competitivă",
+          "shortLabel": "Poziționare",
+          "description": "Diferențiere și cadru competitiv."
+        },
+        "brandTrustGrowth": {
+          "label": "Încredere brand și creștere",
+          "shortLabel": "Încredere",
+          "description": "Credibilitate, dovadă socială și semnale de încredere."
+        }
+      },
+      "hero": {
+        "auditComplete": "Audit finalizat",
+        "generated": "Generat:",
+        "pagesAudited": "Pagini auditate:",
+        "discovered": "descoperite",
+        "discovery": "Descoperire:",
+        "overallScore": "Scor general",
+        "overallScoreAria": "Scor general {score} din 100"
+      },
+      "charts": {
+        "overall": "General",
+        "radarAria": "Diagramă radar a scorurilor de audit",
+        "barsAria": "Diagramă cu bare a scorurilor de audit"
+      },
+      "pagesTable": {
+        "path": "Cale",
+        "status": "Status",
+        "html": "HTML",
+        "text": "Text",
+        "ok": "OK",
+        "error": "Eroare",
+        "underfilled": "Doar {filled} din {max} sloturi de pagini au putut fi completate — site-ul poate folosi navigare randată client-side, bloca crawlerii sau expune puține rute HTML publice. Căile comune au fost sondare automat acolo unde a fost posibil.",
+        "extraDiscoveredOne": "{count} pagină suplimentară descoperită, dar neinclusă în acest audit (limitat la top {max}).",
+        "extraDiscoveredMany": "{count} pagini suplimentare descoperite, dar neincluse în acest audit (limitat la top {max})."
+      },
+      "toolbar": {
+        "exportHint": "Exportă acest raport sau rulează un audit nou",
+        "downloadPdf": "Descarcă PDF",
+        "generatingPdf": "Se generează PDF…",
+        "print": "Printează",
+        "json": "JSON",
+        "exportingJson": "Se exportă…",
+        "newAudit": "Audit nou",
+        "cancel": "Anulează",
+        "sectionsNav": "Secțiuni raport",
+        "urlPlaceholder": "https://exemplu.com",
+        "pdfExportFailed": "Exportul PDF a eșuat. Apasă Print și alege „Salvează ca PDF\" în dialog."
+      }
+    }
+  },
+  "automationAudit": {
+    "hero": {
+      "eyebrow": "Audit automatizare site web",
+      "title": "Raport oportunități de automatizare",
+      "description": "Idei practice de automatizare pentru business-ul tău — bazate pe site-ul tău public."
+    },
+    "anotherAuditHint": "Introdu un URL pentru a rula un alt audit",
+    "clearAndStartOver": "Șterge și începe de la capăt",
+    "auditRequestFailed": "Cererea de audit a eșuat",
+    "auditFailed": "Audit eșuat",
+    "apiErrors": {
+      "invalidJson": "JSON invalid",
+      "targetUrlRequired": "targetUrl este obligatoriu",
+      "invalidUrl": "URL invalid sau blocat",
+      "openAiNotConfigured": "OPENAI_API_KEY nu este configurat",
+      "noPageContent": "Nu s-a putut prelua conținut de pagină pentru audit",
+      "auditFailed": "Audit eșuat"
+    },
+    "scopeNote": "Acest audit se bazează doar pe ce am putut afla de pe site-ul tău public. Nu putem vedea procesele interne, sistemele private sau modul în care echipa ta lucrează zilnic — sugestiile descriu oportunități practice deduse din prezența ta online.",
+    "form": {
+      "urlLabel": "URL site web",
+      "urlPlaceholder": "https://site-ul-tau.com",
+      "runAudit": "Rulează auditul",
+      "scanning": "Se scanează…",
+      "tryLabel": "Încearcă:",
+      "helperText": "Scanează site-ul tău public pentru a deduce modelul de business, detecta instrumentele vizibile și recomanda direcții de automatizare."
+    },
+    "progress": {
+      "ariaLabel": "Progres audit",
+      "runningAudit": "Audit în curs",
+      "durationHint": "Durează de obicei 45–90 de secunde. Păstrează acest tab deschis.",
+      "steps": {
+        "discovering": {
+          "label": "Descoperire pagini",
+          "detail": "Sitemap, crawl și căi comune"
+        },
+        "selecting": {
+          "label": "Selectare top 5",
+          "detail": "Clasificare după relevanța operațională"
+        },
+        "fetching": {
+          "label": "Preluare HTML",
+          "detail": "Până la 5 pagini în paralel"
+        },
+        "detecting": {
+          "label": "Detectare integrări",
+          "detail": "Scanare instrumente vizibile"
+        },
+        "auditing": {
+          "label": "Audit automatizare în curs",
+          "detail": "Scoruri AI și analiză fluxuri de lucru"
+        },
+        "summary": {
+          "label": "Generare rezumat",
+          "detail": "Recapitulare executivă și acțiuni"
+        }
+      }
+    },
+    "teaser": {
+      "ariaLabel": "Audit finalizat. Scor general {score} din 100.",
+      "complete": "Audit finalizat",
+      "buildingReport": "Se construiește raportul…",
+      "scoreOutOf": "/100",
+      "readinessAria": "Pregătire automatizare {score} din 100"
+    },
+    "report": {
+      "nav": {
+        "summary": "Rezumat",
+        "business": "Business",
+        "readiness": "Pregătire",
+        "yourSite": "Site-ul tău",
+        "findings": "Constatări",
+        "workflows": "Fluxuri",
+        "quickWins": "Câștiguri rapide",
+        "actions": "Acțiuni"
+      },
+      "sections": {
+        "executiveSummary": {
+          "title": "Rezumat executiv",
+          "description": "Concluzia principală, în limbaj simplu."
+        },
+        "businessSummary": {
+          "title": "Rezumat business",
+          "description": "Ce pare că vinzi, cui te adresezi și oferta ta principală."
+        },
+        "scoreOverview": {
+          "title": "Pregătire pentru automatizare",
+          "description": "Cât de mult spațiu există pentru a automatiza zonele cheie ale business-ului tău. Vezi Constatările mai jos pentru detalii."
+        },
+        "yourWebsite": {
+          "title": "Ce am găsit pe site-ul tău",
+          "description": "Semnale de pe site-ul tău public și automatizări practice pe care le-ai putea rula — sau adăuga — pe baza a ceea ce am văzut."
+        },
+        "findings": {
+          "title": "Constatări fluxuri de lucru",
+          "description": "Pentru fiecare zonă a business-ului tău: ce am observat, de ce contează și cum poți îmbunătăți."
+        },
+        "recommendations": {
+          "title": "Recomandări fluxuri de lucru",
+          "description": "Automatizări practice pe care le-ai putea implementa — descrise ca ce se întâmplă, nu cum este construit."
+        },
+        "quickWins": {
+          "title": "Câștiguri rapide",
+          "description": "Automatizări cu impact mare pe care le-ai putea explora săptămâna aceasta."
+        },
+        "actions": {
+          "title": "Acțiuni prioritizate",
+          "description": "Pașii următori clasificați după impactul așteptat."
+        }
+      },
+      "emptyStates": {
+        "executiveSummary": "Nu s-a generat un rezumat executiv pentru acest audit.",
+        "scoreRationale": "Nu am găsit suficient pe site-ul tău public pentru a explica acest scor în detaliu.",
+        "evidence": "Niciun semnal clar pe paginile pe care le-am analizat.",
+        "improvements": "Programează un call de consultanță pentru a analiza cum funcționează asta în business-ul tău — paginile publice singure nu au fost suficiente.",
+        "workflows": "Nu s-au identificat recomandări de fluxuri de lucru.",
+        "improvementsWorkflows": "Nu s-au identificat fluxuri de lucru suplimentare de îmbunătățire.",
+        "quickWins": "Nu s-au identificat câștiguri rapide.",
+        "recommendations": "Nu s-au generat recomandări prioritizate.",
+        "detectedTools": "Niciun semnal specific pe paginile tale publice — recomandăm totuși automatizări în secțiunile de mai jos, pe baza tipului tău de business."
+      },
+      "impact": {
+        "high": "Ridicat",
+        "medium": "Mediu",
+        "low": "Scăzut",
+        "impactSuffix": "Impact {impact}"
+      },
+      "auditAreas": {
+        "leadCaptureFollowUp": {
+          "label": "Captare lead-uri și follow-up",
+          "shortLabel": "Lead-uri",
+          "description": "Obținerea de clienți noi și follow-up cu aceștia."
+        },
+        "onboardingDelivery": {
+          "label": "Onboarding și livrare",
+          "shortLabel": "Onboarding",
+          "description": "Înscriere, onboarding, livrare și transferuri către clienți."
+        },
+        "supportKnowledge": {
+          "label": "Suport și cunoștințe",
+          "shortLabel": "Suport",
+          "description": "FAQ, conținut de ajutor și răspunsuri la întrebările clienților."
+        },
+        "contentOperations": {
+          "label": "Operațiuni de conținut",
+          "shortLabel": "Conținut",
+          "description": "Publicare conținut și sincronizare canale."
+        },
+        "reportingHandoffs": {
+          "label": "Raportare și transferuri",
+          "shortLabel": "Raportare",
+          "description": "Rapoarte, alerte și alinierea echipelor."
+        }
+      },
+      "hero": {
+        "auditComplete": "Audit site finalizat",
+        "generated": "Generat {date}",
+        "readinessScore": "Scor pregătire",
+        "readinessScoreAria": "Pregătire automatizare {score} din 100"
+      },
+      "businessSnapshot": {
+        "businessType": "Tip de business",
+        "audience": "Audiență",
+        "offer": "Ofertă"
+      },
+      "websiteTools": {
+        "alreadyUsingTitle": "Ce folosești probabil deja",
+        "alreadyUsingDescription": "Pe baza semnalelor de pe site-ul tău public — fiecare element include o automatizare practică pe care ai putea-o rula.",
+        "additionalTitle": "Automatizări suplimentare pe care le-ai putea adăuga",
+        "additionalDescription": "Idei de fluxuri de lucru care ar întări zonele pe care nu le-am putut vedea complet doar pe site.",
+        "likelyUsing": "Probabil folosești",
+        "signalFromWebsite": "semnal de pe site-ul tău",
+        "timeAndMoneySaved": "Timp și bani economisiți",
+        "confidence": {
+          "high": "Semnal puternic",
+          "medium": "Probabil",
+          "low": "Posibil"
+        }
+      },
+      "areaPanel": {
+        "whatWeNoticed": "Ce am observat",
+        "fromYourWebsite": "De pe site-ul tău",
+        "suggestedImprovement": "Îmbunătățire sugerată"
+      },
+      "workflowOpportunities": {
+        "whyWeSuggest": "De ce sugerăm asta:"
+      },
+      "consultingCta": {
+        "title": "Vrei o analiză mai detaliată?",
+        "description": "Acest raport este un punct de plecare de pe site-ul tău public. Programează un call gratuit de consultanță și vom mapa stack-ul real, fluxurile de lucru și oportunitățile de automatizare în detaliu.",
+        "buttonLabel": "Programează consultanță gratuită",
+        "inlineBefore": "Pentru o analiză mai detaliată a fluxurilor de lucru și stack-ului tău real,",
+        "inlineHighlight": "programează un call gratuit de consultanță",
+        "inlineAfter": "— vom merge dincolo de ce este vizibil pe site-ul tău."
+      },
+      "charts": {
+        "overall": "General",
+        "radarAria": "Diagramă radar a scorurilor de automatizare",
+        "barsAria": "Diagramă cu bare a scorurilor de automatizare"
+      },
+      "toolbar": {
+        "exportHint": "Exportă acest raport sau rulează un audit nou",
+        "downloadPdf": "Descarcă PDF",
+        "generatingPdf": "Se generează PDF…",
+        "print": "Printează",
+        "json": "JSON",
+        "exportingJson": "Se exportă…",
+        "newAudit": "Audit nou",
+        "cancel": "Anulează",
+        "sectionsNav": "Secțiuni raport",
+        "urlPlaceholder": "https://exemplu.com",
+        "pdfExportFailed": "Exportul PDF a eșuat. Apasă Print și alege „Salvează ca PDF\" în dialog."
+      }
+    }
+  },
+  "common": {
+    "buttons": {
+      "submit": "Trimite",
+      "cancel": "Anulează",
+      "close": "Închide",
+      "back": "Înapoi",
+      "home": "Acasă",
+      "learnMore": "Află mai multe",
+      "bookCall": "Programează un call",
+      "getInTouch": "Contactează-ne",
+      "requestAutomation": "Solicită automatizare"
+    },
+    "errors": {
+      "generic": "Ceva nu a mers bine. Te rugăm să încerci din nou.",
+      "required": "Acest câmp este obligatoriu.",
+      "invalidEmail": "Te rugăm să introduci o adresă de email validă."
+    },
+    "loading": "Se încarcă…",
+    "optional": "(opțional)"
+  }
+}

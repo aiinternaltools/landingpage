@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/routing";
 import type { AiNewsBriefingStory } from "@/content/ai-news/types";
 import { StoryCard } from "@/components/ai-news/briefing/StoryCard";
 
@@ -12,6 +14,8 @@ const navBtnClass =
   "flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-lg border border-border bg-muted-bg/80 text-lg text-muted transition-colors hover:border-accent/30 hover:text-foreground disabled:pointer-events-none disabled:opacity-30";
 
 export function StoriesTabs({ stories }: StoriesTabsProps) {
+  const t = useTranslations("aiNews");
+  const locale = useLocale() as Locale;
   const baseId = useId();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -51,7 +55,7 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
       <div className="flex min-w-0 items-center gap-2 border-b border-border/60 pb-3 md:hidden">
         <button
           type="button"
-          aria-label="Previous story"
+          aria-label={t("article.previousStory")}
           disabled={activeIndex === 0}
           onClick={() => selectStory(activeIndex - 1)}
           className={navBtnClass}
@@ -60,14 +64,17 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
         </button>
         <div className="min-w-0 flex-1 px-1 text-center">
           <p className="text-[11px] text-muted">
-            Story {activeIndex + 1} of {stories.length}
+            {t("article.storyOf", {
+              current: activeIndex + 1,
+              total: stories.length,
+            })}
           </p>
           <p className="truncate text-sm font-semibold text-foreground">{activeStory.company}</p>
           <p className="truncate text-[11px] text-muted">{activeStory.category}</p>
         </div>
         <button
           type="button"
-          aria-label="Next story"
+          aria-label={t("article.nextStory")}
           disabled={activeIndex === stories.length - 1}
           onClick={() => selectStory(activeIndex + 1)}
           className={navBtnClass}
@@ -80,7 +87,7 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
         <div
           ref={scrollRef}
           role="tablist"
-          aria-label="Weekly AI stories"
+          aria-label={t("article.storiesTablist")}
           className="scrollbar-none scroll-fade-x flex w-full max-w-full flex-wrap gap-1.5 pb-0.5"
         >
           {stories.map((story, index) => {
@@ -96,7 +103,10 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
                 data-story-index={index}
                 aria-selected={selected}
                 aria-controls={panelId}
-                aria-label={`Story ${index + 1} of ${stories.length}: ${story.company}, ${story.category}`}
+                aria-label={t("article.storyOf", {
+                  current: index + 1,
+                  total: stories.length,
+                }) + `: ${story.company}, ${story.category}`}
                 title={`${story.company} — ${story.category}`}
                 tabIndex={selected ? 0 : -1}
                 onClick={() => selectStory(index)}
@@ -127,13 +137,16 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
           index={activeIndex}
           expanded={expanded}
           onToggleExpanded={() => setExpanded((v) => !v)}
+          locale={locale}
         />
       </div>
 
       <div className="hidden items-center justify-between gap-4 border-t border-border/80 pt-4 md:flex">
         <p className="text-xs text-muted">
-          Story <span className="font-medium text-foreground">{activeIndex + 1}</span> of{" "}
-          {stories.length}
+          {t("article.storyOf", {
+            current: activeIndex + 1,
+            total: stories.length,
+          })}
         </p>
         <div className="flex gap-2">
           <button
@@ -142,7 +155,7 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
             disabled={activeIndex === 0}
             onClick={() => selectStory(activeIndex - 1)}
           >
-            ← Previous
+            {t("article.previous")}
           </button>
           <button
             type="button"
@@ -150,7 +163,7 @@ export function StoriesTabs({ stories }: StoriesTabsProps) {
             disabled={activeIndex === stories.length - 1}
             onClick={() => selectStory(activeIndex + 1)}
           >
-            Next →
+            {t("article.next")}
           </button>
         </div>
       </div>

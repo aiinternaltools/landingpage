@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 type ReportScoreTeaserProps = {
   hostname: string;
   overallScore: number;
@@ -15,12 +17,14 @@ export function ReportScoreTeaser({
   hostname,
   overallScore,
 }: ReportScoreTeaserProps) {
+  const t = useTranslations("automationAudit");
+
   return (
     <div
       className="audit-teaser-enter flex flex-col items-center justify-center px-6 py-16 text-center sm:py-20"
       role="status"
       aria-live="polite"
-      aria-label={`Audit complete. Automation readiness ${overallScore} out of 100.`}
+      aria-label={t("teaser.readinessAria", { score: overallScore })}
     >
       <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-emerald-500/40 bg-emerald-500/10">
         <svg
@@ -35,14 +39,14 @@ export function ReportScoreTeaser({
         </svg>
       </div>
       <p className="mt-5 text-xs font-semibold uppercase tracking-widest text-emerald-400">
-        Scan complete
+        {t("teaser.complete")}
       </p>
       <p className="mt-2 text-lg font-medium text-foreground">{hostname}</p>
       <p className={`mt-4 text-5xl font-bold tabular-nums ${scoreTone(overallScore)}`}>
         {overallScore}
-        <span className="text-2xl font-semibold text-muted">/100</span>
+        <span className="text-2xl font-semibold text-muted">{t("teaser.scoreOutOf")}</span>
       </p>
-      <p className="mt-3 text-sm text-muted">Building your report…</p>
+      <p className="mt-3 text-sm text-muted">{t("teaser.buildingReport")}</p>
     </div>
   );
 }

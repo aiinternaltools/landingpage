@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 import type { AiNewsArticleListItem } from "@/content/ai-news/types";
 import { formatSignalStrength, signalStrengthLevel } from "@/lib/ai-news-utils";
 
@@ -25,9 +26,10 @@ type EditionTimelineItemProps = {
   edition: AiNewsArticleListItem;
   isLatest: boolean;
   isLast: boolean;
+  t: Awaited<ReturnType<typeof getTranslations<"aiNews">>>;
 };
 
-function EditionTimelineItem({ edition, isLatest, isLast }: EditionTimelineItemProps) {
+function EditionTimelineItem({ edition, isLatest, isLast, t }: EditionTimelineItemProps) {
   const level = signalStrengthLevel(edition.signalStrength);
 
   return (
@@ -53,7 +55,7 @@ function EditionTimelineItem({ edition, isLatest, isLast }: EditionTimelineItemP
       </div>
 
       <div className={`min-w-0 pb-8 sm:pb-10 ${isLast ? "pb-0 sm:pb-0" : ""}`}>
-        <EditionTimelineCard edition={edition} isLatest={isLatest} />
+        <EditionTimelineCard edition={edition} isLatest={isLatest} t={t} />
       </div>
     </li>
   );
@@ -62,9 +64,10 @@ function EditionTimelineItem({ edition, isLatest, isLast }: EditionTimelineItemP
 type EditionTimelineCardProps = {
   edition: AiNewsArticleListItem;
   isLatest: boolean;
+  t: Awaited<ReturnType<typeof getTranslations<"aiNews">>>;
 };
 
-function EditionTimelineCard({ edition, isLatest }: EditionTimelineCardProps) {
+function EditionTimelineCard({ edition, isLatest, t }: EditionTimelineCardProps) {
   return (
     <Link
       href={`/ai-news/${edition.slug}`}
@@ -78,16 +81,16 @@ function EditionTimelineCard({ edition, isLatest }: EditionTimelineCardProps) {
         </time>
         {edition.signalStrength ? (
           <span className="rounded-full border border-border px-2 py-0.5">
-            {formatSignalStrength(edition.signalStrength)} signal
+            {formatSignalStrength(edition.signalStrength, t)} {t("timeline.signalSuffix")}
           </span>
         ) : null}
         {isLatest ? (
           <span className="rounded-full border border-accent/30 bg-accent-muted px-2 py-0.5 font-medium text-accent">
-            Latest
+            {t("timeline.latest")}
           </span>
         ) : null}
         {edition.hasAudio ? (
-          <span className="flex items-center gap-0.5" title="Audio available">
+          <span className="flex items-center gap-0.5" title={t("timeline.audioAvailable")}>
             <svg
               width="12"
               height="12"
@@ -109,7 +112,7 @@ function EditionTimelineCard({ edition, isLatest }: EditionTimelineCardProps) {
       </p>
 
       <p className="mt-3 flex items-center gap-1 text-xs font-medium text-accent">
-        Read briefing
+        {t("timeline.readBriefing")}
         <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
           →
         </span>
@@ -118,7 +121,9 @@ function EditionTimelineCard({ edition, isLatest }: EditionTimelineCardProps) {
   );
 }
 
-export function EditionTimeline({ editions }: EditionTimelineProps) {
+export async function EditionTimeline({ editions }: EditionTimelineProps) {
+  const t = await getTranslations("aiNews");
+
   if (editions.length === 0) return null;
 
   const maxLevel = Math.max(
@@ -126,15 +131,20 @@ export function EditionTimeline({ editions }: EditionTimelineProps) {
     1,
   );
 
+  const editionCountLabel =
+    editions.length === 1
+      ? t("timeline.oneEdition")
+      : t("timeline.editionsCount", { count: editions.length });
+
   return (
     <div className="mt-10">
       <div className="mb-8 flex flex-col gap-4 rounded-xl border border-border/80 bg-background/40 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-muted">
-            Weekly signal evolution
+            {t("timeline.signalEvolution")}
           </p>
           <p className="mt-1 text-sm text-muted">
-            Each node is one edition — bar length reflects signal strength that week.
+            {t("timeline.signalEvolutionDescription")}
           </p>
         </div>
         <div className="flex items-end gap-2 sm:gap-3" aria-hidden>
@@ -146,7 +156,11 @@ export function EditionTimeline({ editions }: EditionTimelineProps) {
                 } ${n === maxLevel ? "opacity-100" : "opacity-35"}`}
               />
               <span className="text-[10px] text-muted">
-                {n === 1 ? "Low" : n === 2 ? "Med" : "High"}
+                {n === 1
+                  ? t("timeline.signalLow")
+                  : n === 2
+                    ? t("timeline.signalMed")
+                    : t("timeline.signalHigh")}
               </span>
             </div>
           ))}
@@ -160,13 +174,13 @@ export function EditionTimeline({ editions }: EditionTimelineProps) {
             edition={edition}
             isLatest={index === 0}
             isLast={index === editions.length - 1}
+            t={t}
           />
         ))}
       </ol>
 
       <p className="mt-6 text-center text-xs text-muted">
-        Newest at top ·{" "}
-        {editions.length === 1 ? "1 edition" : `${editions.length} editions`}
+        {t("timeline.newestAtTop")} {editionCountLabel}
       </p>
     </div>
   );

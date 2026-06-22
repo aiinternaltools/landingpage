@@ -1,12 +1,17 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { AiNewsArticleListItem } from "@/content/ai-news/types";
+import type { Locale } from "@/i18n/routing";
 import { formatArticleDate, formatSignalStrength } from "@/lib/ai-news-utils";
 
 type ArticleCardProps = {
   article: AiNewsArticleListItem;
 };
 
-export function ArticleCard({ article }: ArticleCardProps) {
+export async function ArticleCard({ article }: ArticleCardProps) {
+  const t = await getTranslations("aiNews");
+  const locale = (await getLocale()) as Locale;
+
   return (
     <article className="card-elevated card-elevated-hover group flex h-full flex-col rounded-2xl p-6">
       <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
@@ -14,11 +19,12 @@ export function ArticleCard({ article }: ArticleCardProps) {
           {article.weekLabel}
         </span>
         <time dateTime={article.publishedAt}>
-          {formatArticleDate(article.publishedAt)}
+          {formatArticleDate(article.publishedAt, locale)}
         </time>
         {article.signalStrength ? (
           <span className="rounded-md border border-border px-2 py-0.5 text-[11px]">
-            {formatSignalStrength(article.signalStrength)} signal
+            {formatSignalStrength(article.signalStrength, t)}{" "}
+            {t("timeline.signalSuffix")}
           </span>
         ) : null}
         {article.hasAudio ? (
@@ -35,7 +41,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
               <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z" />
               <path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3" strokeLinecap="round" />
             </svg>
-            Audio
+            {t("timeline.audio")}
           </span>
         ) : null}
       </div>
@@ -53,7 +59,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
         href={`/ai-news/${article.slug}`}
         className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
       >
-        Read briefing
+        {t("timeline.readBriefing")}
         <span aria-hidden>→</span>
       </Link>
     </article>

@@ -1,4 +1,7 @@
+"use client";
+
 import type { CSSProperties } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { ReportHero } from "@/components/marketing-audit/report/ReportHero";
 import { ReportSection } from "@/components/marketing-audit/report/ReportSection";
 import { ScoreBarsChart } from "@/components/marketing-audit/report/ScoreBarsChart";
@@ -9,9 +12,10 @@ import { QuickWinsList } from "@/components/marketing-audit/report/QuickWinsList
 import { RecommendationsList } from "@/components/marketing-audit/report/RecommendationsList";
 import { PagesAuditedTable } from "@/components/marketing-audit/report/PagesAuditedTable";
 import {
-  REPORT_AUDIT_AREAS,
-  REPORT_TEMPLATE_SECTIONS,
+  getReportAuditAreas,
+  getReportTemplateSections,
 } from "@/components/marketing-audit/report/report-template-sections";
+import type { Locale } from "@/i18n/routing";
 import type { MarketingAuditReport } from "@/lib/marketing-audit/types";
 
 type MarketingAuditReportTemplateProps = {
@@ -24,7 +28,10 @@ export function MarketingAuditReportTemplate({
   report,
   animate = false,
 }: MarketingAuditReportTemplateProps) {
-  const sections = REPORT_TEMPLATE_SECTIONS;
+  const t = useTranslations("marketingAudit");
+  const locale = useLocale() as Locale;
+  const sections = getReportTemplateSections(t);
+  const auditAreas = getReportAuditAreas(locale);
   const stagger = animate ? "audit-reveal-item" : "";
 
   return (
@@ -65,15 +72,9 @@ export function MarketingAuditReportTemplate({
         >
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="card-elevated rounded-2xl p-4 sm:p-6">
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-muted">
-                Radar view
-              </h3>
               <ScoreRadarChart scores={report.audit.scores} />
             </div>
             <div className="card-elevated rounded-2xl p-4 sm:p-6">
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-muted">
-                Score breakdown
-              </h3>
               <ScoreBarsChart scores={report.audit.scores} />
             </div>
           </div>
@@ -92,7 +93,7 @@ export function MarketingAuditReportTemplate({
           band={sections.findings.band}
         >
           <div className="grid gap-4 md:grid-cols-2">
-            {REPORT_AUDIT_AREAS.map((area) => (
+            {auditAreas.map((area) => (
               <AuditAreaPanel
                 key={area.id}
                 area={area.id}

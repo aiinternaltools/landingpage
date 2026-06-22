@@ -1,5 +1,8 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/Card";
-import { EMPTY_STATE_COPY } from "@/components/automation-audit/report/report-template-sections";
+import { getEmptyStateCopy } from "@/components/automation-audit/report/report-template-sections";
 import type { ToolRecommendation } from "@/lib/automation-audit/types";
 
 type ImprovementWorkflowsListProps = {
@@ -25,10 +28,13 @@ function ImpactBadge({ impact }: { impact: ToolRecommendation["impact"] }) {
 export function ImprovementWorkflowsList({
   recommendations,
 }: ImprovementWorkflowsListProps) {
+  const t = useTranslations("automationAudit");
+  const emptyStates = getEmptyStateCopy(t);
+
   if (recommendations.length === 0) {
     return (
       <Card>
-        <p className="text-sm text-muted">{EMPTY_STATE_COPY.improvements}</p>
+        <p className="text-sm text-muted">{emptyStates.improvements}</p>
       </Card>
     );
   }

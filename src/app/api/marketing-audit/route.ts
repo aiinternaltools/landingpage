@@ -11,6 +11,10 @@ import {
 import { prioritizePages } from "@/lib/marketing-audit/prioritize-pages";
 import type { PageTextResult } from "@/lib/marketing-audit/types";
 import { normalizeTargetUrl } from "@/lib/marketing-audit/validate-url";
+import {
+  getAuditApiError,
+  parseAuditLocale,
+} from "@/lib/audit-api-messages";
 
 export const maxDuration = 90;
 
@@ -19,8 +23,13 @@ export async function POST(request: Request) {
   try {
     body = await request.json();
   } catch {
-    return Response.json({ error: "Invalid JSON" }, { status: 400 });
+    return Response.json(
+      { error: getAuditApiError("en", "marketingAudit", "invalidJson") },
+      { status: 400 }
+    );
   }
+
+  const locale = parseAuditLocale(body);
 
   let targetUrl: string | null = null;
   if (body && typeof body === "object") {
@@ -29,17 +38,23 @@ export async function POST(request: Request) {
   }
 
   if (!targetUrl) {
-    return Response.json({ error: "targetUrl is required" }, { status: 400 });
+    return Response.json(
+      { error: getAuditApiError(locale, "marketingAudit", "targetUrlRequired") },
+      { status: 400 }
+    );
   }
 
   const normalized = normalizeTargetUrl(targetUrl);
   if (!normalized) {
-    return Response.json({ error: "Invalid or blocked URL" }, { status: 400 });
+    return Response.json(
+      { error: getAuditApiError(locale, "marketingAudit", "invalidUrl") },
+      { status: 400 }
+    );
   }
 
   if (!hasOpenAiKey()) {
     return Response.json(
-      { error: "OPENAI_API_KEY is not configured" },
+      { error: getAuditApiError(locale, "marketingAudit", "openAiNotConfigured") },
       { status: 503 }
     );
   }
@@ -82,13 +97,13 @@ export async function POST(request: Request) {
 
     if (!excerpt.textExcerpt) {
       return Response.json(
-        { error: "Could not fetch any page content to audit" },
+        { error: getAuditApiError(locale, "marketingAudit", "noPageContent") },
         { status: 502 }
       );
     }
 
-    const auditRaw = await runAuditLlm(normalized, fetchedAt, excerpt);
-    const executiveRaw = await runExecutiveLlm(auditRaw);
+    const auditRaw = await runAuditLlm(normalized, fetchedAt, excerpt, locale);
+    const executiveRaw = await runExecutiveLlm(auditRaw, locale);
 
     const report = mergeReport({
       targetUrl: normalized,
@@ -102,7 +117,10 @@ export async function POST(request: Request) {
 
     return Response.json(report);
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Audit failed";
+    const message =
+      err instanceof Error
+        ? err.message
+        : getAuditApiError(locale, "marketingAudit", "auditFailed");
     return Response.json({ error: message }, { status: 502 });
   }
 }

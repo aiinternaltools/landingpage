@@ -1,22 +1,28 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/Card";
-import { EMPTY_STATE_COPY } from "@/components/automation-audit/report/report-template-sections";
+import { getEmptyStateCopy } from "@/components/automation-audit/report/report-template-sections";
 import type { DetectedTool } from "@/lib/automation-audit/types";
 
 type DetectedToolsTableProps = {
   tools: DetectedTool[];
 };
 
-const confidenceLabel: Record<DetectedTool["confidence"], string> = {
-  high: "Strong signal",
-  medium: "Likely",
-  low: "Possible",
-};
-
 export function DetectedToolsTable({ tools }: DetectedToolsTableProps) {
+  const t = useTranslations("automationAudit");
+  const emptyStates = getEmptyStateCopy(t);
+
+  const confidenceLabel: Record<DetectedTool["confidence"], string> = {
+    high: t("report.websiteTools.confidence.high"),
+    medium: t("report.websiteTools.confidence.medium"),
+    low: t("report.websiteTools.confidence.low"),
+  };
+
   if (tools.length === 0) {
     return (
       <Card>
-        <p className="text-sm text-muted">{EMPTY_STATE_COPY.detectedTools}</p>
+        <p className="text-sm text-muted">{emptyStates.detectedTools}</p>
       </Card>
     );
   }
@@ -32,16 +38,18 @@ export function DetectedToolsTable({ tools }: DetectedToolsTableProps) {
                   {tool.automationSuggestion}
                 </h4>
                 <p className="mt-2 text-xs text-muted">
-                  Likely using <span className="text-muted-strong">{tool.name}</span>
+                  {t("report.websiteTools.likelyUsing")}{" "}
+                  <span className="text-muted-strong">{tool.name}</span>
                   {" · "}
-                  {confidenceLabel[tool.confidence]} signal from your website
+                  {confidenceLabel[tool.confidence]}{" "}
+                  {t("report.websiteTools.signalFromWebsite")}
                 </p>
               </div>
             </div>
 
             <div className="mt-4 rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-3 py-2.5">
               <p className="text-xs font-semibold text-emerald-400">
-                Time & money saved
+                {t("report.websiteTools.timeAndMoneySaved")}
               </p>
               <p className="mt-1 text-sm leading-relaxed text-muted-strong">
                 {tool.savingsNote}

@@ -1,100 +1,111 @@
-import {
-  AUTOMATION_AREAS,
-  REPORT_CONSULTING_CTA,
-} from "@/lib/automation-audit/constants";
+import type { useTranslations } from "next-intl";
+import { getAuditConstants } from "@/lib/automation-audit/constants";
+import type { Locale } from "@/i18n/routing";
 
-export { REPORT_CONSULTING_CTA };
+export type AutomationAuditT = ReturnType<typeof useTranslations<"automationAudit">>;
 
-export const REPORT_TEMPLATE_NAV = [
-  { id: "executive-summary", label: "Summary" },
-  { id: "business-summary", label: "Business" },
-  { id: "score-overview", label: "Readiness" },
-  { id: "your-website", label: "Your site" },
-  { id: "findings", label: "Findings" },
-  { id: "recommendations", label: "Workflows" },
-  { id: "quick-wins", label: "Quick wins" },
-  { id: "actions", label: "Actions" },
-] as const;
+export function getReportTemplateNav(t: AutomationAuditT) {
+  return [
+    { id: "executive-summary" as const, label: t("report.nav.summary") },
+    { id: "business-summary" as const, label: t("report.nav.business") },
+    { id: "score-overview" as const, label: t("report.nav.readiness") },
+    { id: "your-website" as const, label: t("report.nav.yourSite") },
+    { id: "findings" as const, label: t("report.nav.findings") },
+    { id: "recommendations" as const, label: t("report.nav.workflows") },
+    { id: "quick-wins" as const, label: t("report.nav.quickWins") },
+    { id: "actions" as const, label: t("report.nav.actions") },
+  ];
+}
 
-export const REPORT_TEMPLATE_SECTIONS = {
-  hero: {
-    id: "hero" as const,
-    eyebrow: "Website automation audit",
-    title: "Automation opportunity report",
-    description:
-      "Practical automation ideas for your business — based on your public website.",
-  },
-  executiveSummary: {
-    id: "executive-summary" as const,
-    title: "Executive Summary",
-    description: "The headline takeaway in plain language.",
-    band: false,
-  },
-  businessSummary: {
-    id: "business-summary" as const,
-    title: "Business Summary",
-    description: "What you appear to sell, who you serve, and your core offer.",
-    band: true,
-  },
-  scoreOverview: {
-    id: "score-overview" as const,
-    title: "Automation Readiness",
-    description:
-      "How much room there is to automate key areas of your business. See Findings below for details.",
-    band: false,
-  },
-  yourWebsite: {
-    id: "your-website" as const,
-    title: "What We Found on Your Website",
-    description:
-      "Signals from your public site and practical automations you could run — or add — based on what we saw.",
-    band: true,
-  },
-  findings: {
-    id: "findings" as const,
-    title: "Workflow Findings",
-    description:
-      "For each area of your business: what we noticed, why it matters, and how to improve.",
-    band: false,
-  },
-  recommendations: {
-    id: "recommendations" as const,
-    title: "Workflow Recommendations",
-    description:
-      "Practical automations you could put in place — described as what happens, not how it is built.",
-    band: true,
-  },
-  quickWins: {
-    id: "quick-wins" as const,
-    title: "Quick Wins",
-    description: "High-impact automations you could explore this week.",
-    band: false,
-  },
-  actions: {
-    id: "actions" as const,
-    title: "Prioritized Actions",
-    description: "Ranked next steps by expected impact.",
-    band: true,
-  },
-} as const;
+export function getReportTemplateSections(t: AutomationAuditT) {
+  return {
+    hero: {
+      id: "hero" as const,
+      eyebrow: t("hero.eyebrow"),
+      title: t("hero.title"),
+      description: t("hero.description"),
+    },
+    executiveSummary: {
+      id: "executive-summary" as const,
+      title: t("report.sections.executiveSummary.title"),
+      description: t("report.sections.executiveSummary.description"),
+      band: false,
+    },
+    businessSummary: {
+      id: "business-summary" as const,
+      title: t("report.sections.businessSummary.title"),
+      description: t("report.sections.businessSummary.description"),
+      band: true,
+    },
+    scoreOverview: {
+      id: "score-overview" as const,
+      title: t("report.sections.scoreOverview.title"),
+      description: t("report.sections.scoreOverview.description"),
+      band: false,
+    },
+    yourWebsite: {
+      id: "your-website" as const,
+      title: t("report.sections.yourWebsite.title"),
+      description: t("report.sections.yourWebsite.description"),
+      band: true,
+    },
+    findings: {
+      id: "findings" as const,
+      title: t("report.sections.findings.title"),
+      description: t("report.sections.findings.description"),
+      band: false,
+    },
+    recommendations: {
+      id: "recommendations" as const,
+      title: t("report.sections.recommendations.title"),
+      description: t("report.sections.recommendations.description"),
+      band: true,
+    },
+    quickWins: {
+      id: "quick-wins" as const,
+      title: t("report.sections.quickWins.title"),
+      description: t("report.sections.quickWins.description"),
+      band: false,
+    },
+    actions: {
+      id: "actions" as const,
+      title: t("report.sections.actions.title"),
+      description: t("report.sections.actions.description"),
+      band: true,
+    },
+  };
+}
 
-export const REPORT_AUDIT_AREAS = AUTOMATION_AREAS;
+export function getEmptyStateCopy(t: AutomationAuditT) {
+  return {
+    executiveSummary: t("report.emptyStates.executiveSummary"),
+    areaAssessment: {
+      scoreRationale: t("report.emptyStates.scoreRationale"),
+      evidence: t("report.emptyStates.evidence"),
+      improvements: t("report.emptyStates.improvements"),
+    },
+    workflows: t("report.emptyStates.workflows"),
+    improvements: t("report.emptyStates.improvementsWorkflows"),
+    quickWins: t("report.emptyStates.quickWins"),
+    recommendations: t("report.emptyStates.recommendations"),
+    detectedTools: t("report.emptyStates.detectedTools"),
+  };
+}
 
-export const EMPTY_STATE_COPY = {
-  executiveSummary: "No executive summary was generated for this audit.",
-  areaAssessment: {
-    scoreRationale:
-      "We could not find enough on your public website to explain this score in detail.",
-    evidence: "No clear signals on the pages we reviewed.",
-    improvements:
-      "Book a consulting call to review how this works inside your business — public pages alone were not enough.",
-  },
-  workflows: "No workflow recommendations identified.",
-  improvements: "No additional improvement workflows identified.",
-  quickWins: "No quick wins identified.",
-  recommendations: "No prioritized recommendations were generated.",
-  detectedTools:
-    "No specific signals on your public pages — we still recommend automations in the sections below based on your business type.",
-} as const;
+export function getImpactLabel(
+  t: AutomationAuditT,
+  impact: "High" | "Medium" | "Low"
+) {
+  const labels = {
+    High: t("report.impact.high"),
+    Medium: t("report.impact.medium"),
+    Low: t("report.impact.low"),
+  } as const;
+  return labels[impact];
+}
+
+export function getReportAuditAreas(locale: Locale) {
+  return getAuditConstants(locale).areas;
+}
 
 export const IMPACT_ORDER = ["High", "Medium", "Low"] as const;

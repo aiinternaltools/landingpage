@@ -1,12 +1,17 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/Card";
-import { EMPTY_STATE_COPY } from "@/components/marketing-audit/report/report-template-sections";
+import { getEmptyStateCopy } from "@/components/marketing-audit/report/report-template-sections";
 
 type QuickWinsListProps = {
   quickWins: string[];
 };
 
 export function QuickWinsList({ quickWins }: QuickWinsListProps) {
-  const items = quickWins.length > 0 ? quickWins : [EMPTY_STATE_COPY.quickWins];
+  const t = useTranslations("marketingAudit");
+  const emptyStates = getEmptyStateCopy(t);
+  const items = quickWins.length > 0 ? quickWins : [emptyStates.quickWins];
 
   return (
     <Card>

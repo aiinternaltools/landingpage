@@ -1,6 +1,10 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/Card";
 import {
-  EMPTY_STATE_COPY,
+  getEmptyStateCopy,
+  getImpactLabel,
   IMPACT_ORDER,
 } from "@/components/marketing-audit/report/report-template-sections";
 import type {
@@ -18,21 +22,30 @@ const impactStyles: Record<RecommendationImpact, string> = {
   Low: "border-emerald-500/40 bg-emerald-500/15 text-emerald-300",
 };
 
-function ImpactBadge({ impact }: { impact: RecommendationImpact }) {
+function ImpactBadge({
+  impact,
+  label,
+}: {
+  impact: RecommendationImpact;
+  label: string;
+}) {
   return (
     <span
       className={`inline-flex shrink-0 rounded-full border px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${impactStyles[impact]}`}
     >
-      {impact}
+      {label}
     </span>
   );
 }
 
 export function RecommendationsList({ recommendations }: RecommendationsListProps) {
+  const t = useTranslations("marketingAudit");
+  const emptyStates = getEmptyStateCopy(t);
+
   if (recommendations.length === 0) {
     return (
       <Card>
-        <p className="text-sm text-muted">{EMPTY_STATE_COPY.recommendations}</p>
+        <p className="text-sm text-muted">{emptyStates.recommendations}</p>
       </Card>
     );
   }
@@ -50,7 +63,7 @@ export function RecommendationsList({ recommendations }: RecommendationsListProp
             key={impact}
             className="card-elevated flex items-center gap-2 rounded-xl px-4 py-2"
           >
-            <ImpactBadge impact={impact} />
+            <ImpactBadge impact={impact} label={getImpactLabel(t, impact)} />
             <span className="text-sm font-medium text-foreground">{count}</span>
           </div>
         ))}
@@ -60,14 +73,19 @@ export function RecommendationsList({ recommendations }: RecommendationsListProp
         const group = recommendations.filter((r) => r.impact === impact);
         if (group.length === 0) return null;
         return (
-          <Card key={impact} title={`${impact} impact`}>
+          <Card
+            key={impact}
+            title={t("report.impact.impactSuffix", {
+              impact: getImpactLabel(t, impact),
+            })}
+          >
             <ul className="space-y-3">
               {group.map((rec, i) => (
                 <li
                   key={`${impact}-${i}`}
                   className="flex items-start gap-3 text-sm leading-relaxed sm:text-base"
                 >
-                  <ImpactBadge impact={rec.impact} />
+                  <ImpactBadge impact={rec.impact} label={getImpactLabel(t, rec.impact)} />
                   <span className="text-foreground">{rec.nextStep}</span>
                 </li>
               ))}

@@ -1,71 +1,100 @@
 /** Fixed layout for every marketing audit report — not driven per site by JSON. */
 
-import { AUDIT_AREAS } from "@/lib/marketing-audit/constants";
+import type { useTranslations } from "next-intl";
+import { getAuditConstants } from "@/lib/marketing-audit/constants";
+import type { Locale } from "@/i18n/routing";
 
-export const REPORT_TEMPLATE_NAV = [
-  { id: "executive-summary", label: "Summary" },
-  { id: "score-overview", label: "Scores" },
-  { id: "findings", label: "Findings" },
-  { id: "quick-wins", label: "Quick wins" },
-  { id: "recommendations", label: "Actions" },
-  { id: "pages-audited", label: "Pages" },
-] as const;
+export type MarketingAuditT = ReturnType<typeof useTranslations<"marketingAudit">>;
 
 export type ReportTemplateSectionId =
-  (typeof REPORT_TEMPLATE_NAV)[number]["id"];
+  | "executive-summary"
+  | "score-overview"
+  | "findings"
+  | "quick-wins"
+  | "recommendations"
+  | "pages-audited";
 
-export const REPORT_TEMPLATE_SECTIONS = {
-  hero: {
-    id: "hero" as const,
-    eyebrow: "Marketing Audit",
-    title: "Site audit report",
-    description: "AI-powered analysis of your top marketing pages.",
-  },
-  executiveSummary: {
-    id: "executive-summary" as const,
-    title: "Executive Summary",
-    description: "The headline takeaway for busy founders and operators.",
-    band: false,
-  },
-  scoreOverview: {
-    id: "score-overview" as const,
-    title: "Score Overview",
-    description: "Performance across five marketing dimensions plus overall score.",
-    band: true,
-  },
-  findings: {
-    id: "findings" as const,
-    title: "Detailed Findings",
-    description: "Evidence-based observations across every audit area.",
-    band: false,
-  },
-  quickWins: {
-    id: "quick-wins" as const,
-    title: "Quick Wins",
-    description: "High-impact improvements you can act on this week.",
-    band: true,
-  },
-  recommendations: {
-    id: "recommendations" as const,
-    title: "Prioritized Recommendations",
-    description: "Ranked next steps by expected impact.",
-    band: false,
-  },
-  pagesAudited: {
-    id: "pages-audited" as const,
-    title: "Pages Audited",
-    description: "The five highest-priority pages included in this audit.",
-    band: true,
-  },
-} as const;
+export function getReportTemplateNav(t: MarketingAuditT) {
+  return [
+    { id: "executive-summary" as const, label: t("report.nav.summary") },
+    { id: "score-overview" as const, label: t("report.nav.scores") },
+    { id: "findings" as const, label: t("report.nav.findings") },
+    { id: "quick-wins" as const, label: t("report.nav.quickWins") },
+    { id: "recommendations" as const, label: t("report.nav.actions") },
+    { id: "pages-audited" as const, label: t("report.nav.pages") },
+  ];
+}
 
-export const REPORT_AUDIT_AREAS = AUDIT_AREAS;
+export function getReportTemplateSections(t: MarketingAuditT) {
+  return {
+    hero: {
+      id: "hero" as const,
+      eyebrow: t("hero.eyebrow"),
+      title: t("hero.title"),
+      description: t("hero.description"),
+    },
+    executiveSummary: {
+      id: "executive-summary" as const,
+      title: t("report.sections.executiveSummary.title"),
+      description: t("report.sections.executiveSummary.description"),
+      band: false,
+    },
+    scoreOverview: {
+      id: "score-overview" as const,
+      title: t("report.sections.scoreOverview.title"),
+      description: t("report.sections.scoreOverview.description"),
+      band: true,
+    },
+    findings: {
+      id: "findings" as const,
+      title: t("report.sections.findings.title"),
+      description: t("report.sections.findings.description"),
+      band: false,
+    },
+    quickWins: {
+      id: "quick-wins" as const,
+      title: t("report.sections.quickWins.title"),
+      description: t("report.sections.quickWins.description"),
+      band: true,
+    },
+    recommendations: {
+      id: "recommendations" as const,
+      title: t("report.sections.recommendations.title"),
+      description: t("report.sections.recommendations.description"),
+      band: false,
+    },
+    pagesAudited: {
+      id: "pages-audited" as const,
+      title: t("report.sections.pagesAudited.title"),
+      description: t("report.sections.pagesAudited.description"),
+      band: true,
+    },
+  };
+}
 
-export const EMPTY_STATE_COPY = {
-  executiveSummary: "No executive summary was generated for this audit.",
-  findings: "No findings identified for this area.",
-  quickWins: "No quick wins identified.",
-  recommendations: "No prioritized recommendations were generated.",
-} as const;
+export function getEmptyStateCopy(t: MarketingAuditT) {
+  return {
+    executiveSummary: t("report.emptyStates.executiveSummary"),
+    findings: t("report.emptyStates.findings"),
+    quickWins: t("report.emptyStates.quickWins"),
+    recommendations: t("report.emptyStates.recommendations"),
+  };
+}
+
+export function getImpactLabel(
+  t: MarketingAuditT,
+  impact: "High" | "Medium" | "Low"
+) {
+  const labels = {
+    High: t("report.impact.high"),
+    Medium: t("report.impact.medium"),
+    Low: t("report.impact.low"),
+  } as const;
+  return labels[impact];
+}
+
+export function getReportAuditAreas(locale: Locale) {
+  return getAuditConstants(locale).areas;
+}
 
 export const IMPACT_ORDER = ["High", "Medium", "Low"] as const;

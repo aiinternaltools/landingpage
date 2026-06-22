@@ -1,19 +1,27 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import {
-  contactForm,
   contactUseCaseCustomId,
-  contactUseCaseOptions,
   type ContactUseCaseId,
-} from "@/content/contact";
+} from "@/content/index";
+import type { getContactForm, getContactUseCaseOptions } from "@/content/index";
 
 const fieldClass =
   "w-full rounded-lg border border-border bg-background/90 px-3 py-2 text-sm text-foreground placeholder:text-muted/60 transition-[border-color,box-shadow] focus:border-accent/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
 const labelClass = "block text-xs font-medium text-foreground";
 
-export function ContactForm() {
+type ContactFormProps = {
+  formContent: ReturnType<typeof getContactForm>;
+  useCaseOptions: ReturnType<typeof getContactUseCaseOptions>;
+};
+
+export function ContactForm({ formContent, useCaseOptions }: ContactFormProps) {
+  const t = useTranslations("contactForm");
+  const tCommon = useTranslations("common");
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
@@ -33,7 +41,7 @@ export function ContactForm() {
 
     if (isCustom && !message.trim()) {
       setStatus("error");
-      setErrorMessage("Please describe your workflow when selecting something custom.");
+      setErrorMessage(t("validationCustomWorkflow"));
       return;
     }
 
@@ -52,7 +60,7 @@ export function ContactForm() {
 
       if (!res.ok) {
         const data = (await res.json().catch(() => null)) as { error?: string } | null;
-        throw new Error(data?.error ?? "Something went wrong. Please try again.");
+        throw new Error(data?.error ?? tCommon("errors.generic"));
       }
 
       setStatus("success");
@@ -64,7 +72,7 @@ export function ContactForm() {
     } catch (err) {
       setStatus("error");
       setErrorMessage(
-        err instanceof Error ? err.message : "Something went wrong. Please try again.",
+        err instanceof Error ? err.message : tCommon("errors.generic"),
       );
     }
   }
@@ -91,10 +99,10 @@ export function ContactForm() {
           </svg>
         </span>
         <p className="mt-3 text-base font-semibold text-foreground">
-          {contactForm.successTitle}
+          {formContent.successTitle}
         </p>
         <p className="mt-1.5 max-w-sm text-sm leading-relaxed text-muted">
-          {contactForm.successDescription}
+          {formContent.successDescription}
         </p>
       </div>
     );
@@ -105,7 +113,7 @@ export function ContactForm() {
       <div className="grid gap-3 sm:grid-cols-2">
         <div>
           <label htmlFor="contact-name" className={labelClass}>
-            Name
+            {t("name")}
           </label>
           <input
             id="contact-name"
@@ -121,7 +129,7 @@ export function ContactForm() {
 
         <div>
           <label htmlFor="contact-email" className={labelClass}>
-            Email
+            {t("email")}
           </label>
           <input
             id="contact-email"
@@ -139,8 +147,8 @@ export function ContactForm() {
       <div className="grid gap-3 sm:grid-cols-2">
         <div>
           <label htmlFor="contact-company" className={labelClass}>
-            Company{" "}
-            <span className="font-normal text-muted">(optional)</span>
+            {t("company")}{" "}
+            <span className="font-normal text-muted">{t("companyOptional")}</span>
           </label>
           <input
             id="contact-company"
@@ -155,7 +163,7 @@ export function ContactForm() {
 
         <div>
           <label htmlFor="contact-use-case" className={labelClass}>
-            {contactForm.useCaseLabel}
+            {formContent.useCaseLabel}
           </label>
           <select
             id="contact-use-case"
@@ -166,9 +174,9 @@ export function ContactForm() {
             className={`${fieldClass} mt-1`}
           >
             <option value="" disabled>
-              {contactForm.useCasePlaceholder}
+              {formContent.useCasePlaceholder}
             </option>
-            {contactUseCaseOptions.map(({ value, label }) => (
+            {useCaseOptions.map(({ value, label }) => (
               <option key={value} value={value}>
                 {label}
               </option>
@@ -179,9 +187,9 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-message" className={labelClass}>
-          {isCustom ? contactForm.messageLabelCustom : contactForm.messageLabel}{" "}
+          {isCustom ? formContent.messageLabelCustom : formContent.messageLabel}{" "}
           {!isCustom ? (
-            <span className="font-normal text-muted">(optional)</span>
+            <span className="font-normal text-muted">{t("optional")}</span>
           ) : null}
         </label>
         <textarea
@@ -194,8 +202,8 @@ export function ContactForm() {
           className={`${fieldClass} mt-1 resize-none`}
           placeholder={
             isCustom
-              ? contactForm.messagePlaceholder
-              : contactForm.messagePlaceholderUseCase
+              ? formContent.messagePlaceholder
+              : formContent.messagePlaceholderUseCase
           }
         />
       </div>
@@ -214,7 +222,7 @@ export function ContactForm() {
         disabled={status === "submitting"}
         className="w-full rounded-lg border border-accent/35 bg-accent/12 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-accent/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50"
       >
-        {status === "submitting" ? contactForm.formSubmitting : contactForm.formSubmit}
+        {status === "submitting" ? formContent.formSubmitting : formContent.formSubmit}
       </button>
     </form>
   );

@@ -1,0 +1,865 @@
+{
+  "metadata": {
+    "siteTitleDefault": "AI Internal Tools — AI automation for operational businesses",
+    "siteTitleTemplate": "%s · aiinternaltools.com",
+    "siteDescription": "Practical AI systems and automations for operational teams: workflow automation, agents, internal tools, and knowledge assistants. Try demos, then scope custom work.",
+    "home": {
+      "title": "AI Internal Tools — AI automation for operational businesses",
+      "description": "Practical AI systems and automations for operational teams: workflow automation, agents, internal tools, and knowledge assistants. Try demos, then scope custom work."
+    },
+    "about": {
+      "title": "About",
+      "description": "Andrei Alexandru Gabriel — React, Next.js, TypeScript, Supabase, Vercel; applied AI (LLM integrations, agents, RAG), n8n and workflow automation. Aviation QA background, PhD predictive maintenance."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Reach out about a workflow from the site or request a custom automation—we'll reply with clear next steps."
+    },
+    "community": {
+      "title": "Community Waitlist",
+      "description": "Join the waitlist for an operator hub with applied AI tools, templates, and peers. Founding 1,000 members get free access plus Marketing Audit and Automation Audit at launch."
+    },
+    "login": {
+      "title": "Sign in",
+      "description": "Sign in to access automation demos with limited demo credits (coming soon)."
+    },
+    "aiNews": {
+      "title": "AI News",
+      "description": "Weekly AI news for business owners—filtered signal, practical takeaways for operations, marketing, productivity, and competitive advantage."
+    },
+    "marketingAudit": {
+      "title": "Marketing Audit",
+      "description": "AI-powered marketing audit for your website. Discovers key pages, scores messaging, CRO, SEO, positioning, and trust — with actionable recommendations."
+    },
+    "automationAudit": {
+      "title": "Automation Audit",
+      "description": "AI-powered automation opportunity scan. Infers business model, detects visible integrations, and recommends workflow automations."
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "description": "Workflows we automate most often for operational teams — from social media to custom automations tailored to your stack.",
+      "aiSocialMediaAssistant": {
+        "title": "AI Social Media Assistant",
+        "description": "Turn Google Sheets ideas into on-brand social posts. AI generates content per channel, you approve and schedule, then posts go live automatically on LinkedIn, Instagram, Facebook, and X."
+      }
+    }
+  },
+  "nav": {
+    "community": "Community",
+    "aiNews": "AI News",
+    "useCases": "Use Cases",
+    "contact": "Contact",
+    "marketingAudit": "Marketing Audit",
+    "automationAudit": "Automation Audit",
+    "about": "About",
+    "home": "Home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "languageSwitcher": {
+      "label": "Language",
+      "en": "Eng",
+      "ro": "Ro"
+    }
+  },
+  "footer": {
+    "tagline": "AI automation for operational businesses.",
+    "copyright": "© {year} AI Internal Tools. All rights reserved.",
+    "links": {
+      "community": "Community",
+      "marketingAudit": "Marketing Audit",
+      "automationAudit": "Automation Audit",
+      "aiNews": "AI News",
+      "useCases": "Use Cases",
+      "contact": "Contact"
+    }
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "AI automation for operational teams",
+      "titleBefore": "Replace manual work with",
+      "titleAccent": "AI & process automation",
+      "description": "We design and implement AI-driven automations that remove bottlenecks and keep your operations running efficiently at scale.",
+      "bookCall": "Book a call",
+      "getInTouch": "Get in touch",
+      "stats": {
+        "fasterOperations": {
+          "value": "3X",
+          "label": "Faster operations"
+        },
+        "errorReduction": {
+          "value": "99%",
+          "label": "Error reduction"
+        },
+        "timeSaved": {
+          "value": "70%",
+          "label": "Time saved"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "A clear path from first call to production automation",
+      "steps": {
+        "discovery": {
+          "number": "01",
+          "title": "Discovery call",
+          "body": "30 minutes. You walk us through your current manual processes. We identify what's automatable and map out the workflow"
+        },
+        "build": {
+          "number": "02",
+          "title": "We design & build",
+          "body": "We design the automation, connect your systems (APIs, webhooks, AI), test everything, and make sure it actually works"
+        },
+        "live": {
+          "number": "03",
+          "title": "Live & Monitored",
+          "body": "Few days later, it's running. We monitor performance, train your team, and provide ongoing support as your needs evolve"
+        }
+      }
+    },
+    "useCases": {
+      "title": "Use cases",
+      "subtitle": "Workflows we automate most often for operational teams",
+      "discoverWorkflow": "Discover the workflow",
+      "discoverWorkflowAria": "Discover the workflow: {title}",
+      "customBadge": "Custom automation",
+      "customHeading": "Your workflow isn't listed?",
+      "customCta": "Request custom automation"
+    },
+    "toolCategories": {
+      "eyebrow": "Use cases",
+      "title": "Pick the workflow that costs you time.",
+      "categories": {
+        "leadRouting": {
+          "title": "Lead routing",
+          "description": "Score, enrich, assign, and update CRM fields."
+        },
+        "knowledgeAssistants": {
+          "title": "Knowledge assistants",
+          "description": "Fast answers grounded in your SOPs and docs."
+        },
+        "documentWorkflows": {
+          "title": "Document workflows",
+          "description": "Build packets from templates, rules, and CRM data."
+        },
+        "dashboards": {
+          "title": "Dashboards",
+          "description": "Rollups and short summaries leadership can scan."
+        },
+        "supportCopilots": {
+          "title": "Support copilots",
+          "description": "Triage, draft replies, and suggest next steps."
+        },
+        "crossToolHandoffs": {
+          "title": "Cross-tool handoffs",
+          "description": "Tasks, tickets, and updates triggered automatically."
+        }
+      },
+      "ctaHeading": "Need a workflow like this?",
+      "ctaDescription": "Share the process. We'll map what to automate first.",
+      "ctaButton": "Request automation"
+    },
+    "solutionSection": {
+      "eyebrow": "How it works",
+      "title": "From messy process to working system.",
+      "description": "Start small, prove value quickly, then wire it into the way your team already works.",
+      "steps": {
+        "map": {
+          "number": "01",
+          "title": "Map",
+          "body": "Pinpoint the repeatable workflow and the tools involved."
+        },
+        "prototype": {
+          "number": "02",
+          "title": "Prototype",
+          "body": "Test the automation pattern with a working demo."
+        },
+        "ship": {
+          "number": "03",
+          "title": "Ship",
+          "body": "Build the agent, app, or integration around your stack."
+        }
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "contact": "Contact",
+    "languages": "Languages",
+    "requestAutomation": "Request automation",
+    "encodeBootcampProject": "Encode bootcamp project",
+    "stackEyebrow": "Stack",
+    "coreStackTitle": "Core application stack",
+    "coreStackIntro": "Typical delivery setup (including products like PixelPlot on Vercel). Patterns and integrations matter more than listing every model name.",
+    "selectedRoles": "Selected roles",
+    "recognition": "Recognition",
+    "announcementLink": "Announcement →",
+    "education": "Education",
+    "projectRepoLink": "Project repo →",
+    "publications": "Publications",
+    "publicationsIntro": "Peer-reviewed papers and articles.",
+    "also": "Also",
+    "alsoIntro": "Research, domain, and chain work beyond the core web + AI stack above.",
+    "letsTalk": "Let's talk",
+    "letsTalkDescription": "Describe a workflow; I'll suggest what to automate first.",
+    "contactButton": "Contact",
+    "demosButton": "Demos",
+    "homeButton": "Home"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Interested in one of our workflows, or need something built around your tools? Pick what fits below and share a few details—we'll reply with clear next steps.",
+    "backHome": "← Home"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "companyOptional": "(optional)",
+    "optional": "(optional)",
+    "heading": "Tell us what you need",
+    "description": "Choose a workflow from the site or select something custom, then add any context that helps us understand your setup.",
+    "useCaseLabel": "Workflow",
+    "useCasePlaceholder": "Select a workflow…",
+    "messageLabel": "Additional details",
+    "messageLabelCustom": "Describe your workflow",
+    "messagePlaceholder": "Tools you use, what should trigger the automation, what \"done\" looks like…",
+    "messagePlaceholderUseCase": "Optional — team size, timeline, or anything specific to your business…",
+    "formSubmit": "Send message",
+    "formSubmitting": "Sending…",
+    "successTitle": "Message sent",
+    "successDescription": "Thanks for reaching out. We'll review your note and get back to you soon.",
+    "validationCustomWorkflow": "Please describe your workflow when selecting something custom.",
+    "useCaseOptions": {
+      "socialMedia": "AI Social Media Assistant",
+      "custom": "Something custom"
+    }
+  },
+  "community": {
+    "eyebrow": "Waitlist · Founding 1,000 get an onboarding bonus",
+    "heroTitleBefore": "AI tools and workflows for operators",
+    "heroTitleAfter": "not slide decks",
+    "heroDescription": "We're building a member hub with applied AI tools, templates, and peer connection. Join the waitlist, the first 1,000 get free access plus Marketing Audit and Automation Audit included at launch.",
+    "cta": "Join the waitlist",
+    "backHome": "Back to home",
+    "benefitsHeading": "What founding members get",
+    "benefitsSubheading": "Tools, playbooks, and peers",
+    "benefitsIntro": "Founding members get the hub plus two audit tools on day one. Join the waitlist now to secure one of the first {limit} spots.",
+    "joinBadge": "Hub launching soon · {limit} founding spots · 2 audit tools included",
+    "joinHeading": "Join the waitlist",
+    "joinDescription": "The hub isn't live yet. Reserve your spot and we'll email you when access opens. Founding members get free hub access and an onboarding bonus: full access to our Marketing Audit and Automation Audit tools.",
+    "trustItems": {
+      "noCreditCard": "No credit card",
+      "firstFree": "Onboarding bonus: 2 AI audit tools",
+      "leaveAnytime": "Leave anytime"
+    },
+    "waitlistFormLabel": "Waitlist form",
+    "preferEmail": "Prefer email?",
+    "getInTouch": "Get in touch",
+    "benefits": {
+      "tools": "Marketing & Automation Audits included—scan your site and get actionable reports (founding bonus)",
+      "curated": "Curated guidance without hype or tool spam",
+      "examples": "Real business implementations—not theory",
+      "templates": "Ready-to-use workflows and automation templates",
+      "networking": "Connect with operators solving similar problems"
+    }
+  },
+  "communityForm": {
+    "name": "Name",
+    "email": "Email",
+    "roleLabel": "Role / business type",
+    "rolePlaceholder": "Select role…",
+    "interestsLabel": "Interests",
+    "interestsOptional": "Optional",
+    "interestsSelected": "{count} selected",
+    "challengeLabel": "Biggest AI challenge",
+    "challengeOptional": "(optional)",
+    "challengePlaceholder": "e.g. admin overload, manual reporting…",
+    "formSubmit": "Join the waitlist",
+    "formSubmitting": "Joining…",
+    "successTitle": "You're on the waitlist",
+    "successDescription": "Thanks for signing up. You're in line for founding access and the Marketing + Automation Audit onboarding bonus—we'll email you as soon as the hub opens.",
+    "roles": {
+      "entrepreneur": "Entrepreneur",
+      "freelancer": "Freelancer",
+      "manager": "Manager",
+      "consultant": "Consultant",
+      "other": "Other"
+    },
+    "interests": {
+      "auditTools": "Try the audit tools",
+      "understandAi": "Better understand AI",
+      "saveTime": "Save time in my business",
+      "automateProcesses": "Automate processes",
+      "discoverTools": "Discover useful tools",
+      "templatesWorkflows": "Receive templates / workflows",
+      "practicalExamples": "See practical examples",
+      "networking": "Networking",
+      "consulting": "AI consulting / implementation",
+      "courses": "Courses / workshops"
+    }
+  },
+  "login": {
+    "title": "Demo access",
+    "description": "Sign-in for the demo lab is not wired up yet. The goal is simple: create an account, receive a small allocation of demo credits, try selected proof-of-concept tools, then move to a custom automation if you need it in production.",
+    "note": "Authentication will likely use Supabase later; this route is reserved for that flow.",
+    "requestAutomation": "Request a custom automation",
+    "backHome": "Back to home"
+  },
+  "aiNews": {
+    "index": {
+      "eyebrow": "Weekly briefing",
+      "titleBefore": "AI News",
+      "titleAfter": "for business owners",
+      "description": "Each week we filter the noise and explain what matters in AI—why it matters, and how you can use it to improve operations, marketing, productivity, decision-making, and competitive advantage.",
+      "focusAreas": {
+        "operations": "Operations & automation",
+        "marketing": "Marketing & growth",
+        "productivity": "Productivity",
+        "decisionMaking": "Decision-making",
+        "competitiveAdvantage": "Competitive advantage"
+      },
+      "scrollToTimeline": "Scroll to edition timeline",
+      "timeline": "Timeline",
+      "editionTimelineTitle": "Edition timeline",
+      "editionTimelineDescription": "Track how AI signal evolved week over week.",
+      "joinWaitlist": "Join the waitlist",
+      "emptyTitle": "First edition coming soon",
+      "emptyDescriptionBefore": "Add a weekly JSON file in",
+      "emptyDescriptionMiddle": "(see",
+      "emptyDescriptionAfter": "for the schema), then rebuild.",
+      "emptySchemaExample": "3-9_May2026.json",
+      "emptyReadmeBefore": "See",
+      "emptyReadmeAfter": "for the JSON format.",
+      "articlesPath": "src/content/ai-news/articles/",
+      "readmePath": "src/content/ai-news/README.md"
+    },
+    "notFound": {
+      "title": "Edition not found",
+      "description": "This weekly briefing doesn't exist or isn't published yet.",
+      "backToAiNews": "Back to AI News",
+      "home": "Home"
+    },
+    "timeline": {
+      "signalEvolution": "Weekly signal evolution",
+      "signalEvolutionDescription": "Each node is one edition — bar length reflects signal strength that week.",
+      "signalLow": "Low",
+      "signalMed": "Med",
+      "signalHigh": "High",
+      "signalSuffix": "signal",
+      "latest": "Latest",
+      "audioAvailable": "Audio available",
+      "readBriefing": "Read briefing",
+      "newestAtTop": "Newest at top ·",
+      "oneEdition": "1 edition",
+      "editionsCount": "{count} editions",
+      "audio": "Audio"
+    },
+    "article": {
+      "allEditions": "All editions",
+      "articleIntroAria": "Article introduction",
+      "executiveBriefingPrefix": "Executive AI briefing ·",
+      "signalLabel": "Signal: {strength}",
+      "scrollForBriefing": "Scroll for the full briefing ↓",
+      "operatorsTake": "Operator's Take",
+      "whatToDoDifferently": "What to do differently",
+      "sourcesNotProvided": "Sources not provided for this edition.",
+      "noToolsListed": "No tools listed for this edition.",
+      "timeToTest": "Time to test: {time}",
+      "listen": "Listen",
+      "defaultAudioTitle": "Weekly audio summary",
+      "downloadAudio": "Download audio",
+      "bestFor": "Best for:",
+      "suggestedTest": "Suggested test",
+      "businessValue": "Business value:",
+      "example": "Example:",
+      "businessExample": "Business example",
+      "themeOfTheWeek": "Theme of the week",
+      "summary": "Summary",
+      "whatChangedThisWeek": "What changed this week",
+      "storyNumber": "Story {number}",
+      "ownerTakeaway": "Owner takeaway",
+      "whyItMatters": "Why it matters for business owners",
+      "readFullStory": "Read full story",
+      "whatHappened": "What happened",
+      "practicalUseCases": "Practical use cases",
+      "risksToWatch": "Risks to watch",
+      "showLess": "Show less",
+      "previousStory": "Previous story",
+      "nextStory": "Next story",
+      "storiesTablist": "Weekly AI stories",
+      "storyOf": "Story {current} of {total}",
+      "previous": "← Previous",
+      "next": "Next →",
+      "executiveSummaryShort": "2 min executive summary",
+      "executiveSummaryDuration": "2 min",
+      "executiveSummaryLabel": "Executive summary",
+      "generatingAudio": "Generating audio…",
+      "pauseSummary": "Pause 2-minute summary",
+      "resumeSummary": "Resume 2-minute summary",
+      "playSummary": "Play 2-minute executive summary",
+      "listening": "Listening…",
+      "playbackFailed": "Playback failed",
+      "couldNotGenerateAudio": "Could not generate audio",
+      "couldNotPlaySummary": "Could not play summary"
+    },
+    "sections": {
+      "nav": {
+        "pulse": "Pulse",
+        "stories": "Stories",
+        "tools": "Tools",
+        "operatorsTake": "Operator's take",
+        "actionPlan": "Action plan",
+        "beginner": "Term",
+        "sources": "Sources"
+      },
+      "marketPulse": {
+        "title": "AI Market Pulse",
+        "description": "What shifted this week—and why it matters for operators."
+      },
+      "stories": {
+        "title": "The Most Important AI Stories This Week",
+        "description": "Each story is filtered for business impact—not hype."
+      },
+      "tools": {
+        "title": "AI Tools Worth Testing This Week",
+        "description": "A short testing menu—pick one that matches a workflow you already run."
+      },
+      "actionPlan": {
+        "title": "What You Should Do This Week",
+        "description": "Concrete steps you can run without a technical team."
+      },
+      "beginner": {
+        "title": "AI Term of the Week"
+      },
+      "sources": {
+        "title": "Sources"
+      },
+      "cta": {
+        "title": "Want this applied to your business?",
+        "description": "I help owners turn AI news into automations and workflows that ship.",
+        "buttonLabel": "Book a call"
+      }
+    },
+    "impact": {
+      "actNow": "Act now",
+      "watchClosely": "Watch closely",
+      "actNowFinanceWatchOthers": "Act now (finance) · Watch (others)"
+    },
+    "signalStrength": {
+      "high": "High",
+      "medium": "Medium",
+      "moderate": "Moderate",
+      "low": "Low"
+    }
+  },
+  "marketingAudit": {
+    "hero": {
+      "eyebrow": "Marketing Audit",
+      "title": "Site audit report",
+      "description": "AI-powered analysis of your top marketing pages."
+    },
+    "anotherAuditHint": "Enter a URL to run another audit",
+    "clearAndStartOver": "Clear and start over",
+    "auditRequestFailed": "Audit request failed",
+    "auditFailed": "Audit failed",
+    "apiErrors": {
+      "invalidJson": "Invalid JSON",
+      "targetUrlRequired": "targetUrl is required",
+      "invalidUrl": "Invalid or blocked URL",
+      "openAiNotConfigured": "OPENAI_API_KEY is not configured",
+      "noPageContent": "Could not fetch any page content to audit",
+      "auditFailed": "Audit failed"
+    },
+    "form": {
+      "urlLabel": "Website URL",
+      "urlPlaceholder": "https://your-site.com",
+      "runAudit": "Run audit",
+      "auditing": "Auditing…",
+      "tryLabel": "Try:",
+      "helperText": "Discovers pages via sitemap, crawl & path probing — then audits the top 5 marketing pages."
+    },
+    "progress": {
+      "ariaLabel": "Audit progress",
+      "runningAudit": "Running audit",
+      "durationHint": "Usually takes 45–90 seconds. Keep this tab open.",
+      "steps": {
+        "discovering": {
+          "label": "Discovering pages",
+          "detail": "Sitemap, crawl & common paths"
+        },
+        "selecting": {
+          "label": "Selecting top 5",
+          "detail": "Ranking by marketing importance"
+        },
+        "fetching": {
+          "label": "Fetching HTML",
+          "detail": "Up to 5 pages in parallel"
+        },
+        "auditing": {
+          "label": "Running marketing audit",
+          "detail": "AI scores & findings"
+        },
+        "summary": {
+          "label": "Generating summary",
+          "detail": "Executive recap & actions"
+        }
+      }
+    },
+    "teaser": {
+      "ariaLabel": "Audit complete. Overall score {score} out of 100.",
+      "complete": "Audit complete",
+      "buildingReport": "Building your report…",
+      "scoreOutOf": "/100"
+    },
+    "report": {
+      "nav": {
+        "summary": "Summary",
+        "scores": "Scores",
+        "findings": "Findings",
+        "quickWins": "Quick wins",
+        "actions": "Actions",
+        "pages": "Pages"
+      },
+      "sections": {
+        "executiveSummary": {
+          "title": "Executive Summary",
+          "description": "The headline takeaway for busy founders and operators."
+        },
+        "scoreOverview": {
+          "title": "Score Overview",
+          "description": "Performance across five marketing dimensions plus overall score."
+        },
+        "findings": {
+          "title": "Detailed Findings",
+          "description": "Evidence-based observations across every audit area."
+        },
+        "quickWins": {
+          "title": "Quick Wins",
+          "description": "High-impact improvements you can act on this week."
+        },
+        "recommendations": {
+          "title": "Prioritized Recommendations",
+          "description": "Ranked next steps by expected impact."
+        },
+        "pagesAudited": {
+          "title": "Pages Audited",
+          "description": "The five highest-priority pages included in this audit."
+        }
+      },
+      "emptyStates": {
+        "executiveSummary": "No executive summary was generated for this audit.",
+        "findings": "No findings identified for this area.",
+        "quickWins": "No quick wins identified.",
+        "recommendations": "No prioritized recommendations were generated."
+      },
+      "impact": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low",
+        "impactSuffix": "{impact} impact"
+      },
+      "auditAreas": {
+        "contentMessaging": {
+          "label": "Content & Messaging",
+          "shortLabel": "Content",
+          "description": "Headlines, value props, and clarity of message."
+        },
+        "conversionCro": {
+          "label": "Conversion & CRO",
+          "shortLabel": "CRO",
+          "description": "CTAs, forms, friction, and conversion paths."
+        },
+        "seoDiscoverability": {
+          "label": "SEO & Discoverability",
+          "shortLabel": "SEO",
+          "description": "Keywords, structure, and organic visibility signals."
+        },
+        "competitivePositioning": {
+          "label": "Competitive Positioning",
+          "shortLabel": "Positioning",
+          "description": "Differentiation and competitive framing."
+        },
+        "brandTrustGrowth": {
+          "label": "Brand Trust & Growth",
+          "shortLabel": "Trust",
+          "description": "Credibility, social proof, and trust signals."
+        }
+      },
+      "hero": {
+        "auditComplete": "Audit complete",
+        "generated": "Generated:",
+        "pagesAudited": "Pages audited:",
+        "discovered": "discovered",
+        "discovery": "Discovery:",
+        "overallScore": "Overall score",
+        "overallScoreAria": "Overall score {score} out of 100"
+      },
+      "charts": {
+        "overall": "Overall",
+        "radarAria": "Radar chart of audit scores",
+        "barsAria": "Bar chart of audit scores"
+      },
+      "pagesTable": {
+        "path": "Path",
+        "status": "Status",
+        "html": "HTML",
+        "text": "Text",
+        "ok": "OK",
+        "error": "Error",
+        "underfilled": "Only {filled} of {max} page slots could be filled — the site may use client-rendered navigation, block crawlers, or expose few public HTML routes. Common paths were probed automatically where possible.",
+        "extraDiscoveredOne": "{count} additional page discovered but not included in this audit (limited to top {max}).",
+        "extraDiscoveredMany": "{count} additional pages discovered but not included in this audit (limited to top {max})."
+      },
+      "toolbar": {
+        "exportHint": "Export this report or run a new audit",
+        "downloadPdf": "Download PDF",
+        "generatingPdf": "Generating PDF…",
+        "print": "Print",
+        "json": "JSON",
+        "exportingJson": "Exporting…",
+        "newAudit": "New audit",
+        "cancel": "Cancel",
+        "sectionsNav": "Report sections",
+        "urlPlaceholder": "https://example.com",
+        "pdfExportFailed": "PDF export failed. Click Print and choose \"Save as PDF\" in the dialog."
+      }
+    }
+  },
+  "automationAudit": {
+    "hero": {
+      "eyebrow": "Website automation audit",
+      "title": "Automation opportunity report",
+      "description": "Practical automation ideas for your business — based on your public website."
+    },
+    "anotherAuditHint": "Enter a URL to run another audit",
+    "clearAndStartOver": "Clear and start over",
+    "auditRequestFailed": "Audit request failed",
+    "auditFailed": "Audit failed",
+    "apiErrors": {
+      "invalidJson": "Invalid JSON",
+      "targetUrlRequired": "targetUrl is required",
+      "invalidUrl": "Invalid or blocked URL",
+      "openAiNotConfigured": "OPENAI_API_KEY is not configured",
+      "noPageContent": "Could not fetch any page content to audit",
+      "auditFailed": "Audit failed"
+    },
+    "scopeNote": "This audit is based only on what we could learn from your public website. We cannot see your internal processes, private systems, or how your team works day to day — suggestions describe practical opportunities inferred from your online presence.",
+    "form": {
+      "urlLabel": "Website URL",
+      "urlPlaceholder": "https://your-site.com",
+      "runAudit": "Run audit",
+      "scanning": "Scanning…",
+      "tryLabel": "Try:",
+      "helperText": "Scans your public site to infer business model, detect visible tools, and recommend automation directions."
+    },
+    "progress": {
+      "ariaLabel": "Audit progress",
+      "runningAudit": "Running audit",
+      "durationHint": "Usually takes 45–90 seconds. Keep this tab open.",
+      "steps": {
+        "discovering": {
+          "label": "Discovering pages",
+          "detail": "Sitemap, crawl & common paths"
+        },
+        "selecting": {
+          "label": "Selecting top 5",
+          "detail": "Ranking by ops relevance"
+        },
+        "fetching": {
+          "label": "Fetching HTML",
+          "detail": "Up to 5 pages in parallel"
+        },
+        "detecting": {
+          "label": "Detecting integrations",
+          "detail": "Scanning for visible tools"
+        },
+        "auditing": {
+          "label": "Running automation audit",
+          "detail": "AI scores & workflow analysis"
+        },
+        "summary": {
+          "label": "Generating summary",
+          "detail": "Executive recap & actions"
+        }
+      }
+    },
+    "teaser": {
+      "ariaLabel": "Audit complete. Overall score {score} out of 100.",
+      "complete": "Audit complete",
+      "buildingReport": "Building your report…",
+      "scoreOutOf": "/100",
+      "readinessAria": "Automation readiness {score} out of 100"
+    },
+    "report": {
+      "nav": {
+        "summary": "Summary",
+        "business": "Business",
+        "readiness": "Readiness",
+        "yourSite": "Your site",
+        "findings": "Findings",
+        "workflows": "Workflows",
+        "quickWins": "Quick wins",
+        "actions": "Actions"
+      },
+      "sections": {
+        "executiveSummary": {
+          "title": "Executive Summary",
+          "description": "The headline takeaway in plain language."
+        },
+        "businessSummary": {
+          "title": "Business Summary",
+          "description": "What you appear to sell, who you serve, and your core offer."
+        },
+        "scoreOverview": {
+          "title": "Automation Readiness",
+          "description": "How much room there is to automate key areas of your business. See Findings below for details."
+        },
+        "yourWebsite": {
+          "title": "What We Found on Your Website",
+          "description": "Signals from your public site and practical automations you could run — or add — based on what we saw."
+        },
+        "findings": {
+          "title": "Workflow Findings",
+          "description": "For each area of your business: what we noticed, why it matters, and how to improve."
+        },
+        "recommendations": {
+          "title": "Workflow Recommendations",
+          "description": "Practical automations you could put in place — described as what happens, not how it is built."
+        },
+        "quickWins": {
+          "title": "Quick Wins",
+          "description": "High-impact automations you could explore this week."
+        },
+        "actions": {
+          "title": "Prioritized Actions",
+          "description": "Ranked next steps by expected impact."
+        }
+      },
+      "emptyStates": {
+        "executiveSummary": "No executive summary was generated for this audit.",
+        "scoreRationale": "We could not find enough on your public website to explain this score in detail.",
+        "evidence": "No clear signals on the pages we reviewed.",
+        "improvements": "Book a consulting call to review how this works inside your business — public pages alone were not enough.",
+        "workflows": "No workflow recommendations identified.",
+        "improvementsWorkflows": "No additional improvement workflows identified.",
+        "quickWins": "No quick wins identified.",
+        "recommendations": "No prioritized recommendations were generated.",
+        "detectedTools": "No specific signals on your public pages — we still recommend automations in the sections below based on your business type."
+      },
+      "impact": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low",
+        "impactSuffix": "{impact} impact"
+      },
+      "auditAreas": {
+        "leadCaptureFollowUp": {
+          "label": "Lead Capture & Follow-up",
+          "shortLabel": "Leads",
+          "description": "Getting new customers and following up with them."
+        },
+        "onboardingDelivery": {
+          "label": "Onboarding & Delivery",
+          "shortLabel": "Onboarding",
+          "description": "Signup, onboarding, delivery, and client handoffs."
+        },
+        "supportKnowledge": {
+          "label": "Support & Knowledge",
+          "shortLabel": "Support",
+          "description": "FAQ, help content, and answering customer questions."
+        },
+        "contentOperations": {
+          "label": "Content Operations",
+          "shortLabel": "Content",
+          "description": "Publishing content and keeping channels in sync."
+        },
+        "reportingHandoffs": {
+          "label": "Reporting & Handoffs",
+          "shortLabel": "Reporting",
+          "description": "Reports, alerts, and keeping teams aligned."
+        }
+      },
+      "hero": {
+        "auditComplete": "Website audit complete",
+        "generated": "Generated {date}",
+        "readinessScore": "Readiness score",
+        "readinessScoreAria": "Automation readiness {score} out of 100"
+      },
+      "businessSnapshot": {
+        "businessType": "Business type",
+        "audience": "Audience",
+        "offer": "Offer"
+      },
+      "websiteTools": {
+        "alreadyUsingTitle": "What you're likely already using",
+        "alreadyUsingDescription": "Based on signals from your public website — each item includes a practical automation you could run.",
+        "additionalTitle": "Additional automations you could add",
+        "additionalDescription": "Workflow ideas that would strengthen areas we could not fully see on your site alone.",
+        "likelyUsing": "Likely using",
+        "signalFromWebsite": "signal from your website",
+        "timeAndMoneySaved": "Time & money saved",
+        "confidence": {
+          "high": "Strong signal",
+          "medium": "Likely",
+          "low": "Possible"
+        }
+      },
+      "areaPanel": {
+        "whatWeNoticed": "What we noticed",
+        "fromYourWebsite": "From your website",
+        "suggestedImprovement": "Suggested improvement"
+      },
+      "workflowOpportunities": {
+        "whyWeSuggest": "Why we suggest this:"
+      },
+      "consultingCta": {
+        "title": "Want a deeper analysis?",
+        "description": "This report is a starting point from your public site. Book a free consulting call and we'll map your real stack, workflows, and automation opportunities in detail.",
+        "buttonLabel": "Book free consulting",
+        "inlineBefore": "For a more detailed analysis of your real workflows and stack,",
+        "inlineHighlight": "book a free consulting call",
+        "inlineAfter": "— we'll go beyond what's visible on your website."
+      },
+      "charts": {
+        "overall": "Overall",
+        "radarAria": "Radar chart of automation scores",
+        "barsAria": "Bar chart of automation scores"
+      },
+      "toolbar": {
+        "exportHint": "Export this report or run a new audit",
+        "downloadPdf": "Download PDF",
+        "generatingPdf": "Generating PDF…",
+        "print": "Print",
+        "json": "JSON",
+        "exportingJson": "Exporting…",
+        "newAudit": "New audit",
+        "cancel": "Cancel",
+        "sectionsNav": "Report sections",
+        "urlPlaceholder": "https://example.com",
+        "pdfExportFailed": "PDF export failed. Click Print and choose \"Save as PDF\" in the dialog."
+      }
+    }
+  },
+  "common": {
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "close": "Close",
+      "back": "Back",
+      "home": "Home",
+      "learnMore": "Learn more",
+      "bookCall": "Book a call",
+      "getInTouch": "Get in touch",
+      "requestAutomation": "Request automation"
+    },
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "required": "This field is required.",
+      "invalidEmail": "Please enter a valid email address."
+    },
+    "loading": "Loading…",
+    "optional": "(optional)"
+  }
+}

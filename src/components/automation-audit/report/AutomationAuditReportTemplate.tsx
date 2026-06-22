@@ -1,4 +1,7 @@
+"use client";
+
 import type { CSSProperties } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { AuditAreaPanel } from "@/components/automation-audit/report/AuditAreaPanel";
 import { BusinessSnapshotCard } from "@/components/automation-audit/report/BusinessSnapshotCard";
 import { ExecutiveSummaryCard } from "@/components/automation-audit/report/ExecutiveSummaryCard";
@@ -12,9 +15,10 @@ import { ScoreRadarChart } from "@/components/automation-audit/report/ScoreRadar
 import { WebsiteToolsSection } from "@/components/automation-audit/report/WebsiteToolsSection";
 import { WorkflowOpportunitiesList } from "@/components/automation-audit/report/WorkflowOpportunitiesList";
 import {
-  REPORT_AUDIT_AREAS,
-  REPORT_TEMPLATE_SECTIONS,
+  getReportAuditAreas,
+  getReportTemplateSections,
 } from "@/components/automation-audit/report/report-template-sections";
+import type { Locale } from "@/i18n/routing";
 import type { AutomationAuditReport } from "@/lib/automation-audit/types";
 
 type AutomationAuditReportTemplateProps = {
@@ -26,7 +30,10 @@ export function AutomationAuditReportTemplate({
   report,
   animate = false,
 }: AutomationAuditReportTemplateProps) {
-  const sections = REPORT_TEMPLATE_SECTIONS;
+  const t = useTranslations("automationAudit");
+  const locale = useLocale() as Locale;
+  const sections = getReportTemplateSections(t);
+  const auditAreas = getReportAuditAreas(locale);
   const stagger = animate ? "audit-reveal-item" : "";
 
   return (
@@ -66,15 +73,9 @@ export function AutomationAuditReportTemplate({
         >
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="card-elevated rounded-2xl p-4 sm:p-6">
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-muted">
-                Overview
-              </h3>
               <ScoreRadarChart scores={report.audit.scores} />
             </div>
             <div className="card-elevated rounded-2xl p-4 sm:p-6">
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-muted">
-                By area
-              </h3>
               <ScoreBarsChart scores={report.audit.scores} />
             </div>
           </div>
@@ -103,7 +104,7 @@ export function AutomationAuditReportTemplate({
           band={sections.findings.band}
         >
           <div className="grid gap-4 md:grid-cols-2">
-            {REPORT_AUDIT_AREAS.map((area) => (
+            {auditAreas.map((area) => (
               <AuditAreaPanel
                 key={area.id}
                 area={area.id}

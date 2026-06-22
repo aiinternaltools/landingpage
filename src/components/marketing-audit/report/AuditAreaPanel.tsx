@@ -1,5 +1,8 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { AuditAreaIcon } from "@/components/marketing-audit/icons/AuditAreaIcon";
-import { EMPTY_STATE_COPY } from "@/components/marketing-audit/report/report-template-sections";
+import { getEmptyStateCopy } from "@/components/marketing-audit/report/report-template-sections";
 import { Card } from "@/components/ui/Card";
 import type { AuditArea } from "@/lib/marketing-audit/types";
 
@@ -26,7 +29,9 @@ export function AuditAreaPanel({
   score,
   findings,
 }: AuditAreaPanelProps) {
-  const items = findings.length > 0 ? findings : [EMPTY_STATE_COPY.findings];
+  const t = useTranslations("marketingAudit");
+  const emptyStates = getEmptyStateCopy(t);
+  const items = findings.length > 0 ? findings : [emptyStates.findings];
 
   return (
     <Card>

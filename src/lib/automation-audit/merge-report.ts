@@ -1,4 +1,5 @@
-import { AUTOMATION_AREAS, MAX_PAGES, SCOPE_NOTE } from "./constants";
+import { AUTOMATION_AREAS, getScopeNote, MAX_PAGES } from "./constants";
+import type { Locale } from "@/i18n/routing";
 import type {
   AutomationArea,
   AutomationAreaAssessment,
@@ -150,6 +151,7 @@ export function mergeReport(params: {
   detectedTools: DetectedTool[];
   auditRaw: RawAutomationAuditLlmOutput;
   executiveRaw: RawExecutiveLlmOutput;
+  locale?: Locale;
 }): AutomationAuditReport {
   const {
     targetUrl,
@@ -160,13 +162,14 @@ export function mergeReport(params: {
     detectedTools,
     auditRaw,
     executiveRaw,
+    locale = "en",
   } = params;
 
   return {
     reportVersion: "1.0",
     generatedAt: new Date().toISOString(),
     targetUrl,
-    scopeNote: SCOPE_NOTE,
+    scopeNote: getScopeNote(locale),
     discovery: {
       method: discoveryMethod,
       totalDiscovered,

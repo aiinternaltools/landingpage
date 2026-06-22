@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { formatImpactLevel } from "@/lib/ai-news-utils";
 
 type ImpactBadgeProps = {
@@ -12,7 +15,8 @@ const toneClass = {
 };
 
 export function ImpactBadge({ level, className = "" }: ImpactBadgeProps) {
-  const { label, tone } = formatImpactLevel(level);
+  const t = useTranslations("aiNews.impact");
+  const { label, tone } = formatImpactLevel(level, t);
   return (
     <span
       className={`inline-flex shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide ${toneClass[tone]} ${className}`.trim()}

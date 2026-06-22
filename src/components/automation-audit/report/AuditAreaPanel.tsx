@@ -1,5 +1,8 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { AutomationAreaIcon } from "@/components/automation-audit/icons/AutomationAreaIcon";
-import { EMPTY_STATE_COPY } from "@/components/automation-audit/report/report-template-sections";
+import { getEmptyStateCopy } from "@/components/automation-audit/report/report-template-sections";
 import { Card } from "@/components/ui/Card";
 import type {
   AutomationArea,
@@ -57,6 +60,9 @@ export function AuditAreaPanel({
   score,
   assessment,
 }: AuditAreaPanelProps) {
+  const t = useTranslations("automationAudit");
+  const emptyStates = getEmptyStateCopy(t);
+
   return (
     <Card>
       <div className="flex items-start justify-between gap-4">
@@ -82,22 +88,22 @@ export function AuditAreaPanel({
       <div className="mt-4 space-y-4 border-t border-border/60 pt-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-            What we noticed
+            {t("report.areaPanel.whatWeNoticed")}
           </p>
           <p className="mt-1.5 text-sm leading-relaxed text-foreground">
             {assessment.scoreRationale.trim() ||
-              EMPTY_STATE_COPY.areaAssessment.scoreRationale}
+              emptyStates.areaAssessment.scoreRationale}
           </p>
         </div>
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-muted">
-            From your website
+            {t("report.areaPanel.fromYourWebsite")}
           </p>
           <div className="mt-2">
             <BulletList
               items={assessment.evidence}
-              emptyLabel={EMPTY_STATE_COPY.areaAssessment.evidence}
+              emptyLabel={emptyStates.areaAssessment.evidence}
               bulletClassName="bg-muted"
             />
           </div>
@@ -105,12 +111,12 @@ export function AuditAreaPanel({
 
         <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-3 py-2.5">
           <p className="text-xs font-semibold text-emerald-400">
-            Suggested improvement
+            {t("report.areaPanel.suggestedImprovement")}
           </p>
           <div className="mt-2">
             <BulletList
               items={assessment.improvements}
-              emptyLabel={EMPTY_STATE_COPY.areaAssessment.improvements}
+              emptyLabel={emptyStates.areaAssessment.improvements}
               bulletClassName="bg-emerald-400/80"
             />
           </div>

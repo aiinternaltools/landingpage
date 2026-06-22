@@ -1,16 +1,18 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AuditWorkspace } from "@/components/automation-audit/AuditWorkspace";
 import { AutomationAuditForm } from "@/components/automation-audit/AutomationAuditForm";
 import { AutomationAuditProgress } from "@/components/automation-audit/AutomationAuditProgress";
 import { AutomationAuditReport } from "@/components/automation-audit/report/AutomationAuditReport";
 import { ReportScoreTeaser } from "@/components/automation-audit/report/ReportScoreTeaser";
-import { REPORT_TEMPLATE_SECTIONS } from "@/components/automation-audit/report/report-template-sections";
+import { getReportTemplateSections } from "@/components/automation-audit/report/report-template-sections";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageBackdrop } from "@/components/ui/PageBackdrop";
+import type { Locale } from "@/i18n/routing";
 import type { AutomationAuditReport as Report } from "@/lib/automation-audit/types";
 
 type AuditPhase = "input" | "running" | "teaser" | "report" | "error";
@@ -28,6 +30,8 @@ function getHostname(url: string): string {
 }
 
 export function AutomationAuditTool() {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("automationAudit");
   const [targetUrl, setTargetUrl] = useState("");
   const [phase, setPhase] = useState<AuditPhase>("input");
   const [activeStep, setActiveStep] = useState(0);
@@ -80,14 +84,14 @@ export function AutomationAuditTool() {
       const res = await fetch("/api/automation-audit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ targetUrl: url }),
+        body: JSON.stringify({ targetUrl: url, locale }),
       });
 
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
         throw new Error(
-          typeof data.error === "string" ? data.error : "Audit request failed"
+          typeof data.error === "string" ? data.error : t("auditRequestFailed")
         );
       }
 
@@ -100,7 +104,7 @@ export function AutomationAuditTool() {
         setPhase("report");
       }, TEASER_DURATION_MS);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Audit failed");
+      setError(err instanceof Error ? err.message : t("auditFailed"));
       setPhase("error");
     } finally {
       clearProgressTimer();
@@ -116,7 +120,7 @@ export function AutomationAuditTool() {
     setPhase("input");
   };
 
-  const hero = REPORT_TEMPLATE_SECTIONS.hero;
+  const hero = getReportTemplateSections(t).hero;
   const showHero = phase === "input" && !hasAuditedOnce;
 
   return (
@@ -145,9 +149,7 @@ export function AutomationAuditTool() {
         </div>
 
         {hasAuditedOnce && phase === "input" ? (
-          <p className="mb-4 text-center text-sm text-muted">
-            Enter a URL to run another audit
-          </p>
+          <p className="mb-4 text-center text-sm text-muted">{t("anotherAuditHint")}</p>
         ) : null}
 
         <AuditWorkspace phase={phase}>
@@ -206,7 +208,7 @@ export function AutomationAuditTool() {
                   className="text-xs"
                   onClick={() => startNewAudit()}
                 >
-                  Clear and start over
+                  {t("clearAndStartOver")}
                 </Button>
               </div>
             </div>

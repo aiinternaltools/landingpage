@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import type { CommunityBenefitId } from "@/content/community";
+import type { CommunityBenefitId } from "@/content/index";
 
 type IconProps = {
   className?: string;
@@ -89,7 +89,7 @@ function IconUsers({ className }: IconProps) {
   );
 }
 
-function IconTrending({ className }: IconProps) {
+function IconTools({ className }: IconProps) {
   return (
     <svg
       className={className}
@@ -103,18 +103,17 @@ function IconTrending({ className }: IconProps) {
       strokeLinejoin="round"
       aria-hidden
     >
-      <path d="M3 17l6-6 4 4 7-9" />
-      <path d="M14 6h7v7" />
+      <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
     </svg>
   );
 }
 
 const icons: Record<CommunityBenefitId, (props: IconProps) => JSX.Element> = {
+  tools: IconTools,
   curated: IconBookOpen,
   examples: IconBriefcase,
   templates: IconWorkflow,
   networking: IconUsers,
-  updates: IconTrending,
 };
 
 type CommunityBenefitIconProps = IconProps & {

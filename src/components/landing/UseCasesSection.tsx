@@ -1,16 +1,29 @@
-import Link from "next/link";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
-import { landingUseCases } from "@/content/use-cases";
+import type { getLandingUseCases } from "@/content/index";
+
+type LandingUseCase = ReturnType<typeof getLandingUseCases>[number];
+
+type UseCasesSectionProps = {
+  landingUseCases: readonly LandingUseCase[];
+};
 
 function UseCaseCard({
   title,
   tagline,
   href,
+  discoverLabel,
+  discoverAria,
 }: {
   title: string;
   tagline?: string;
   href: string;
+  discoverLabel: string;
+  discoverAria: string;
 }) {
   return (
     <article className="card-elevated card-elevated-hover group overflow-hidden rounded-2xl">
@@ -25,10 +38,10 @@ function UseCaseCard({
         </div>
         <Link
           href={href}
-          aria-label={`Discover the workflow: ${title}`}
+          aria-label={discoverAria}
           className="inline-flex w-fit items-center gap-2 self-end text-xs font-medium text-muted-strong transition-colors group-hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-sm"
         >
-          <span>Discover the workflow</span>
+          <span>{discoverLabel}</span>
           <span className="flex size-7 shrink-0 items-center justify-center rounded-full border border-border bg-muted-bg text-muted-strong transition-colors group-hover:border-accent/40 group-hover:bg-accent-muted group-hover:text-accent">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden>
               <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -40,20 +53,28 @@ function UseCaseCard({
   );
 }
 
-export function UseCasesSection() {
+export function UseCasesSection({ landingUseCases }: UseCasesSectionProps) {
+  const t = useTranslations("landing.useCases");
+
   return (
     <Section id="use-cases" className="section-band relative overflow-hidden border-t border-border">
       <h2 className="relative text-center text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-        Use cases
+        {t("title")}
       </h2>
       <p className="relative mx-auto mt-3 max-w-lg text-center text-sm text-muted">
-        Workflows we automate most often for operational teams
+        {t("subtitle")}
       </p>
 
       <ul className="relative mx-auto mt-12 grid max-w-2xl gap-5 md:gap-6">
         {landingUseCases.map(({ id, title, tagline, href }) => (
           <li key={id}>
-            <UseCaseCard title={title} tagline={tagline} href={href} />
+            <UseCaseCard
+              title={title}
+              tagline={tagline}
+              href={href}
+              discoverLabel={t("discoverWorkflow")}
+              discoverAria={t("discoverWorkflowAria", { title })}
+            />
           </li>
         ))}
       </ul>
@@ -62,10 +83,10 @@ export function UseCasesSection() {
         <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div className="max-w-lg">
             <span className="inline-flex rounded-full border border-border bg-muted-bg px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-muted-strong">
-              Custom automation
+              {t("customBadge")}
             </span>
             <h3 className="mt-3 text-xl font-bold tracking-tight text-foreground md:text-2xl">
-              Your workflow isn&apos;t listed?
+              {t("customHeading")}
             </h3>
           </div>
           <Button
@@ -73,7 +94,7 @@ export function UseCasesSection() {
             variant="primary"
             className="shrink-0 md:min-w-[14rem]"
           >
-            Request custom automation
+            {t("customCta")}
           </Button>
         </div>
       </div>

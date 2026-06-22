@@ -1,19 +1,20 @@
+import { getTranslations } from "next-intl/server";
 import type { AiNewsToolToTest } from "@/content/ai-news/types";
 import { BriefingSection } from "@/components/ai-news/briefing/BriefingSection";
-import { ARTICLE_TEMPLATE_SECTIONS } from "@/components/ai-news/briefing/article-template-sections";
+import { getArticleSections } from "@/components/ai-news/briefing/article-template-sections";
 
 type ToolsToTestProps = {
   tools: AiNewsToolToTest[];
 };
 
-export function ToolsToTest({ tools }: ToolsToTestProps) {
-  const { tools: toolsSection } = ARTICLE_TEMPLATE_SECTIONS;
+export async function ToolsToTest({ tools }: ToolsToTestProps) {
+  const t = await getTranslations("aiNews");
+  const { tools: toolsSection } = getArticleSections(t);
 
   if (tools.length === 0) {
     return (
       <BriefingSection id={toolsSection.id} title={toolsSection.title}>
-        {/* TODO: tools_to_test missing from JSON */}
-        <p className="text-sm text-muted">No tools listed for this edition.</p>
+        <p className="text-sm text-muted">{t("article.noToolsListed")}</p>
       </BriefingSection>
     );
   }
@@ -39,22 +40,22 @@ export function ToolsToTest({ tools }: ToolsToTestProps) {
               </span>
             </div>
             <p className="mt-2 text-xs font-medium text-accent">
-              Time to test: {tool.time_to_test}
+              {t("article.timeToTest", { time: tool.time_to_test })}
             </p>
             <p className="briefing-break mt-3 text-sm leading-relaxed text-muted">
-              <span className="font-medium text-foreground">Best for: </span>
+              <span className="font-medium text-foreground">{t("article.bestFor")} </span>
               {tool.best_for}
             </p>
             <div className="mt-4 min-w-0 flex-1 rounded-lg border border-border/80 bg-background/40 p-3">
               <p className="text-xs font-semibold uppercase tracking-wider text-muted">
-                Suggested test
+                {t("article.suggestedTest")}
               </p>
               <p className="briefing-break mt-1.5 text-sm leading-relaxed text-foreground/90">
                 {tool.suggested_test}
               </p>
             </div>
             <p className="briefing-break mt-4 text-sm leading-relaxed text-foreground/90">
-              <span className="font-medium text-accent">Business value: </span>
+              <span className="font-medium text-accent">{t("article.businessValue")} </span>
               {tool.business_value}
             </p>
           </li>

@@ -11,7 +11,13 @@ import type {
   AiNewsWeeklyAction,
 } from "@/content/ai-news/types";
 
-const ARTICLES_DIR = path.join(process.cwd(), "src/content/ai-news/articles");
+export type LocaleArticles = "en" | "ro";
+
+const ARTICLES_BASE_DIR = path.join(process.cwd(), "src/content/ai-news/articles");
+
+function getArticlesDir(locale: LocaleArticles = "en") {
+  return path.join(ARTICLES_BASE_DIR, locale);
+}
 
 function isArticleFile(name: string) {
   return name.endsWith(".json") && !name.startsWith("_");
@@ -234,8 +240,8 @@ function parseBriefing(raw: unknown, filename: string): AiNewsBriefing | null {
   };
 }
 
-function readArticleFile(filename: string): AiNewsBriefing | null {
-  const filePath = path.join(ARTICLES_DIR, filename);
+function readArticleFile(filename: string, locale: LocaleArticles): AiNewsBriefing | null {
+  const filePath = path.join(getArticlesDir(locale), filename);
   try {
     const raw = JSON.parse(fs.readFileSync(filePath, "utf8")) as unknown;
     return parseBriefing(raw, filename);
@@ -245,13 +251,17 @@ function readArticleFile(filename: string): AiNewsBriefing | null {
   }
 }
 
-export function getAllArticles(includeDrafts = false): AiNewsArticle[] {
-  if (!fs.existsSync(ARTICLES_DIR)) return [];
+export function getAllArticles(
+  includeDrafts = false,
+  locale: LocaleArticles = "en",
+): AiNewsArticle[] {
+  const articlesDir = getArticlesDir(locale);
+  if (!fs.existsSync(articlesDir)) return [];
 
   return fs
-    .readdirSync(ARTICLES_DIR)
+    .readdirSync(articlesDir)
     .filter(isArticleFile)
-    .map(readArticleFile)
+    .map((filename) => readArticleFile(filename, locale))
     .filter((a): a is AiNewsBriefing => a !== null)
     .filter((a) => includeDrafts || a.status !== "draft")
     .sort(
@@ -259,12 +269,15 @@ export function getAllArticles(includeDrafts = false): AiNewsArticle[] {
     );
 }
 
-export function getArticleBySlug(slug: string): AiNewsArticle | null {
-  return getAllArticles(true).find((a) => a.slug === slug) ?? null;
+export function getArticleBySlug(
+  slug: string,
+  locale: LocaleArticles = "en",
+): AiNewsArticle | null {
+  return getAllArticles(true, locale).find((a) => a.slug === slug) ?? null;
 }
 
-export function getPublishedArticleSlugs(): string[] {
-  return getAllArticles(false).map((a) => a.slug);
+export function getPublishedArticleSlugs(locale: LocaleArticles = "en"): string[] {
+  return getAllArticles(false, locale).map((a) => a.slug);
 }
 
 export function toListItem(article: AiNewsArticle): AiNewsArticleListItem {
@@ -282,6 +295,9 @@ export function toListItem(article: AiNewsArticle): AiNewsArticleListItem {
   };
 }
 
-export function getAllArticleListItems(includeDrafts = false): AiNewsArticleListItem[] {
-  return getAllArticles(includeDrafts).map(toListItem);
+export function getAllArticleListItems(
+  includeDrafts = false,
+  locale: LocaleArticles = "en",
+): AiNewsArticleListItem[] {
+  return getAllArticles(includeDrafts, locale).map(toListItem);
 }

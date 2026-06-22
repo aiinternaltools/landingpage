@@ -1,13 +1,15 @@
+import { getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
 import { BriefingSection } from "@/components/ai-news/briefing/BriefingSection";
-import { ARTICLE_TEMPLATE_SECTIONS } from "@/components/ai-news/briefing/article-template-sections";
+import { getArticleSections } from "@/components/ai-news/briefing/article-template-sections";
 
 type BeginnerCornerProps = {
   term: AiNewsBriefing["beginner_term"];
 };
 
-export function BeginnerCorner({ term }: BeginnerCornerProps) {
-  const { beginner } = ARTICLE_TEMPLATE_SECTIONS;
+export async function BeginnerCorner({ term }: BeginnerCornerProps) {
+  const t = await getTranslations("aiNews");
+  const { beginner } = getArticleSections(t);
 
   return (
     <BriefingSection id={beginner.id} title={beginner.title}>
@@ -20,7 +22,7 @@ export function BeginnerCorner({ term }: BeginnerCornerProps) {
         </p>
         <div className="mt-5 rounded-xl border border-border bg-background/50 p-3.5 sm:mt-6 sm:p-4">
           <p className="text-xs font-semibold uppercase tracking-wider text-muted">
-            Business example
+            {t("article.businessExample")}
           </p>
           <p className="mt-2 text-sm leading-relaxed text-muted break-words">
             {term.business_example}

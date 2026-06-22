@@ -1,9 +1,5 @@
-import {
-  AUDIT_SYSTEM_PROMPT,
-  buildAuditUserPrompt,
-  buildExecutiveUserPrompt,
-  EXECUTIVE_SYSTEM_PROMPT,
-} from "./audit-prompts";
+import type { Locale } from "@/i18n/routing";
+import { getAuditPrompts } from "./prompts";
 import type {
   LlmExcerptResult,
   RawAuditLlmOutput,
@@ -142,11 +138,13 @@ async function callOpenAiStructured<T>(
 export async function runAuditLlm(
   normalizedUrl: string,
   fetchedAt: string,
-  excerpt: LlmExcerptResult
+  excerpt: LlmExcerptResult,
+  locale: Locale = "en"
 ): Promise<RawAuditLlmOutput> {
+  const prompts = getAuditPrompts(locale);
   return callOpenAiStructured<RawAuditLlmOutput>(
-    AUDIT_SYSTEM_PROMPT,
-    buildAuditUserPrompt(normalizedUrl, fetchedAt, excerpt),
+    prompts.AUDIT_SYSTEM_PROMPT,
+    prompts.buildAuditUserPrompt(normalizedUrl, fetchedAt, excerpt),
     "marketing_audit",
     AUDIT_JSON_SCHEMA as unknown as Record<string, unknown>,
     12_000
@@ -154,11 +152,13 @@ export async function runAuditLlm(
 }
 
 export async function runExecutiveLlm(
-  audit: RawAuditLlmOutput
+  audit: RawAuditLlmOutput,
+  locale: Locale = "en"
 ): Promise<RawExecutiveLlmOutput> {
+  const prompts = getAuditPrompts(locale);
   return callOpenAiStructured<RawExecutiveLlmOutput>(
-    EXECUTIVE_SYSTEM_PROMPT,
-    buildExecutiveUserPrompt(JSON.stringify(audit)),
+    prompts.EXECUTIVE_SYSTEM_PROMPT,
+    prompts.buildExecutiveUserPrompt(JSON.stringify(audit)),
     "marketing_executive_summary",
     EXECUTIVE_JSON_SCHEMA as unknown as Record<string, unknown>,
     4_000

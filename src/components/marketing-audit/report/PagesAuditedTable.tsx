@@ -1,12 +1,18 @@
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 import { MAX_PAGES } from "@/lib/marketing-audit/constants";
 import type { MarketingAuditReport } from "@/lib/marketing-audit/types";
 import { Card } from "@/components/ui/Card";
+import type { Locale } from "@/i18n/routing";
 
 type PagesAuditedTableProps = {
   report: MarketingAuditReport;
 };
 
 export function PagesAuditedTable({ report }: PagesAuditedTableProps) {
+  const t = useTranslations("marketingAudit");
+  const locale = useLocale() as Locale;
   const rows = report.pagesAudited;
 
   const extraDiscovered =
@@ -22,10 +28,10 @@ export function PagesAuditedTable({ report }: PagesAuditedTableProps) {
         <table className="w-full min-w-[32rem] text-left text-sm">
           <thead>
             <tr className="border-b border-border text-xs uppercase tracking-wide text-muted">
-              <th className="pb-3 pr-4 font-semibold">Path</th>
-              <th className="pb-3 pr-4 font-semibold">Status</th>
-              <th className="pb-3 pr-4 font-semibold">HTML</th>
-              <th className="pb-3 font-semibold">Text</th>
+              <th className="pb-3 pr-4 font-semibold">{t("report.pagesTable.path")}</th>
+              <th className="pb-3 pr-4 font-semibold">{t("report.pagesTable.status")}</th>
+              <th className="pb-3 pr-4 font-semibold">{t("report.pagesTable.html")}</th>
+              <th className="pb-3 font-semibold">{t("report.pagesTable.text")}</th>
             </tr>
           </thead>
           <tbody>
@@ -53,15 +59,17 @@ export function PagesAuditedTable({ report }: PagesAuditedTableProps) {
                         : "text-rose-400"
                     }
                   >
-                    {page.status === "success" ? "OK" : page.error ?? "Error"}
+                    {page.status === "success"
+                      ? t("report.pagesTable.ok")
+                      : page.error ?? t("report.pagesTable.error")}
                   </span>
                 </td>
                 <td className="py-3 pr-4 tabular-nums text-muted">
-                  {page.htmlLength > 0 ? page.htmlLength.toLocaleString() : "—"}
+                  {page.htmlLength > 0 ? page.htmlLength.toLocaleString(locale) : "—"}
                 </td>
                 <td className="py-3 tabular-nums text-muted">
                   {page.pageTextLength > 0
-                    ? page.pageTextLength.toLocaleString()
+                    ? page.pageTextLength.toLocaleString(locale)
                     : "—"}
                 </td>
               </tr>
@@ -71,15 +79,23 @@ export function PagesAuditedTable({ report }: PagesAuditedTableProps) {
       </div>
       {underfilled ? (
         <p className="mt-4 text-sm text-muted">
-          Only {rows.length} of {MAX_PAGES} page slots could be filled — the site
-          may use client-rendered navigation, block crawlers, or expose few public
-          HTML routes. Common paths were probed automatically where possible.
+          {t("report.pagesTable.underfilled", {
+            filled: rows.length,
+            max: MAX_PAGES,
+          })}
         </p>
       ) : null}
       {extraDiscovered > 0 ? (
         <p className="mt-2 text-sm text-muted">
-          {extraDiscovered} additional page{extraDiscovered === 1 ? "" : "s"}{" "}
-          discovered but not included in this audit (limited to top {MAX_PAGES}).
+          {extraDiscovered === 1
+            ? t("report.pagesTable.extraDiscoveredOne", {
+                count: extraDiscovered,
+                max: MAX_PAGES,
+              })
+            : t("report.pagesTable.extraDiscoveredMany", {
+                count: extraDiscovered,
+                max: MAX_PAGES,
+              })}
         </p>
       ) : null}
     </Card>

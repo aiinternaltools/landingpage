@@ -1,12 +1,14 @@
 "use client";
 
-const STEPS = [
-  { label: "Discovering pages", detail: "Sitemap, crawl & common paths" },
-  { label: "Selecting top 5", detail: "Ranking by ops relevance" },
-  { label: "Fetching HTML", detail: "Up to 5 pages in parallel" },
-  { label: "Detecting integrations", detail: "Scanning for visible tools" },
-  { label: "Running automation audit", detail: "AI scores & workflow analysis" },
-  { label: "Generating summary", detail: "Executive recap & actions" },
+import { useTranslations } from "next-intl";
+
+const STEP_KEYS = [
+  "discovering",
+  "selecting",
+  "fetching",
+  "detecting",
+  "auditing",
+  "summary",
 ] as const;
 
 type AutomationAuditProgressProps = {
@@ -18,6 +20,8 @@ export function AutomationAuditProgress({
   activeStep,
   targetUrl,
 }: AutomationAuditProgressProps) {
+  const t = useTranslations("automationAudit");
+
   const hostname = (() => {
     try {
       return new URL(
@@ -28,23 +32,21 @@ export function AutomationAuditProgress({
     }
   })();
 
-  const progressPct = Math.round(((activeStep + 1) / STEPS.length) * 100);
+  const progressPct = Math.round(((activeStep + 1) / STEP_KEYS.length) * 100);
 
   return (
     <div
       className="audit-progress-enter px-5 py-8 sm:px-8 sm:py-10"
       role="status"
       aria-live="polite"
-      aria-label="Audit progress"
+      aria-label={t("progress.ariaLabel")}
     >
       <div className="mb-6 border-b border-border/60 pb-5">
         <p className="text-xs font-semibold uppercase tracking-widest text-accent">
-          Running audit
+          {t("progress.runningAudit")}
         </p>
         <p className="mt-1 text-base font-medium text-foreground">{hostname}</p>
-        <p className="mt-1 text-xs text-muted">
-          Usually takes 45–90 seconds. Keep this tab open.
-        </p>
+        <p className="mt-1 text-xs text-muted">{t("progress.durationHint")}</p>
       </div>
 
       <div className="mb-6 h-2 overflow-hidden rounded-full bg-muted-bg">
@@ -59,12 +61,14 @@ export function AutomationAuditProgress({
       </div>
 
       <ul className="space-y-4">
-        {STEPS.map((step, i) => {
+        {STEP_KEYS.map((key, i) => {
           const done = i < activeStep;
           const active = i === activeStep;
+          const label = t(`progress.steps.${key}.label`);
+          const detail = t(`progress.steps.${key}.detail`);
           return (
             <li
-              key={step.label}
+              key={key}
               className={`flex items-start gap-3 text-sm ${
                 active
                   ? "font-medium text-foreground"
@@ -98,10 +102,8 @@ export function AutomationAuditProgress({
                 )}
               </span>
               <div className="min-w-0 flex-1">
-                <p>{step.label}</p>
-                {active ? (
-                  <p className="mt-0.5 text-xs text-muted">{step.detail}</p>
-                ) : null}
+                <p>{label}</p>
+                {active ? <p className="mt-0.5 text-xs text-muted">{detail}</p> : null}
               </div>
               {active ? (
                 <span className="mt-1.5 inline-flex shrink-0 gap-1" aria-hidden>

@@ -1,10 +1,13 @@
+import { getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
 
 type OperatorTakeProps = {
   insight: AiNewsBriefing["strategic_insight"];
 };
 
-export function OperatorTake({ insight }: OperatorTakeProps) {
+export async function OperatorTake({ insight }: OperatorTakeProps) {
+  const t = await getTranslations("aiNews");
+
   return (
     <section
       id="operators-take"
@@ -12,7 +15,7 @@ export function OperatorTake({ insight }: OperatorTakeProps) {
       aria-labelledby="operators-take-heading"
     >
       <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-        Operator&apos;s Take
+        {t("article.operatorsTake")}
       </p>
       <h2
         id="operators-take-heading"
@@ -25,7 +28,7 @@ export function OperatorTake({ insight }: OperatorTakeProps) {
       </p>
       <blockquote className="mt-6 min-w-0 border-l-2 border-accent pl-3 sm:mt-8 sm:pl-4 md:pl-6">
         <p className="text-xs font-semibold uppercase tracking-wider text-accent sm:text-sm">
-          What to do differently
+          {t("article.whatToDoDifferently")}
         </p>
         <p className="briefing-break mt-2 text-sm font-medium leading-relaxed text-foreground sm:text-base md:text-lg">
           {insight.operator_take}

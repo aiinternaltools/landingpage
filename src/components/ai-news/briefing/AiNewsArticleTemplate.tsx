@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
 import { ArticleAudioPlayer } from "@/components/ai-news/ArticleAudioPlayer";
 import { BeginnerCorner } from "@/components/ai-news/briefing/BeginnerCorner";
@@ -12,8 +13,8 @@ import { StoriesTabs } from "@/components/ai-news/briefing/StoriesTabs";
 import { ToolsToTest } from "@/components/ai-news/briefing/ToolsToTest";
 import { WeeklyActionPlan } from "@/components/ai-news/briefing/WeeklyActionPlan";
 import {
-  ARTICLE_TEMPLATE_CTA,
-  ARTICLE_TEMPLATE_SECTIONS,
+  getArticleCta,
+  getArticleSections,
 } from "@/components/ai-news/briefing/article-template-sections";
 import { PageBackdrop } from "@/components/ui/PageBackdrop";
 import { Button } from "@/components/ui/Button";
@@ -23,14 +24,17 @@ type AiNewsArticleTemplateProps = {
   article: AiNewsBriefing;
 };
 
-export function AiNewsArticleTemplate({ article }: AiNewsArticleTemplateProps) {
+export async function AiNewsArticleTemplate({ article }: AiNewsArticleTemplateProps) {
+  const t = await getTranslations("aiNews");
   const sources = collectUniqueSources(article.stories);
-  const { stories: storiesSection, actionPlan } = ARTICLE_TEMPLATE_SECTIONS;
+  const sections = getArticleSections(t);
+  const cta = getArticleCta(t);
+  const { stories: storiesSection, actionPlan } = sections;
 
   return (
     <>
       <section
-        aria-label="Article introduction"
+        aria-label={t("article.articleIntroAria")}
         className="relative flex flex-col overflow-x-hidden border-b border-border max-md:min-h-0 md:min-h-[calc(100dvh-var(--header-height))]"
       >
         <PageBackdrop glow="hero" />
@@ -43,7 +47,7 @@ export function AiNewsArticleTemplate({ article }: AiNewsArticleTemplateProps) {
             href="/ai-news"
             className="mb-1 inline-flex shrink-0 items-center gap-1 text-xs text-muted transition-colors hover:text-accent sm:mb-0 sm:text-sm"
           >
-            <span aria-hidden>←</span> All editions
+            <span aria-hidden>←</span> {t("article.allEditions")}
           </Link>
           <BriefingHero article={article} className="flex-1" />
         </div>
@@ -81,19 +85,11 @@ export function AiNewsArticleTemplate({ article }: AiNewsArticleTemplateProps) {
 
         <div className="card-elevated flex min-w-0 flex-col gap-4 rounded-2xl border-accent/20 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-6 md:p-8">
           <div>
-            <p className="text-sm font-semibold text-foreground">
-              {ARTICLE_TEMPLATE_CTA.title}
-            </p>
-            <p className="mt-1 text-sm text-muted">
-              {ARTICLE_TEMPLATE_CTA.description}
-            </p>
+            <p className="text-sm font-semibold text-foreground">{cta.title}</p>
+            <p className="mt-1 text-sm text-muted">{cta.description}</p>
           </div>
-          <Button
-            href={ARTICLE_TEMPLATE_CTA.href}
-            variant="primary"
-            className="shrink-0"
-          >
-            {ARTICLE_TEMPLATE_CTA.buttonLabel}
+          <Button href={cta.href} variant="primary" className="shrink-0">
+            {cta.buttonLabel}
           </Button>
         </div>
       </div>

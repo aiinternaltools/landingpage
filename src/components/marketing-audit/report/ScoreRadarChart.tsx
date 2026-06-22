@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import {
   PolarAngleAxis,
   PolarGrid,
@@ -7,7 +8,8 @@ import {
   RadarChart,
   ResponsiveContainer,
 } from "recharts";
-import { REPORT_AUDIT_AREAS } from "@/components/marketing-audit/report/report-template-sections";
+import { getReportAuditAreas } from "@/components/marketing-audit/report/report-template-sections";
+import type { Locale } from "@/i18n/routing";
 import type { AuditScores } from "@/lib/marketing-audit/types";
 
 type ScoreRadarChartProps = {
@@ -15,14 +17,16 @@ type ScoreRadarChartProps = {
 };
 
 export function ScoreRadarChart({ scores }: ScoreRadarChartProps) {
-  const data = REPORT_AUDIT_AREAS.map((area) => ({
+  const t = useTranslations("marketingAudit");
+  const locale = useLocale() as Locale;
+  const data = getReportAuditAreas(locale).map((area) => ({
     area: area.shortLabel,
     score: scores[area.id],
     fullMark: 100,
   }));
 
   return (
-    <div className="h-72 w-full" aria-label="Radar chart of audit scores">
+    <div className="h-72 w-full" aria-label={t("report.charts.radarAria")}>
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart data={data} cx="50%" cy="50%" outerRadius="75%">
           <PolarGrid stroke="rgba(15,23,42,0.1)" />

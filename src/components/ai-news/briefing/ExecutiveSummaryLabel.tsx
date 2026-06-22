@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type ExecutiveSummaryLabelProps = {
   summary: string;
@@ -10,6 +11,7 @@ type ExecutiveSummaryLabelProps = {
 type PlayerState = "idle" | "loading" | "playing" | "paused" | "error";
 
 export function ExecutiveSummaryLabel({ summary, className = "" }: ExecutiveSummaryLabelProps) {
+  const t = useTranslations("aiNews");
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const blobUrlRef = useRef<string | null>(null);
 
@@ -34,7 +36,7 @@ export function ExecutiveSummaryLabel({ summary, className = "" }: ExecutiveSumm
     audio.onended = () => setState("idle");
     audio.onerror = () => {
       setState("error");
-      setErrorMessage("Playback failed");
+      setErrorMessage(t("article.playbackFailed"));
     };
   }
 
@@ -51,7 +53,7 @@ export function ExecutiveSummaryLabel({ summary, className = "" }: ExecutiveSumm
 
       if (!res.ok) {
         const data = (await res.json().catch(() => null)) as { error?: string } | null;
-        throw new Error(data?.error ?? "Could not generate audio");
+        throw new Error(data?.error ?? t("article.couldNotGenerateAudio"));
       }
 
       revokeBlob();
@@ -68,7 +70,9 @@ export function ExecutiveSummaryLabel({ summary, className = "" }: ExecutiveSumm
       setState("playing");
     } catch (err) {
       setState("error");
-      setErrorMessage(err instanceof Error ? err.message : "Could not play summary");
+      setErrorMessage(
+        err instanceof Error ? err.message : t("article.couldNotPlaySummary"),
+      );
     }
   }
 
@@ -94,18 +98,18 @@ export function ExecutiveSummaryLabel({ summary, className = "" }: ExecutiveSumm
   const isActive = isPlaying || state === "paused";
 
   const playLabel = isLoading
-    ? "Generating audio…"
+    ? t("article.generatingAudio")
     : isPlaying
-      ? "Pause 2-minute summary"
+      ? t("article.pauseSummary")
       : state === "paused"
-        ? "Resume 2-minute summary"
-        : "Play 2-minute executive summary";
+        ? t("article.resumeSummary")
+        : t("article.playSummary");
 
   const statusText =
     state === "error" && errorMessage
       ? errorMessage
       : isActive
-        ? "Listening…"
+        ? t("article.listening")
         : null;
 
   return (
@@ -124,13 +128,13 @@ export function ExecutiveSummaryLabel({ summary, className = "" }: ExecutiveSumm
           id="exec-summary-label-title"
           className="truncate text-xs font-semibold text-accent sm:hidden"
         >
-          2 min executive summary
+          {t("article.executiveSummaryShort")}
         </p>
         <div className="hidden leading-tight sm:block">
           <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent">
-            2 min
+            {t("article.executiveSummaryDuration")}
           </p>
-          <p className="text-[10px] text-muted">Executive summary</p>
+          <p className="text-[10px] text-muted">{t("article.executiveSummaryLabel")}</p>
         </div>
         {statusText ? (
           <p className="sr-only" role="status" aria-live="polite">

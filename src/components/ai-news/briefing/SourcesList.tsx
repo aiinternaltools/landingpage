@@ -1,19 +1,20 @@
+import { getTranslations } from "next-intl/server";
 import type { AiNewsSource } from "@/content/ai-news/types";
 import { BriefingSection } from "@/components/ai-news/briefing/BriefingSection";
-import { ARTICLE_TEMPLATE_SECTIONS } from "@/components/ai-news/briefing/article-template-sections";
+import { getArticleSections } from "@/components/ai-news/briefing/article-template-sections";
 
 type SourcesListProps = {
   sources: AiNewsSource[];
 };
 
-export function SourcesList({ sources }: SourcesListProps) {
-  const { sources: sourcesSection } = ARTICLE_TEMPLATE_SECTIONS;
+export async function SourcesList({ sources }: SourcesListProps) {
+  const t = await getTranslations("aiNews");
+  const { sources: sourcesSection } = getArticleSections(t);
 
   if (sources.length === 0) {
     return (
       <BriefingSection id={sourcesSection.id} title={sourcesSection.title}>
-        {/* TODO: no sources in story data */}
-        <p className="text-sm text-muted">Sources not provided for this edition.</p>
+        <p className="text-sm text-muted">{t("article.sourcesNotProvided")}</p>
       </BriefingSection>
     );
   }

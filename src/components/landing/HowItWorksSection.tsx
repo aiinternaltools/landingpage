@@ -1,25 +1,10 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 
-const steps = [
-  {
-    n: "01",
-    title: "Discovery call",
-    body: "30 minutes. You walk us through your current manual processes. We identify what's automatable and map out the workflow",
-    stepClass: "text-accent",
-  },
-  {
-    n: "02",
-    title: "We design & build",
-    body: "We design the automation, connect your systems (APIs, webhooks, AI), test everything, and make sure it actually works",
-    stepClass: "text-foreground",
-  },
-  {
-    n: "03",
-    title: "Live & Monitored",
-    body: "Few days later, it's running. We monitor performance, train your team, and provide ongoing support as your needs evolve",
-    stepClass: "text-brand-green",
-  },
-] as const;
+const stepKeys = ["discovery", "build", "live"] as const;
+const stepClasses = ["text-accent", "text-foreground", "text-brand-green"] as const;
 
 function StepCard({
   n,
@@ -44,19 +29,26 @@ function StepCard({
 }
 
 export function HowItWorksSection() {
+  const t = useTranslations("landing.howItWorks");
+
   return (
     <Section className="section-surface relative overflow-hidden border-t border-border">
       <h2 className="text-center text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-        How it works
+        {t("title")}
       </h2>
       <p className="mx-auto mt-3 max-w-lg text-center text-sm text-muted">
-        A clear path from first call to production automation
+        {t("subtitle")}
       </p>
 
       <ul className="mt-12 grid gap-5 md:grid-cols-3 md:gap-6">
-        {steps.map((step) => (
-          <li key={step.n}>
-            <StepCard {...step} />
+        {stepKeys.map((key, index) => (
+          <li key={key}>
+            <StepCard
+              n={t(`steps.${key}.number`)}
+              title={t(`steps.${key}.title`)}
+              body={t(`steps.${key}.body`)}
+              stepClass={stepClasses[index]}
+            />
           </li>
         ))}
       </ul>
