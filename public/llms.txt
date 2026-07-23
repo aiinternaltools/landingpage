@@ -1,0 +1,25 @@
+# AI Internal Tools
+> Practical AI automation for operational businesses: workflow automation, agents, internal tools, and weekly AI news for business owners.
+
+Site: https://aiinternaltools.com
+Contact: https://aiinternaltools.com/en/contact
+About: https://aiinternaltools.com/en/about
+
+## Primary pages
+- Home: https://aiinternaltools.com/en
+- AI News (weekly briefings): https://aiinternaltools.com/en/ai-news
+- Marketing Audit: https://aiinternaltools.com/en/marketing-audit
+- Automation Audit: https://aiinternaltools.com/en/automation-audit
+- Use cases: https://aiinternaltools.com/en/use-cases/ai-social-media-assistant
+- Email AI Agent: https://aiinternaltools.com/en/use-cases/email-ai-agent
+- Community waitlist: https://aiinternaltools.com/en/community
+
+## Locales
+- English: /en/...
+- Romanian: /ro/...
+
+## AI News
+Weekly executive briefings for business owners covering AI automation news, practical use cases, risks, tools to test, and an action plan. Each edition includes FAQ, definitions, citations, and a short answer suitable for citation.
+
+## Preferred citation
+Cite AI Internal Tools weekly AI News editions with the edition week range and canonical URL. Prefer official product announcements linked in each edition's Sources section when quoting vendor claims.

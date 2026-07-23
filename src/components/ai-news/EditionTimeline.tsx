@@ -1,7 +1,13 @@
+"use client";
+
+import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
 import type { AiNewsArticleListItem } from "@/content/ai-news/types";
+import { Button } from "@/components/ui/Button";
 import { formatSignalStrength, signalStrengthLevel } from "@/lib/ai-news-utils";
+
+const PAGE_SIZE = 5;
 
 type EditionTimelineProps = {
   editions: AiNewsArticleListItem[];
@@ -26,10 +32,9 @@ type EditionTimelineItemProps = {
   edition: AiNewsArticleListItem;
   isLatest: boolean;
   isLast: boolean;
-  t: Awaited<ReturnType<typeof getTranslations<"aiNews">>>;
 };
 
-function EditionTimelineItem({ edition, isLatest, isLast, t }: EditionTimelineItemProps) {
+function EditionTimelineItem({ edition, isLatest, isLast }: EditionTimelineItemProps) {
   const level = signalStrengthLevel(edition.signalStrength);
 
   return (
@@ -55,7 +60,7 @@ function EditionTimelineItem({ edition, isLatest, isLast, t }: EditionTimelineIt
       </div>
 
       <div className={`min-w-0 pb-8 sm:pb-10 ${isLast ? "pb-0 sm:pb-0" : ""}`}>
-        <EditionTimelineCard edition={edition} isLatest={isLatest} t={t} />
+        <EditionTimelineCard edition={edition} isLatest={isLatest} />
       </div>
     </li>
   );
@@ -64,10 +69,11 @@ function EditionTimelineItem({ edition, isLatest, isLast, t }: EditionTimelineIt
 type EditionTimelineCardProps = {
   edition: AiNewsArticleListItem;
   isLatest: boolean;
-  t: Awaited<ReturnType<typeof getTranslations<"aiNews">>>;
 };
 
-function EditionTimelineCard({ edition, isLatest, t }: EditionTimelineCardProps) {
+function EditionTimelineCard({ edition, isLatest }: EditionTimelineCardProps) {
+  const t = useTranslations("aiNews");
+
   return (
     <Link
       href={`/ai-news/${edition.slug}`}
@@ -81,7 +87,8 @@ function EditionTimelineCard({ edition, isLatest, t }: EditionTimelineCardProps)
         </time>
         {edition.signalStrength ? (
           <span className="rounded-full border border-border px-2 py-0.5">
-            {formatSignalStrength(edition.signalStrength, t)} {t("timeline.signalSuffix")}
+            {formatSignalStrength(edition.signalStrength, t as (key: string) => string)}{" "}
+            {t("timeline.signalSuffix")}
           </span>
         ) : null}
         {isLatest ? (
@@ -121,10 +128,14 @@ function EditionTimelineCard({ edition, isLatest, t }: EditionTimelineCardProps)
   );
 }
 
-export async function EditionTimeline({ editions }: EditionTimelineProps) {
-  const t = await getTranslations("aiNews");
+export function EditionTimeline({ editions }: EditionTimelineProps) {
+  const t = useTranslations("aiNews");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   if (editions.length === 0) return null;
+
+  const visibleEditions = editions.slice(0, visibleCount);
+  const hasMore = visibleCount < editions.length;
 
   const maxLevel = Math.max(
     ...editions.map((e) => signalStrengthLevel(e.signalStrength)),
@@ -168,16 +179,28 @@ export async function EditionTimeline({ editions }: EditionTimelineProps) {
       </div>
 
       <ol className="relative mx-auto max-w-xl">
-        {editions.map((edition, index) => (
+        {visibleEditions.map((edition, index) => (
           <EditionTimelineItem
             key={edition.slug}
             edition={edition}
             isLatest={index === 0}
-            isLast={index === editions.length - 1}
-            t={t}
+            isLast={index === visibleEditions.length - 1}
           />
         ))}
       </ol>
+
+      {hasMore ? (
+        <div className="mt-8 flex justify-center">
+          <Button
+            variant="secondary"
+            onClick={() =>
+              setVisibleCount((count) => Math.min(count + PAGE_SIZE, editions.length))
+            }
+          >
+            {t("timeline.readMore")}
+          </Button>
+        </div>
+      ) : null}
 
       <p className="mt-6 text-center text-xs text-muted">
         {t("timeline.newestAtTop")} {editionCountLabel}

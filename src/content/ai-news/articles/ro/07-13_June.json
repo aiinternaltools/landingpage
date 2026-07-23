@@ -1,0 +1,488 @@
+{
+  "week_range": "7–13 iunie 2026",
+  "date_start": "2026-06-07",
+  "date_end": "2026-06-13",
+  "audience": "Antreprenori și proprietari de afaceri care vor să folosească automatizarea cu AI pentru a economisi timp, a reduce munca manuală, a crește productivitatea și a îmbunătăți fluxurile operaționale",
+  "content_positioning": "Briefing săptămânal despre AI automation pentru antreprenori",
+  "theme": "Automatizarea cu AI se mută către execuție securizată, workflow-uri de suport și reziliență operațională",
+  "hook": "Săptămâna aceasta, automatizarea cu AI a devenit mai serioasă. OpenAI a făcut un pas spre un spațiu cloud securizat pentru Codex, Google a arătat cum agenții de securitate pot investiga și răspunde la incidente, iar SAP a introdus agenți AI în fluxurile de suport.",
+  "executive_summary": "Săptămâna 7–13 iunie 2026 a arătat că automatizarea cu AI are nevoie de mai mult decât un model inteligent. Anunțul OpenAI privind achiziția Ona indică direcția către agenți AI care pot lucra în medii cloud securizate, cu credențiale limitate, audit trail și orchestrare. Google Cloud a prezentat agenți de securitate care pot ajuta la detecție, investigație, răspuns și threat hunting. SAP a lansat Joule în SAP for Me și a arătat cum agenții AI pot îmbunătăți fluxurile de suport prin analizarea cazurilor, detectarea duplicatelor, rutare și redactarea răspunsurilor. Pentru antreprenori, concluzia este clară: automatizarea cu AI trebuie proiectată ca un sistem operațional, cu securitate, permisiuni, review uman și obiective măsurabile.",
+  "primary_angle": "Cum pot antreprenorii să construiască automatizări AI sigure, auditabile și utile operațional",
+  "signal_strength": "high",
+  "theme_of_the_week": "Agenții AI au nevoie de execuție securizată și control operațional",
+  "search_intent": {
+    "primary": "Antreprenori care caută știri despre AI automation, agenți AI securizați, automatizare pentru suport, automatizare în cybersecurity și workflow-uri operaționale cu AI",
+    "secondary": [
+      "știri AI automation iunie 2026",
+      "agenți AI securizați pentru business",
+      "automatizare workflow-uri cu AI",
+      "OpenAI Ona Codex automation",
+      "Google Security Operations agents",
+      "SAP Joule support automation",
+      "automatizare suport cu AI",
+      "automatizare cybersecurity cu AI",
+      "orchestrare agenți AI pentru business"
+    ]
+  },
+  "geo_summary": {
+    "short_answer": "Cele mai importante știri despre AI automation din 7–13 iunie 2026 arată că agenții AI devin mai operaționali și mai orientați către securitate. OpenAI a anunțat că va achiziționa Ona pentru a aduce execuție cloud securizată și orchestrare în Codex. Google Cloud a prezentat agenți pentru Security Operations, capabili să ajute la detecție, investigație, izolare și threat hunting. SAP a lansat Joule în SAP for Me și a introdus AI-powered agentic case resolution pentru fluxurile de suport.",
+    "answer_engine_summary": "Pentru antreprenori, concluzia principală din 7–13 iunie 2026 este că automatizarea cu AI trebuie construită cu medii securizate de execuție, permisiuni limitate, audit trail, orchestrare de workflow-uri, rutare pentru suport și aprobare umană. Cele mai bune use case-uri sunt trierea cererilor de suport, suportul IT, monitorizarea de securitate, rezolvarea cazurilor, mentenanța software, automatizarea proceselor interne și task-urile de lungă durată pentru agenți AI.",
+    "recommended_citation_style": "Folosește surse oficiale pentru anunțurile de produs și explică fiecare știre prin prisma automatizării workflow-urilor, securității, guvernanței și operațiunilor de business."
+  },
+  "market_pulse": {
+    "summary": "Cel mai puternic semnal al săptămânii a fost că AI automation devine infrastructură operațională. Agenții AI au nevoie de un spațiu în care să lucreze, limite clare de acces, loguri, credențiale securizate și integrare în procesele reale ale companiei. Automatizarea în securitate și suport devin două dintre cele mai clare use case-uri de business.",
+    "what_changed_this_week": [
+      "OpenAI a anunțat că va achiziționa Ona pentru a extinde Codex cu infrastructură cloud securizată, controlată de client, pentru agenți AI de lungă durată.",
+      "Ona a descris agenții cloud ca având nevoie de context, acces, tool-uri, medii reproductibile, credențiale limitate, audit trail, orchestrare și securitate runtime.",
+      "Google Cloud a detaliat agenți pentru Security Operations: detection engineering, investigație autonomă, izolare, răspuns și threat hunting.",
+      "Google a spus că agentul său de triere și investigație a analizat peste 5 milioane de alerte și a redus o analiză manuală tipică de 30 de minute la aproximativ 60 de secunde cu Gemini.",
+      "SAP a lansat Joule în SAP for Me și a descris AI-powered agentic case resolution pentru fluxurile de suport.",
+      "Microsoft a publicat noi resurse de ghidare pentru planificarea, construirea și operarea agenților enterprise-ready în Copilot Studio."
+    ]
+  },
+  "automation_opportunities": [
+    {
+      "workflow": "Task-uri AI de lungă durată",
+      "automation_idea": "Folosește medii cloud securizate unde agenții AI pot lucra la task-uri timp de ore sau zile, fără să depindă de laptopul unui utilizator sau de o sesiune activă.",
+      "tools_relevant": [
+        "OpenAI Codex",
+        "Ona",
+        "cloud development environments",
+        "GitHub",
+        "Cursor",
+        "Claude Code"
+      ],
+      "difficulty": "high",
+      "business_impact": "Permite agenților AI să gestioneze task-uri tehnice și operaționale mai mari, păstrând munca auditabilă și ușor de verificat."
+    },
+    {
+      "workflow": "Monitorizare și răspuns în cybersecurity",
+      "automation_idea": "Folosește agenți AI pentru analizarea alertelor, generarea detecțiilor, investigarea incidentelor, prioritizarea riscurilor și recomandarea acțiunilor de izolare.",
+      "tools_relevant": [
+        "Google Security Operations",
+        "Google AI Threat Defense",
+        "SIEM",
+        "SOC tools",
+        "Mandiant threat intelligence"
+      ],
+      "difficulty": "high",
+      "business_impact": "Reduce timpul de analiză manuală în securitate și ajută echipele să reacționeze mai rapid la amenințări."
+    },
+    {
+      "workflow": "Triere pentru suport clienți și suport IT",
+      "automation_idea": "Folosește agenți AI pentru a analiza cazurile noi, a detecta duplicatele, a sugera rutarea, a redacta răspunsuri și a escalada cazurile complexe.",
+      "tools_relevant": [
+        "SAP Joule",
+        "SAP for Me",
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "n8n",
+        "CRM"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Crește viteza de răspuns în suport și reduce munca repetitivă de gestionare a cazurilor."
+    },
+    {
+      "workflow": "Guvernanță și auditabilitate pentru agenți AI",
+      "automation_idea": "Creează reguli clare despre ce pot accesa agenții AI, ce acțiuni pot face, ce trebuie aprobat de om și cum sunt verificate logurile.",
+      "tools_relevant": [
+        "Copilot Studio",
+        "OpenAI Codex",
+        "Ona",
+        "Microsoft Agent guidance hubs",
+        "audit logs",
+        "permission systems"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Face automatizările cu AI mai sigure și mai ușor de scalat între echipe."
+    },
+    {
+      "workflow": "Mentenanță software și remediere vulnerabilități",
+      "automation_idea": "Folosește agenți de coding pentru a rula teste, a rezolva probleme, a moderniza aplicații, a remedia vulnerabilități și a pregăti pull request-uri pentru review uman.",
+      "tools_relevant": [
+        "OpenAI Codex",
+        "Ona",
+        "GitHub",
+        "CI/CD",
+        "Claude Code",
+        "Cursor"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduce datoria tehnică și accelerează munca de mentenanță."
+    }
+  ],
+  "stories": [
+    {
+      "id": "openai-ona-secure-codex-agents",
+      "headline": "OpenAI a făcut un pas spre un workspace cloud securizat pentru agenții Codex",
+      "published_date": "2026-06-11",
+      "company": "OpenAI, Ona",
+      "category": "Execuție securizată pentru agenți AI",
+      "automation_relevance": "Această știre este foarte relevantă pentru automatizare deoarece agenții AI de business au nevoie de spații sigure în care să lucreze, nu doar de ferestre de chat. Agenții de lungă durată au nevoie de execuție cloud, credențiale limitate, audit trail, securitate runtime și workflow-uri de review.",
+      "what_happened": "OpenAI a anunțat că va achiziționa Ona, aducând tehnologie de execuție cloud securizată și orchestrare în ecosistemul Codex. OpenAI a spus că peste 5 milioane de oameni folosesc Codex săptămânal pentru cercetare, analiză, construcție și automatizare de lucru, iar achiziția este menită să ajute Codex să gestioneze muncă susținută în software și knowledge workflows.",
+      "why_it_matters": "Pe măsură ce agenții AI devin mai capabili, cele mai valoroase task-uri pot dura ore sau zile. Asta cere infrastructură în care task-urile pot continua în siguranță, pot fi verificate și pot fi controlate de organizație.",
+      "business_relevance": "Pentru antreprenori, această direcție arată că automatizarea AI serioasă are nevoie de arhitectură: medii securizate, control al accesului, loguri și pași de review.",
+      "automation_use_cases": [
+        "Rularea task-urilor lungi de mentenanță software.",
+        "Automatizarea code review-ului și generării de teste.",
+        "Modernizarea aplicațiilor legacy.",
+        "Crearea de tool-uri interne pornind de la cerințe de business.",
+        "Permiterea agenților AI să lucreze pe task-uri tehnice, cu review uman asupra progresului și rezultatului final."
+      ],
+      "impact_level": "act_now_for_technical_teams",
+      "risks": [
+        "Agenții de lungă durată au nevoie de limite stricte de permisiuni.",
+        "Agenții care lucrează cu cod sau sisteme trebuie să aibă audit logs și review uman.",
+        "Companiile ar trebui să evite oferirea de credențiale largi agenților fără supraveghere."
+      ],
+      "owner_takeaway": "Dacă vrei ca agenții AI să facă muncă reală, ai nevoie de mai mult decât prompturi. Ai nevoie de execuție securizată, acces limitat, loguri și reguli de review.",
+      "sources": [
+        {
+          "title": "OpenAI to acquire Ona",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/openai-to-acquire-ona/"
+        },
+        {
+          "title": "Ona is joining OpenAI",
+          "publisher": "Ona",
+          "url": "https://ona.com/stories/ona-joins-openai"
+        }
+      ]
+    },
+    {
+      "id": "google-security-operations-agents",
+      "headline": "Google a arătat cum agenții de securitate pot automatiza detecția, investigația și răspunsul",
+      "published_date": "2026-06-09",
+      "company": "Google Cloud",
+      "category": "Automatizare în cybersecurity",
+      "automation_relevance": "Securitatea este unul dintre cele mai clare exemple de automatizare AI cu valoare de business, deoarece alertele, logurile, vulnerabilitățile și incidentele sunt prea numeroase pentru o analiză exclusiv manuală.",
+      "what_happened": "Google Cloud a detaliat modul în care Google Security Operations lucrează cu AI Threat Defense pentru a monitoriza, detecta și răspunde la amenințări alimentate de AI. A descris agenți pentru detection engineering, agenți de triere și investigație, automatizare agentică pentru izolare și agenți de threat hunting.",
+      "why_it_matters": "Echipele de securitate sunt sub presiune deoarece amenințările se mișcă mai repede decât procesele manuale. Agenții AI pot ajuta la analizarea unor volume mari de date de securitate, generarea detecțiilor, investigarea alertelor și recomandarea acțiunilor de izolare.",
+      "business_relevance": "Chiar și IMM-urile ar trebui să fie atente la acest subiect, pentru că riscul cyber este risc operațional. Automatizarea securității cu AI poate reduce timpul de răspuns și poate crește reziliența.",
+      "automation_use_cases": [
+        "Trierea automată a alertelor.",
+        "Generarea de reguli personalizate de detecție.",
+        "Investigarea activităților suspecte în loguri și sisteme.",
+        "Rezumatul incidentelor pentru manageri.",
+        "Recomandarea acțiunilor de izolare pentru aprobare umană.",
+        "Threat hunting pe baza telemetriei istorice."
+      ],
+      "impact_level": "watch_closely_for_smbs_act_now_for_security_teams",
+      "risks": [
+        "Agenții de securitate necesită configurare de specialitate.",
+        "False positives și false negatives rămân importante.",
+        "Acțiunile de izolare ar trebui să aibă reguli de aprobare, dacă workflow-ul nu este foarte bine controlat."
+      ],
+      "owner_takeaway": "Dacă businessul tău depinde de sisteme digitale, începe să te gândești la monitorizare și răspuns de securitate asistate de AI.",
+      "sources": [
+        {
+          "title": "Detecting and containing AI-powered threats with Google Security Operations agents",
+          "publisher": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/identity-security/detecting-and-containing-powered-threats-with-google-security-operations-agents"
+        }
+      ]
+    },
+    {
+      "id": "sap-joule-support-automation",
+      "headline": "SAP a adus Joule în workflow-urile de suport prin rezolvare agentică a cazurilor",
+      "published_date": "2026-06-11",
+      "company": "SAP",
+      "category": "Automatizare workflow-uri de suport",
+      "automation_relevance": "Workflow-urile de suport sunt ideale pentru automatizare AI deoarece multe cazuri necesită clasificare, detectarea duplicatelor, rutare, sumarizare și redactare de răspunsuri.",
+      "what_happened": "SAP a lansat Joule în SAP for Me și a descris AI-powered agentic case resolution pentru workflow-uri de suport. SAP a spus că agenții AI pot ajuta la analizarea cazurilor noi, detectarea duplicatelor, sugerarea rutării și redactarea răspunsurilor.",
+      "why_it_matters": "Această mișcare arată cum agenții AI intră în suport operațional, nu doar în productivitate internă. Modelul se aplică și în afara SAP: orice business cu volum mare de cereri poate automatiza primul strat de gestionare a cazurilor.",
+      "business_relevance": "Antreprenorii pot folosi aceeași logică de automatizare pentru suport clienți, suport IT, cereri interne, tichete de mentenanță, solicitări HR și probleme cu furnizorii.",
+      "automation_use_cases": [
+        "Clasificarea tichetelor de suport.",
+        "Detectarea cererilor duplicate.",
+        "Rutarea problemelor către persoana sau echipa potrivită.",
+        "Redactarea răspunsurilor de suport.",
+        "Sumarizarea istoricului clientului înainte de escaladare.",
+        "Urmărirea cazurilor nerezolvate și a problemelor recurente."
+      ],
+      "impact_level": "act_now_for_support_heavy_businesses",
+      "risks": [
+        "Răspunsurile către clienți au nevoie de verificare a tonului și acurateții.",
+        "Agenții ar trebui să escaladeze cazurile sensibile sau complexe.",
+        "Automatizarea suportului nu ar trebui să ascundă probleme recurente de produs sau serviciu."
+      ],
+      "owner_takeaway": "Suportul este unul dintre cele mai bune prime use case-uri de AI automation. Începe cu triere și drafturi înainte să permiți rezolvare autonomă.",
+      "sources": [
+        {
+          "title": "SAP Launches Joule in SAP for Me",
+          "publisher": "SAP News Center",
+          "url": "https://news.sap.com/2026/06/sap-launches-joule-in-sap-for-me/"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-agent-guidance-hubs",
+      "headline": "Microsoft a pus accent pe ghidare, guardrails și livrare repetabilă a agenților AI",
+      "published_date": "2026-06-11",
+      "company": "Microsoft",
+      "category": "Guvernanță și operare pentru agenți AI",
+      "automation_relevance": "Resursele Microsoft confirmă că agenții AI de succes au nevoie de planificare, arhitectură, guardrails și disciplină operațională, nu doar de o platformă puternică.",
+      "what_happened": "Microsoft a publicat resurse de ghidare pentru planificarea, construirea și operarea agenților enterprise-ready în Copilot Studio. Microsoft a spus că agenții de succes necesită decizii clare, guardrails practice și o cale de trecere de la experimente la livrare repetabilă.",
+      "why_it_matters": "Multe companii eșuează în AI automation pentru că construiesc demo-uri izolate. Valoarea de business repetabilă cere arhitectură, guvernanță, ownership și lifecycle management.",
+      "business_relevance": "Pentru antreprenori, este un reminder că automatizarea AI trebuie tratată ca un sistem operațional: definești obiective, proiectezi workflow-uri, desemnezi responsabili, verifici output-urile și măsori impactul.",
+      "automation_use_cases": [
+        "Crearea unui checklist de arhitectură pentru agenți.",
+        "Definirea responsabilului pentru fiecare automatizare.",
+        "Stabilirea regulilor de aprobare pentru acțiuni riscante.",
+        "Documentarea workflow-urilor înainte de automatizare.",
+        "Review periodic al logurilor și rezultatelor.",
+        "Transformarea experimentelor reușite în workflow-uri de producție repetabile."
+      ],
+      "impact_level": "act_now",
+      "risks": [
+        "Agenții fără guvernanță pot produce rezultate inconsistente.",
+        "Echipele pot duplica automatizări fără coordonare.",
+        "Automatizarea poate scala greșeli dacă regulile de review sunt slabe."
+      ],
+      "owner_takeaway": "Înainte să adaugi mai mulți agenți AI, creează un checklist simplu de guvernanță: scop, responsabil, acces la date, permisiuni, pași de aprobare și metrică de succes.",
+      "sources": [
+        {
+          "title": "Guidance hubs to help you plan, build, and operate agents",
+          "publisher": "Microsoft Copilot Blog",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-resources-and-guidance-to-plan-build-and-operate-enterprise-ready-agents/"
+        }
+      ]
+    }
+  ],
+  "tools_to_test": [
+    {
+      "name": "OpenAI Codex",
+      "category": "Automatizare tehnică de lungă durată",
+      "best_for": "Companii care construiesc tool-uri interne, întrețin codebase-uri, repară bug-uri, modernizează sisteme sau automatizează workflow-uri tehnice",
+      "time_to_test": "1–2 ore",
+      "suggested_test": "Cere-i lui Codex să revizuiască o automatizare sau un script existent și să sugereze îmbunătățiri, teste și verificări de securitate.",
+      "automation_value": "Ajută la transformarea task-urilor tehnice în muncă agentică ușor de verificat."
+    },
+    {
+      "name": "Google Security Operations agents",
+      "category": "Automatizare cybersecurity",
+      "best_for": "Echipe de securitate și companii care au nevoie de triere mai rapidă a alertelor, investigație și detecție a amenințărilor",
+      "time_to_test": "Necesită evaluare din partea echipei de securitate",
+      "suggested_test": "Analizează o categorie de alerte cu volum mare și stabilește dacă AI poate sumariza, clasifica sau ruta mai rapid cazurile.",
+      "automation_value": "Reduce munca manuală în security operations și crește viteza de răspuns."
+    },
+    {
+      "name": "SAP Joule",
+      "category": "Automatizare suport enterprise",
+      "best_for": "Companii care folosesc SAP și organizații cu workflow-uri structurate de suport sau case management",
+      "time_to_test": "Necesită evaluare enterprise",
+      "suggested_test": "Identifică un tip recurent de caz unde AI ar putea detecta duplicate, sugera rutare și redacta un răspuns.",
+      "automation_value": "Îmbunătățește productivitatea suportului și gestionarea cazurilor."
+    },
+    {
+      "name": "Microsoft Copilot Studio",
+      "category": "Guvernanță agenți și automatizare procese de business",
+      "best_for": "Companii care folosesc ecosistemul Microsoft și vor să construiască agenți cu ghidare, guardrails și workflow-uri repetabile",
+      "time_to_test": "1–2 ore",
+      "suggested_test": "Creează un agent intern simplu pentru cereri ale angajaților, cu reguli clare de acces la date și aprobare.",
+      "automation_value": "Ajută trecerea de la experimente AI izolate la workflow-uri de business guvernate."
+    },
+    {
+      "name": "n8n",
+      "category": "Orchestrare workflow-uri",
+      "best_for": "Conectarea agenților AI la Gmail, Google Sheets, CRM-uri, Slack, Notion, webhook-uri și MCP servers",
+      "time_to_test": "1 oră",
+      "suggested_test": "Construiește un workflow de triere suport: email nou → sumar AI → categorie → draft răspuns → aprobare umană.",
+      "automation_value": "Transformă output-urile AI în procese practice de business."
+    }
+  ],
+  "strategic_insight": {
+    "title": "Povestea reală: AI automation are nevoie de disciplină operațională",
+    "content": "Săptămâna aceasta a arătat că agenții AI devin parte din operațiuni reale. Achiziția Ona de către OpenAI este despre execuție cloud securizată pentru agenți. Agenții de securitate de la Google sunt despre detecție și răspuns autonom. Joule de la SAP este despre workflow-uri de suport. Ghidurile Microsoft sunt despre planificarea și operarea responsabilă a agenților. Modelul este clar: AI automation se mută din zona de demo-uri în zona de operațiuni controlate.",
+    "operator_take": "Antreprenorii ar trebui să nu mai privească AI automation ca pe un prompt inteligent sau un chatbot. Versiunea utilă este un workflow controlat: mediu securizat, context de business, permisiuni definite, aprobare umană, audit logs și rezultat măsurabil."
+  },
+  "weekly_action_plan": [
+    {
+      "action": "Alege un workflow operațional de automatizat",
+      "example": "Triere suport, cereri IT, verificare facturi, update CRM, alerte de securitate sau raportare săptămânală"
+    },
+    {
+      "action": "Definește unde lucrează agentul",
+      "example": "Inbox email, CRM, sistem de ticketing, mediu cloud, spreadsheet, dashboard intern sau codebase"
+    },
+    {
+      "action": "Definește limitele de acces",
+      "example": "Agentul poate citi tichete și redacta răspunsuri, dar nu poate șterge înregistrări, emite rambursări, modifica prețuri sau trimite mesaje finale"
+    },
+    {
+      "action": "Adaugă review și auditabilitate",
+      "example": "Loghează ce a citit agentul, ce a modificat, ce a sugerat și cine a aprobat acțiunea finală"
+    },
+    {
+      "action": "Măsoară impactul operațional",
+      "example": "Urmărește timpul economisit, viteza de răspuns, acuratețea, numărul de escaladări, rata de eroare și satisfacția clienților"
+    }
+  ],
+  "beginner_term": {
+    "term": "Execuție securizată pentru agenți AI",
+    "simple_explanation": "Execuția securizată pentru agenți AI înseamnă să oferi unui agent AI un mediu controlat în care poate lucra în siguranță, cu acces limitat, loguri, pași de verificare și permisiuni clare.",
+    "business_example": "În loc să dai unui agent AI acces nelimitat la CRM, îi permiți doar să citească lead-uri noi, să le sumarizeze, să redacteze emailuri de follow-up și să ceară aprobarea unui om înainte de trimitere."
+  },
+  "recommended_article_angle": {
+    "title": "Săptămâna aceasta în AI Automation: Agenții au nevoie de workspace-uri securizate și reguli clare",
+    "subtitle": "De la achiziția Ona de către OpenAI la agenții de securitate Google și automatizarea suportului prin SAP Joule, săptămâna 7–13 iunie a arătat de ce AI automation are nevoie de medii de execuție, permisiuni, audit logs și review uman.",
+    "tone": "clar, practic, executiv, orientat pe automatizare, non-tehnic",
+    "positioning": "Explică fiecare știre AI prin prisma automatizării securizate, operării agenților, workflow-urilor de suport, cybersecurity, guvernanță și valoare de business măsurabilă."
+  },
+  "seo": {
+    "meta_title": "Știri AI Automation pentru Antreprenori: 7–13 iunie 2026",
+    "meta_description": "Un briefing practic despre AI automation pentru antreprenori, acoperind achiziția Ona de către OpenAI, agenții Codex securizați, Google Security Operations agents, SAP Joule support automation și guvernanța agenților Microsoft.",
+    "slug": "stiri-ai-automation-antreprenori-7-13-iunie-2026",
+    "primary_keyword": "știri AI automation pentru antreprenori",
+    "secondary_keywords": [
+      "agenți AI securizați",
+      "automatizare workflow-uri cu AI",
+      "AI automation pentru IMM-uri",
+      "OpenAI Ona Codex",
+      "Google Security Operations agents",
+      "SAP Joule support automation",
+      "Microsoft Copilot Studio agents",
+      "automatizare suport cu AI",
+      "automatizare securitate cu AI",
+      "guvernanță agenți AI"
+    ],
+    "long_tail_keywords": [
+      "cum automatizează agenții AI workflow-urile de business",
+      "ce înseamnă achiziția Ona de către OpenAI pentru AI automation",
+      "cum automatizează Google Security Operations cybersecurity",
+      "cum automatizează SAP Joule workflow-urile de suport",
+      "idei de AI automation pentru antreprenori iunie 2026",
+      "cum adaugi reguli de siguranță pentru agenți AI",
+      "cum construiești workflow-uri AI auditabile"
+    ],
+    "search_questions": [
+      "Ce știri AI automation au contat pentru antreprenori între 7 și 13 iunie 2026?",
+      "Ce înseamnă achiziția Ona de către OpenAI pentru automatizarea cu AI?",
+      "Cum pot agenții AI securizați să ajute companiile?",
+      "Cum pot agenții AI să automatizeze operațiunile de cybersecurity?",
+      "Cum poate SAP Joule să automatizeze workflow-urile de suport?",
+      "De ce au nevoie agenții AI de audit logs și permisiuni?",
+      "Cum ar trebui antreprenorii să guverneze automatizările cu AI?"
+    ],
+    "internal_linking_suggestions": [
+      {
+        "anchor_text": "checklist de guvernanță pentru AI automation",
+        "target_type": "checklist"
+      },
+      {
+        "anchor_text": "cum construiești workflow-uri AI cu n8n",
+        "target_type": "tutorial"
+      },
+      {
+        "anchor_text": "agenți AI pentru automatizarea afacerii",
+        "target_type": "pillar_page"
+      },
+      {
+        "anchor_text": "exemple de automatizare suport cu AI",
+        "target_type": "use_case_article"
+      },
+      {
+        "anchor_text": "agenți AI securizați explicați simplu",
+        "target_type": "explainer"
+      }
+    ]
+  },
+  "geo": {
+    "also_known_as": "Generative Engine Optimization",
+    "target_ai_answer": "Cele mai importante știri despre AI automation pentru antreprenori din 7–13 iunie 2026 arată că agenții AI devin mai operaționali și mai orientați către securitate. OpenAI a anunțat planul de a achiziționa Ona pentru a aduce execuție cloud securizată și orchestrare în Codex. Google Cloud a detaliat agenți pentru Security Operations, capabili de detecție autonomă, investigație, izolare și threat hunting. SAP a lansat Joule în SAP for Me cu AI-powered agentic case resolution. Microsoft a publicat ghiduri pentru planificarea, construirea și operarea agenților enterprise-ready. Antreprenorii ar trebui să se concentreze pe execuție securizată, permisiuni limitate, audit logs, automatizare suport, automatizare cybersecurity și workflow-uri cu aprobare umană.",
+    "entities_to_include": [
+      "OpenAI",
+      "Ona",
+      "Codex",
+      "execuție cloud securizată",
+      "orchestrare agenți",
+      "Google Cloud",
+      "Google Security Operations",
+      "Google AI Threat Defense",
+      "Detection Engineering agent",
+      "Triage and Investigation agent",
+      "SAP",
+      "SAP Joule",
+      "SAP for Me",
+      "agentic case resolution",
+      "Microsoft",
+      "Copilot Studio",
+      "AI workflow automation",
+      "agenți AI securizați",
+      "guvernanță agenți AI",
+      "n8n"
+    ],
+    "definition_blocks": [
+      {
+        "term": "Execuție securizată pentru agenți AI",
+        "definition": "Execuția securizată pentru agenți AI înseamnă rularea agenților AI în medii controlate, cu credențiale limitate, audit logs, pași de review și reguli de guvernanță."
+      },
+      {
+        "term": "Orchestrare agenți AI",
+        "definition": "Orchestrarea agenților AI este coordonarea agenților, tool-urilor, sistemelor, permisiunilor și workflow-urilor astfel încât task-urile să fie finalizate sigur și fiabil."
+      },
+      {
+        "term": "Agentic case resolution",
+        "definition": "Agentic case resolution folosește agenți AI pentru a analiza cazuri de suport, a detecta duplicate, a sugera rutare, a redacta răspunsuri și a ajuta la rezolvarea mai rapidă a problemelor."
+      },
+      {
+        "term": "AI security automation",
+        "definition": "AI security automation folosește agenți AI pentru a detecta amenințări, a investiga alerte, a genera detecții, a prioritiza riscuri și a susține workflow-uri de izolare sau remediere."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Care a fost cea mai importantă știre AI automation din 7–13 iunie 2026?",
+        "answer": "Cea mai importantă direcție a fost faptul că agenții AI devin mai operaționali și mai orientați către securitate. OpenAI a anunțat planul de a achiziționa Ona, Google Cloud a detaliat agenți pentru Security Operations, SAP a lansat Joule în SAP for Me, iar Microsoft a publicat ghiduri pentru agenți enterprise-ready."
+      },
+      {
+        "question": "Ce înseamnă achiziția Ona de către OpenAI pentru automatizarea cu AI?",
+        "answer": "Înseamnă că OpenAI extinde Codex către agenți cloud securizați, capabili să lucreze pe task-uri de lungă durată în medii controlate, cu orchestrare, credențiale limitate, audit trail și securitate runtime."
+      },
+      {
+        "question": "Cum pot agenții AI să automatizeze cybersecurity?",
+        "answer": "Agenții AI pot ajuta la generarea regulilor de detecție, investigarea alertelor, colectarea dovezilor, sumarizarea incidentelor, recomandarea acțiunilor de izolare și threat hunting."
+      },
+      {
+        "question": "Cum pot companiile să folosească AI pentru automatizarea suportului?",
+        "answer": "Companiile pot folosi AI pentru clasificarea tichetelor, detectarea cazurilor duplicate, rutarea problemelor, redactarea răspunsurilor, sumarizarea istoricului clientului și escaladarea cazurilor complexe către oameni."
+      },
+      {
+        "question": "De ce au nevoie agenții AI de guardrails?",
+        "answer": "Agenții AI au nevoie de guardrails deoarece pot accesa sisteme, procesa date sensibile și lua acțiuni. Permisiunile clare, pașii de aprobare și audit logs reduc riscul operațional."
+      },
+      {
+        "question": "Ce ar trebui să automatizeze prima dată antreprenorii după știrile acestei săptămâni?",
+        "answer": "Antreprenorii ar trebui să înceapă cu trierea suportului, rutarea cererilor interne, rezumate pentru alerte de securitate, update-uri CRM, verificarea facturilor sau raportarea săptămânală, deoarece aceste workflow-uri sunt repetitive și ușor de supervizat."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "OpenAI to acquire Ona",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/openai-to-acquire-ona/"
+    },
+    {
+      "title": "Ona is joining OpenAI",
+      "publisher": "Ona",
+      "url": "https://ona.com/stories/ona-joins-openai"
+    },
+    {
+      "title": "Detecting and containing AI-powered threats with Google Security Operations agents",
+      "publisher": "Google Cloud",
+      "url": "https://cloud.google.com/blog/products/identity-security/detecting-and-containing-powered-threats-with-google-security-operations-agents"
+    },
+    {
+      "title": "SAP Launches Joule in SAP for Me",
+      "publisher": "SAP News Center",
+      "url": "https://news.sap.com/2026/06/sap-launches-joule-in-sap-for-me/"
+    },
+    {
+      "title": "Guidance hubs to help you plan, build, and operate agents",
+      "publisher": "Microsoft Copilot Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-resources-and-guidance-to-plan-build-and-operate-enterprise-ready-agents/"
+    }
+  ]
+}

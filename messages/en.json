@@ -41,6 +41,10 @@
       "aiSocialMediaAssistant": {
         "title": "AI Social Media Assistant",
         "description": "Turn Google Sheets ideas into on-brand social posts. AI generates content per channel, you approve and schedule, then posts go live automatically on LinkedIn, Instagram, Facebook, and X."
+      },
+      "emailAiAgent": {
+        "title": "Email AI Agent",
+        "description": "Classify every email, reply with your knowledge, and hand off to your team when a human should take over — customer support, leads, invoices, and suppliers."
       }
     }
   },
@@ -354,6 +358,7 @@
       "newestAtTop": "Newest at top ·",
       "oneEdition": "1 edition",
       "editionsCount": "{count} editions",
+      "readMore": "Read more",
       "audio": "Audio"
     },
     "article": {
@@ -362,6 +367,8 @@
       "executiveBriefingPrefix": "Executive AI briefing ·",
       "signalLabel": "Signal: {strength}",
       "scrollForBriefing": "Scroll for the full briefing ↓",
+      "byline": "By {author}",
+      "updatedLabel": "Updated",
       "operatorsTake": "Operator's Take",
       "whatToDoDifferently": "What to do differently",
       "sourcesNotProvided": "Sources not provided for this edition.",
@@ -406,13 +413,20 @@
     },
     "sections": {
       "nav": {
+        "quickAnswer": "Answer",
         "pulse": "Pulse",
         "stories": "Stories",
         "tools": "Tools",
         "operatorsTake": "Operator's take",
         "actionPlan": "Action plan",
         "beginner": "Term",
+        "definitions": "Terms",
+        "faq": "FAQ",
         "sources": "Sources"
+      },
+      "quickAnswer": {
+        "title": "Quick answer",
+        "description": "The citation-ready takeaway for this week’s AI automation news."
       },
       "marketPulse": {
         "title": "AI Market Pulse",
@@ -432,6 +446,14 @@
       },
       "beginner": {
         "title": "AI Term of the Week"
+      },
+      "definitions": {
+        "title": "Key definitions",
+        "description": "Plain-language terms used in this week’s briefing."
+      },
+      "faq": {
+        "title": "FAQ",
+        "description": "Common questions about this week’s AI automation signal."
       },
       "sources": {
         "title": "Sources"

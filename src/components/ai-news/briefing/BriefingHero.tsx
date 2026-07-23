@@ -1,8 +1,10 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
 import { ExecutiveSummaryLabel } from "@/components/ai-news/briefing/ExecutiveSummaryLabel";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { formatSignalStrength } from "@/lib/ai-news-utils";
+import type { Locale } from "@/i18n/routing";
+import { SITE_AUTHOR } from "@/lib/site";
 
 type BriefingHeroProps = {
   article: AiNewsBriefing;
@@ -11,6 +13,7 @@ type BriefingHeroProps = {
 
 export async function BriefingHero({ article, className = "" }: BriefingHeroProps) {
   const t = await getTranslations("aiNews");
+  const locale = (await getLocale()) as Locale;
   const { recommended_article_angle: angle, week_range, hook, signal_strength } = article;
   const signalLabel = formatSignalStrength(signal_strength, t);
 
@@ -20,7 +23,7 @@ export async function BriefingHero({ article, className = "" }: BriefingHeroProp
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
           <Eyebrow className="max-w-full px-2 py-0.5 text-[10px] sm:px-3 sm:py-1 sm:text-xs">
             <span className="hidden sm:inline">{t("article.executiveBriefingPrefix")}</span>
-            {week_range}
+            <time dateTime={article.date_start}>{week_range}</time>
           </Eyebrow>
           <span className="rounded-full border border-accent/25 bg-accent-muted px-2 py-0.5 text-[10px] font-medium text-accent sm:px-2.5 sm:text-xs">
             {t("article.signalLabel", { strength: signalLabel })}
@@ -38,6 +41,17 @@ export async function BriefingHero({ article, className = "" }: BriefingHeroProp
           </h1>
           <p className="mt-2 line-clamp-2 text-sm leading-snug text-muted sm:mt-4 sm:line-clamp-none sm:text-lg md:text-xl">
             {angle.subtitle}
+          </p>
+          <p className="mt-2 text-[11px] text-muted sm:mt-3 sm:text-xs">
+            {t("article.byline", { author: SITE_AUTHOR })}
+            <span aria-hidden> · </span>
+            <time dateTime={article.date_end}>
+              {t("article.updatedLabel")}{" "}
+              {new Date(`${article.date_end}T12:00:00`).toLocaleDateString(
+                locale === "ro" ? "ro-RO" : "en-US",
+                { month: "short", day: "numeric", year: "numeric" },
+              )}
+            </time>
           </p>
           <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-foreground/90 sm:mt-5 sm:line-clamp-none sm:text-base md:mt-6 md:text-lg">
             {hook}

@@ -1,13 +1,20 @@
 import { getTranslations } from "next-intl/server";
+import type { AiNewsBriefing } from "@/content/ai-news/types";
 import { getArticleNav } from "@/components/ai-news/briefing/article-template-sections";
 
 type BriefingNavProps = {
+  article: AiNewsBriefing;
   className?: string;
 };
 
-export async function BriefingNav({ className = "" }: BriefingNavProps) {
+export async function BriefingNav({ article, className = "" }: BriefingNavProps) {
   const t = await getTranslations("aiNews");
-  const nav = getArticleNav(t);
+  const nav = getArticleNav(t).filter((item) => {
+    if (item.id === "quick-answer") return Boolean(article.geo_summary);
+    if (item.id === "faq") return article.seo.faq.length > 0;
+    if (item.id === "definitions") return article.seo.definition_blocks.length > 0;
+    return true;
+  });
 
   return (
     <nav

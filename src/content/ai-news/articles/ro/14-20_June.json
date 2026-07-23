@@ -1,0 +1,513 @@
+{
+  "week_range": "14–20 iunie 2026",
+  "date_start": "2026-06-14",
+  "date_end": "2026-06-20",
+  "audience": "Antreprenori și proprietari de afaceri care vor să folosească automatizarea cu AI pentru a economisi timp, a crește productivitatea, a reduce munca manuală și a îmbunătăți fluxurile de business",
+  "content_positioning": "Briefing săptămânal despre AI automation pentru antreprenori",
+  "theme": "Automatizarea cu AI se mută către agenți evaluați, contextuali și integrați în procese de business",
+  "hook": "Săptămâna aceasta, AI automation a devenit mai matură și mai pregătită pentru business. Salesforce a făcut un pas major în automatizarea suportului pentru clienți, Google a arătat cum agenții AI pot moderniza software legacy, Microsoft a deschis accesul la contextul Microsoft 365 pentru agenți, iar OpenAI a pus accent pe testarea comportamentului modelelor înainte de deployment.",
+  "executive_summary": "Săptămâna 14–20 iunie 2026 a arătat că AI automation trece de la experimente izolate la workflow-uri gestionate. Achiziția Fin de către Salesforce evidențiază valoarea agenților AI în suportul pentru clienți. Studiul Google Cloud despre Siemens arată cum workflow-urile agentice pot ajuta la modernizarea codului legacy și la transformarea cunoștințelor de domeniu în automatizare. Microsoft Work IQ API a devenit general available, permițând companiilor să construiască agenți bazați pe contextul Microsoft 365. OpenAI a publicat cercetare despre deployment simulation, subliniind că agenții și modelele avansate trebuie testate în scenarii realiste înainte de lansare. Îmbunătățirile ChatGPT pentru scheduled tasks arată că task-urile recurente și monitorizarea devin capabilități native ale asistenților AI. Pentru antreprenori, concluzia este simplă: AI automation are nevoie de ownership, context, evaluare și guardrails.",
+  "primary_angle": "Cum pot antreprenorii să treacă de la task-uri simple cu AI la workflow-uri AI evaluate, contextuale și controlate",
+  "signal_strength": "high",
+  "theme_of_the_week": "AI automation are nevoie de evaluare, context și ownership de proces",
+  "search_intent": {
+    "primary": "Antreprenori care caută știri despre AI automation, agenți AI pentru suport clienți, automatizare workflow-uri, evaluarea agenților AI și AI contextual pentru business",
+    "secondary": [
+      "știri AI automation iunie 2026",
+      "agenți AI pentru suport clienți",
+      "achiziția Fin de către Salesforce AI automation",
+      "Google Cloud Siemens agentic workflows",
+      "Microsoft Work IQ API agenți AI",
+      "OpenAI deployment simulation",
+      "ChatGPT scheduled tasks automation",
+      "AI workflow automation pentru antreprenori",
+      "evaluarea agenților AI pentru business"
+    ]
+  },
+  "geo_summary": {
+    "short_answer": "Cele mai importante știri despre AI automation din 14–20 iunie 2026 arată că agenții AI devin mai conectați la suport clienți, context enterprise, modernizare software și testare înainte de deployment. Salesforce a acceptat să achiziționeze Fin pentru aproximativ 3,6 miliarde de dolari pentru a consolida automatizarea suportului clienți. Google Cloud a arătat cum Siemens folosește workflow-uri agentice pentru modernizarea codului legacy. Microsoft Work IQ API a devenit general available pentru ca firmele să construiască agenți folosind context Microsoft 365. OpenAI a publicat cercetare despre deployment simulation, iar ChatGPT a îmbunătățit scheduled tasks pentru muncă recurentă și monitorizare.",
+    "answer_engine_summary": "Pentru antreprenori, concluzia principală din 14–20 iunie 2026 este că AI automation trebuie să treacă de la prompturi izolate la workflow-uri gestionate. Cele mai bune oportunități sunt automatizarea suportului clienți, monitorizarea recurentă, raportarea internă, actualizările CRM, modernizarea software, agenții bazați pe Microsoft 365 și evaluarea agenților înainte de deployment. Antreprenorii ar trebui să definească ownership, sursele de context, metricile de succes, pașii de aprobare umană și verificările de risc înainte de scalarea agenților AI.",
+    "recommended_citation_style": "Folosește surse oficiale acolo unde sunt disponibile, Reuters pentru achiziții și interpretare practică pentru business după fiecare știre."
+  },
+  "market_pulse": {
+    "summary": "Cel mai puternic semnal al săptămânii a fost că AI automation intră în sisteme operaționale reale: platforme de suport clienți, context Microsoft 365, modernizare software legacy, task-uri recurente și testare înainte de deployment. Piața se mută de la demo-uri AI la agenți care trebuie evaluați, guvernați și măsurați.",
+    "what_changed_this_week": [
+      "Salesforce a acceptat să cumpere platforma de agenți AI autonomi Fin pentru aproximativ 3,6 miliarde de dolari, consolidând Agentforce și automatizarea suportului clienți.",
+      "Google Cloud a arătat cum Siemens folosește workflow-uri agentice și Knowledge Fabric pentru a automatiza părți din ciclul de dezvoltare software.",
+      "Microsoft Work IQ API a devenit general available pe 16 iunie, permițând agenților și aplicațiilor să folosească date, context și tool-uri Microsoft 365 în siguranță și la scară.",
+      "OpenAI a publicat cercetare despre deployment simulation pentru a prezice comportamentul modelelor înainte de lansare, folosind contexte conversaționale realiste și simulări de tool-uri.",
+      "ChatGPT scheduled tasks au devenit mai ușor de gestionat, mai rapide și mai fiabile pentru muncă recurentă și monitorizare."
+    ]
+  },
+  "automation_opportunities": [
+    {
+      "workflow": "Automatizare suport clienți",
+      "automation_idea": "Folosește agenți AI pentru a răspunde la întrebări frecvente, a clasifica tichete, a rezolva probleme simple, a escalada cazuri complexe și a îmbunătăți viteza de răspuns.",
+      "tools_relevant": [
+        "Salesforce Agentforce",
+        "Fin",
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "n8n",
+        "CRM"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduce volumul de muncă din suport, crește viteza de răspuns și ajută echipa să scaleze fără angajări imediate."
+    },
+    {
+      "workflow": "Agenți contextuali bazați pe Microsoft 365",
+      "automation_idea": "Construiește agenți AI care folosesc emailuri, fișiere, întâlniri, mesaje Teams și context organizațional pentru rezultate mai relevante.",
+      "tools_relevant": [
+        "Microsoft Work IQ API",
+        "Microsoft 365 Copilot",
+        "Copilot Studio",
+        "Teams",
+        "SharePoint",
+        "Outlook"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Crește productivitatea internă deoarece agenții pot lucra cu contextul real al companiei, nu doar cu prompturi generice."
+    },
+    {
+      "workflow": "Modernizare software legacy",
+      "automation_idea": "Folosește workflow-uri agentice pentru a analiza sisteme vechi, a extrage cerințe, a crea user stories, a genera teste și a asista migrarea codului.",
+      "tools_relevant": [
+        "Google Cloud",
+        "Knowledge Fabric",
+        "Gemini",
+        "OpenAI Codex",
+        "Claude Code",
+        "Cursor"
+      ],
+      "difficulty": "high",
+      "business_impact": "Reduce datoria tehnică și ajută companiile să modernizeze mai rapid sistemele interne vechi."
+    },
+    {
+      "workflow": "Monitorizare și task-uri recurente",
+      "automation_idea": "Folosește task-uri AI programate pentru a monitoriza schimbări, a trimite remindere, a genera rapoarte recurente și a verifica aplicații conectate.",
+      "tools_relevant": [
+        "ChatGPT scheduled tasks",
+        "n8n",
+        "Google Calendar",
+        "Gmail",
+        "Slack",
+        "CRM"
+      ],
+      "difficulty": "low",
+      "business_impact": "Automatizează task-uri mici și repetitive pe care antreprenorii și managerii le uită sau le fac manual."
+    },
+    {
+      "workflow": "Evaluarea agenților înainte de deployment",
+      "automation_idea": "Testează agenții AI cu scenarii realiste înainte să îi introduci în workflow-uri critice sau în interacțiuni cu clienții.",
+      "tools_relevant": [
+        "OpenAI deployment simulation",
+        "agent evals",
+        "simulation datasets",
+        "human review",
+        "test environments"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduce riscul înainte de automatizarea workflow-urilor sensibile precum suport, vânzări, finanțe, legal sau operațiuni."
+    }
+  ],
+  "stories": [
+    {
+      "id": "salesforce-fin-acquisition-customer-service-agents",
+      "headline": "Salesforce a intrat mai adânc în automatizarea suportului clienți prin achiziția Fin",
+      "published_date": "2026-06-15",
+      "company": "Salesforce, Fin",
+      "category": "Automatizare suport clienți",
+      "automation_relevance": "Suportul clienți este unul dintre cele mai clare use case-uri pentru agenți AI deoarece combină întrebări repetitive, clasificarea tichetelor, căutare în knowledge base, escaladare și îmbunătățiri măsurabile ale timpului de răspuns.",
+      "what_happened": "Salesforce a acceptat să achiziționeze platforma de agenți AI autonomi Fin pentru aproximativ 3,6 miliarde de dolari. Tranzacția consolidează oferta Agentforce și reflectă focusul tot mai mare al Salesforce pe AI automation în software-ul de business.",
+      "why_it_matters": "Achiziția arată că marile companii de software enterprise văd agenții AI ca un strat esențial pentru workflow-uri customer-facing, nu doar ca chatbot-uri adiționale.",
+      "business_relevance": "Pentru antreprenori, asta înseamnă că automatizarea suportului clienți devine mainstream. Chiar și companiile mai mici ar trebui să înceapă cu automatizarea întrebărilor frecvente, calificarea lead-urilor, trierea tichetelor și cererile simple de suport.",
+      "automation_use_cases": [
+        "Răspuns automat la întrebări frecvente.",
+        "Clasificarea și rutarea tichetelor primite.",
+        "Sumarizarea istoricului clientului înainte de preluarea de către un om.",
+        "Redactarea răspunsurilor pentru aprobare umană.",
+        "Escaladarea problemelor complexe sau sensibile către persoana potrivită.",
+        "Identificarea problemelor recurente la nivel de produs sau serviciu."
+      ],
+      "impact_level": "act_now_for_support_heavy_businesses",
+      "risks": [
+        "Agenții customer-facing au nevoie de reguli clare de escaladare.",
+        "AI nu ar trebui să facă excepții de politică sau promisiuni fără aprobare.",
+        "Un knowledge base slab va produce răspunsuri slabe."
+      ],
+      "owner_takeaway": "Dacă businessul tău primește întrebări repetitive de la clienți, suportul este unul dintre cele mai bune prime use case-uri pentru agenți AI.",
+      "sources": [
+        {
+          "title": "Salesforce deepens AI automation push with $3.6 billion Fin buyout",
+          "publisher": "Reuters",
+          "url": "https://www.reuters.com/business/salesforce-buy-fin-about-36-billion-2026-06-15/"
+        }
+      ]
+    },
+    {
+      "id": "google-siemens-agentic-workflows-legacy-code",
+      "headline": "Google Cloud a arătat cum Siemens folosește workflow-uri agentice pentru modernizarea codului legacy",
+      "published_date": "2026-06-16",
+      "company": "Google Cloud, Siemens",
+      "category": "Automatizare modernizare software",
+      "automation_relevance": "Modernizarea software-ului legacy este un use case de mare valoare deoarece multe companii sunt încetinite de sisteme vechi, logică nedocumentată, testare manuală și proiecte de migrare costisitoare.",
+      "what_happened": "Google Cloud a publicat un studiu de caz despre modul în care Siemens și Google Cloud au creat Knowledge Fabric, un sistem AI pentru automatizarea unor părți din ciclul de dezvoltare software. Sistemul include agenți precum un user story agent care intervievează un product owner și redactează user stories detaliate cu criterii de acceptanță legate de contextul sistemului existent.",
+      "why_it_matters": "Acest exemplu arată cum workflow-urile agentice pot combina expertiza de domeniu, contextul sistemelor existente și automatizarea software pentru a moderniza sisteme legacy.",
+      "business_relevance": "Pentru antreprenori, este relevant deoarece multe blocaje de automatizare apar din cauza software-ului vechi. Agenții AI pot ajuta la documentarea, înțelegerea, testarea și modernizarea treptată a acestor sisteme.",
+      "automation_use_cases": [
+        "Analiza codului legacy și a logicii de business.",
+        "Extragerea cerințelor de la product owners.",
+        "Generarea de user stories și criterii de acceptanță.",
+        "Crearea de teste pentru sisteme vechi.",
+        "Suport pentru migrare și modernizare.",
+        "Documentarea tool-urilor interne nedocumentate."
+      ],
+      "impact_level": "watch_closely_for_smbs_act_now_for_software_heavy_businesses",
+      "risks": [
+        "Modernizarea legacy necesită experți de domeniu.",
+        "Codul și cerințele generate de AI trebuie verificate.",
+        "Sistemele vechi pot conține reguli de business ascunse care nu sunt evidente doar din cod."
+      ],
+      "owner_takeaway": "Dacă software-ul vechi îți blochează businessul, agenții AI pot ajuta la documentare, testare, planificare de migrare și modernizare a tool-urilor interne.",
+      "sources": [
+        {
+          "title": "How Siemens “sliced the elephant,” modernizing legacy code with agentic workflows",
+          "publisher": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/how-siemens-sliced-the-elephant-modernizing-legacy-code-with-agentic-workflows/"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-work-iq-api-ga",
+      "headline": "Microsoft Work IQ API a devenit general available, facilitând construirea agenților cu context de business",
+      "published_date": "2026-06-16",
+      "company": "Microsoft",
+      "category": "Agenți enterprise contextuali",
+      "automation_relevance": "Agenții de business devin mult mai utili atunci când înțeleg contextul companiei: fișiere, întâlniri, oameni, tool-uri, mesaje și workflow-uri.",
+      "what_happened": "Microsoft a anunțat că Work IQ API ajunge la general availability pe 16 iunie 2026, permițând clienților să construiască agenți și aplicații care folosesc date, context și tool-uri Microsoft 365 în siguranță și la scară.",
+      "why_it_matters": "Agenții AI au nevoie de context de business pentru a produce muncă utilă. Fără acces la cunoștințele potrivite ale companiei, rămân asistenți generici.",
+      "business_relevance": "Pentru companiile care folosesc intens Microsoft, Work IQ API indică direcția către agenți care pot ajuta cu pregătirea întâlnirilor, căutare în knowledge base intern, redactare de documente, suport pentru angajați și automatizare de workflow-uri.",
+      "automation_use_cases": [
+        "Agenți care sumarizează documente relevante înainte de o întâlnire.",
+        "Agenți interni de Q&A peste knowledge base-ul companiei.",
+        "Automatizarea rutării cererilor angajaților.",
+        "Pregătirea status update-urilor din Teams, fișiere și întâlniri.",
+        "Generarea task-urilor de follow-up din context de business."
+      ],
+      "impact_level": "act_now_for_microsoft_365_businesses",
+      "risks": [
+        "Agenții au nevoie de limite de permisiuni înainte de acces la datele companiei.",
+        "Documentele sensibile trebuie guvernate atent.",
+        "Agenții contextuali au nevoie de igienă informațională bună."
+      ],
+      "owner_takeaway": "Cunoștințele companiei tale sunt un activ pentru automatizare. Curăță documentele, permisiunile și procesele înainte să construiești agenți contextuali.",
+      "sources": [
+        {
+          "title": "June 2026 announcements - Partner Center announcements",
+          "publisher": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june"
+        }
+      ]
+    },
+    {
+      "id": "openai-deployment-simulation-agent-evaluation",
+      "headline": "OpenAI a evidențiat deployment simulation pentru lansări mai sigure de modele și agenți",
+      "published_date": "2026-06-16",
+      "company": "OpenAI",
+      "category": "Evaluarea agenților și managementul riscului",
+      "automation_relevance": "Pe măsură ce firmele introduc agenți AI în workflow-uri reale, este nevoie de testarea comportamentului înainte de lansare, mai ales când agenții pot folosi tool-uri, interacționa cu utilizatori sau lua acțiuni.",
+      "what_happened": "OpenAI a publicat cercetare despre prezicerea comportamentului modelelor înainte de release prin simularea deployment-ului. Metoda folosește contexte conversaționale realiste, audit extern și simulări de tool-uri pentru trasee agentice, pentru a estima mai bine comportamentul nedorit al modelelor.",
+      "why_it_matters": "Agenții AI se pot comporta diferit în workflow-uri realiste față de testele simple de benchmark. Simularea ajută la identificarea riscurilor înainte de deployment.",
+      "business_relevance": "Pentru antreprenori, asta înseamnă că automatizările AI importante trebuie testate cu scenarii reale înainte să fie folosite cu clienți, angajați, date financiare sau sisteme operaționale.",
+      "automation_use_cases": [
+        "Simularea conversațiilor de suport înainte de lansarea unui agent de suport.",
+        "Testarea edge case-urilor înainte de deployment-ul unui AI sales assistant.",
+        "Crearea scenariilor de red-team pentru finanțe, legal, HR sau securitate.",
+        "Verificarea faptului că agentul respectă regulile de escaladare.",
+        "Evaluarea comportamentului agentului când informațiile lipsesc sau sunt ambigue."
+      ],
+      "impact_level": "act_now_for_business_critical_agents",
+      "risks": [
+        "Agenții netestați pot eșua în moduri imprevizibile.",
+        "Benchmark-urile simple nu reflectă întotdeauna utilizarea reală în business.",
+        "Simularea nu elimină nevoia de review și monitorizare umană."
+      ],
+      "owner_takeaway": "Înainte să lansezi un agent AI, simulează cazuri realiste și definește ce înseamnă comportament bun, comportament slab și comportament inacceptabil.",
+      "sources": [
+        {
+          "title": "Predicting model behavior before release by simulating deployment",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/deployment-simulation/"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-scheduled-tasks-recurring-automation",
+      "headline": "ChatGPT a îmbunătățit scheduled tasks pentru muncă recurentă și monitorizare",
+      "published_date": "2026-06-17",
+      "company": "OpenAI",
+      "category": "Automatizare productivitate și monitorizare",
+      "automation_relevance": "Scheduled tasks fac AI-ul mai util pentru muncă recurentă: remindere, sumarizări regulate, monitorizare de schimbări și notificări proactive.",
+      "what_happened": "Release notes pentru ChatGPT au menționat că scheduled tasks au devenit mai ușor de găsit și gestionat, mai rapide, mai fiabile și mai utile pentru notificări. Utilizatorii pot programa task-uri la ore exacte sau în intervale mai largi, iar task-urile de monitorizare pot căuta pe web și verifica aplicații conectate pentru schimbări.",
+      "why_it_matters": "Multe task-uri de business nu sunt întrebări unice. Ele se repetă zilnic, săptămânal sau atunci când apare o schimbare. Scheduled tasks transformă AI-ul într-un strat ușor de monitorizare și remindere.",
+      "business_relevance": "Antreprenorii pot folosi scheduled tasks pentru rapoarte săptămânale, monitorizare competitori, remindere pentru follow-up lead-uri, verificări de facturi, pregătire de întâlniri și alerte operaționale.",
+      "automation_use_cases": [
+        "Generarea unui rezumat de business săptămânal în fiecare luni.",
+        "Monitorizarea știrilor despre competitori și notificare doar la schimbări importante.",
+        "Reminder pentru revizuirea facturilor deschise.",
+        "Pregătirea unui brief zilnic pentru întâlniri.",
+        "Verificarea aplicațiilor conectate pentru update-uri importante.",
+        "Generarea recurentă de idei de conținut cu AI."
+      ],
+      "impact_level": "act_now",
+      "risks": [
+        "Scheduled tasks nu ar trebui să înlocuiască sisteme critice de business.",
+        "Verificările operaționale importante trebuie să aibă surse de date fiabile.",
+        "Notificările pot deveni zgomot dacă criteriile task-ului sunt prea generale."
+      ],
+      "owner_takeaway": "Folosește scheduled AI tasks mai întâi pentru muncă recurentă cu risc scăzut: rezumate, remindere, monitorizare și pregătire.",
+      "sources": [
+        {
+          "title": "ChatGPT Release Notes - Scheduled tasks in ChatGPT",
+          "publisher": "OpenAI Help Center",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ]
+    }
+  ],
+  "tools_to_test": [
+    {
+      "name": "Salesforce Agentforce / agenți de suport tip Fin",
+      "category": "Automatizare suport clienți",
+      "best_for": "Businessuri cu întrebări repetitive, volum mare de suport sau timpi mari de răspuns",
+      "time_to_test": "1–2 ore pentru maparea procesului; evaluarea platformei depinde de stack",
+      "suggested_test": "Mapează cele mai frecvente 20 de întrebări din suport și stabilește care pot fi automatizate, care au nevoie de review și care trebuie escaladate.",
+      "automation_value": "Reduce munca repetitivă din suport și îmbunătățește timpul de prim răspuns."
+    },
+    {
+      "name": "Microsoft Work IQ API",
+      "category": "Agenți cu context de business",
+      "best_for": "Companii care folosesc Microsoft 365 și vor agenți bazați pe emailuri, întâlniri, fișiere și context organizațional",
+      "time_to_test": "Necesită evaluare tehnică",
+      "suggested_test": "Alege un workflow intern unde contextul contează, precum pregătire de meeting, suport pentru angajați sau status update de proiect.",
+      "automation_value": "Face agenții AI mai relevanți prin conectarea lor la contextul companiei."
+    },
+    {
+      "name": "ChatGPT scheduled tasks",
+      "category": "Automatizare muncă recurentă",
+      "best_for": "Antreprenori și manageri care au nevoie de rezumate recurente, remindere, monitorizare și asistență proactivă ușoară",
+      "time_to_test": "15–30 minute",
+      "suggested_test": "Creează un task săptămânal care sumarizează știri despre AI automation sau un task zilnic care îți amintește să verifici metrici importante de business.",
+      "automation_value": "Automatizează muncă recurentă cu risc scăzut fără să construiești un sistem complet de workflow."
+    },
+    {
+      "name": "OpenAI deployment simulation approach",
+      "category": "Testarea și evaluarea agenților",
+      "best_for": "Companii care pregătesc agenți AI customer-facing sau business-critical",
+      "time_to_test": "1–2 ore pentru designul scenariilor",
+      "suggested_test": "Creează 10 scenarii realiste pentru un agent de suport, inclusiv informații lipsă, clienți supărați, cereri de refund și edge cases.",
+      "automation_value": "Reduce riscul de deployment înainte ca agenții să fie folosiți de clienți sau angajați."
+    },
+    {
+      "name": "Google Cloud agentic workflow patterns",
+      "category": "Automatizare modernizare software",
+      "best_for": "Companii cu sisteme legacy, tool-uri interne sau codebase-uri care încetinesc operațiunile",
+      "time_to_test": "Necesită evaluare tehnică",
+      "suggested_test": "Alege un tool intern vechi și cere unui agent de coding AI să documenteze logica, riscurile și planul de modernizare.",
+      "automation_value": "Ajută la reducerea datoriei tehnice și la descoperirea oportunităților de automatizare în sistemele vechi."
+    }
+  ],
+  "strategic_insight": {
+    "title": "Povestea reală: AI automation are nevoie de ownership de proces",
+    "content": "Săptămâna aceasta a arătat că AI automation devine mai utilă, dar și mai dependentă de disciplină de business. Salesforce investește în agenți pentru suport clienți. Microsoft oferă agenților context de business. Google arată workflow-uri agentice pentru sisteme legacy. OpenAI testează comportamentul înainte de release. ChatGPT face task-urile recurente mai ușor de gestionat. Firul comun este clar: agenții au nevoie de un responsabil, un workflow, acces la date, evaluare și reguli de escaladare.",
+    "operator_take": "Antreprenorii nu ar trebui să lanseze agenți AI ca experimente fără responsabil. Fiecare automatizare AI ar trebui să aibă un process owner, un use case clar, limite de acces, scenarii de evaluare și o metrică prin care dovedește că funcționează."
+  },
+  "weekly_action_plan": [
+    {
+      "action": "Alege un workflow cu responsabil clar",
+      "example": "Triere suport deținută de customer service, raportare săptămânală deținută de operations, update-uri CRM deținute de sales sau verificare facturi deținută de finance"
+    },
+    {
+      "action": "Definește contextul de business necesar",
+      "example": "FAQ-uri, politici, prețuri, istoric client, note de meeting, înregistrări CRM, documente sau SOP-uri interne"
+    },
+    {
+      "action": "Creează scenarii de test înainte de lansare",
+      "example": "Caz normal, informații lipsă, client supărat, cerere de refund, escaladare urgentă, date incorecte și excepție de politică"
+    },
+    {
+      "action": "Adaugă reguli de escaladare și aprobare",
+      "example": "AI poate redacta și clasifica, dar oamenii aprobă refund-uri, declarații legale, modificări de preț, update-uri în sisteme și răspunsuri finale către clienți"
+    },
+    {
+      "action": "Măsoară dacă automatizarea funcționează",
+      "example": "Urmărește timpul de răspuns, rata de rezolvare, rata de handoff către om, rata de eroare, satisfacția clientului și timpul economisit"
+    }
+  ],
+  "beginner_term": {
+    "term": "Evaluarea agenților AI",
+    "simple_explanation": "Evaluarea agenților AI înseamnă testarea unui agent înainte și după deployment pentru a vedea dacă se comportă corect, respectă regulile, gestionează edge case-uri și produce rezultate utile.",
+    "business_example": "Înainte să lansezi un agent AI de suport, îl testezi cu mesaje realiste de la clienți: întrebări simple, detalii lipsă, reclamații furioase, cereri de refund și cazuri care trebuie escaladate către un om."
+  },
+  "recommended_article_angle": {
+    "title": "Săptămâna aceasta în AI Automation: Agenții au nevoie de context, testare și ownership de proces",
+    "subtitle": "De la achiziția Fin de către Salesforce la Microsoft Work IQ, workflow-urile agentice Siemens și deployment simulation de la OpenAI, săptămâna 14–20 iunie a arătat de ce AI automation trebuie testată, contextualizată și deținută de business.",
+    "tone": "clar, practic, executiv, orientat pe automatizare, non-tehnic",
+    "positioning": "Explică fiecare știre AI prin prisma maturității AI automation: agenți pentru suport clienți, context de business, modernizare legacy, muncă programată, deployment simulation, evaluare, ownership și ROI măsurabil."
+  },
+  "seo": {
+    "meta_title": "Știri AI Automation pentru Antreprenori: 14–20 iunie 2026",
+    "meta_description": "Un briefing practic despre AI automation pentru antreprenori, acoperind achiziția Fin de către Salesforce, Microsoft Work IQ API, workflow-urile agentice Siemens cu Google Cloud, OpenAI deployment simulation și ChatGPT scheduled tasks.",
+    "slug": "stiri-ai-automation-antreprenori-14-20-iunie-2026",
+    "primary_keyword": "știri AI automation pentru antreprenori",
+    "secondary_keywords": [
+      "agenți AI pentru suport clienți",
+      "AI workflow automation",
+      "AI automation pentru IMM-uri",
+      "achiziția Fin Salesforce",
+      "Microsoft Work IQ API",
+      "OpenAI deployment simulation",
+      "ChatGPT scheduled tasks",
+      "Google Cloud Siemens agentic workflows",
+      "evaluare agenți AI",
+      "automatizare procese business cu AI"
+    ],
+    "long_tail_keywords": [
+      "cum automatizează agenții AI workflow-urile de suport clienți",
+      "ce înseamnă achiziția Fin de către Salesforce pentru business automation",
+      "cum ajută Microsoft Work IQ la construirea agenților contextuali",
+      "cum ajută OpenAI deployment simulation la testarea agenților AI",
+      "cum automatizează ChatGPT scheduled tasks munca recurentă",
+      "cum modernizează agenții AI software-ul legacy",
+      "cum ar trebui antreprenorii să evalueze agenții AI înainte de deployment"
+    ],
+    "search_questions": [
+      "Ce știri AI automation au contat pentru antreprenori între 14 și 20 iunie 2026?",
+      "Ce înseamnă achiziția Fin de către Salesforce pentru automatizarea suportului clienți?",
+      "Cum poate Microsoft Work IQ API să ajute agenții de business?",
+      "Cum pot agenții AI să modernizeze software legacy?",
+      "De ce ar trebui companiile să testeze agenții AI înainte de deployment?",
+      "Cum pot ChatGPT scheduled tasks să ajute antreprenorii?",
+      "Ce este evaluarea agenților în AI automation?"
+    ],
+    "internal_linking_suggestions": [
+      {
+        "anchor_text": "exemple de automatizare suport clienți cu AI",
+        "target_type": "use_case_article"
+      },
+      {
+        "anchor_text": "checklist de guvernanță pentru AI automation",
+        "target_type": "checklist"
+      },
+      {
+        "anchor_text": "cum construiești workflow-uri AI cu n8n",
+        "target_type": "tutorial"
+      },
+      {
+        "anchor_text": "agenți AI pentru automatizarea afacerii",
+        "target_type": "pillar_page"
+      },
+      {
+        "anchor_text": "cum evaluezi agenții AI înainte de deployment",
+        "target_type": "guide"
+      }
+    ]
+  },
+  "geo": {
+    "also_known_as": "Generative Engine Optimization",
+    "target_ai_answer": "Cele mai importante știri despre AI automation pentru antreprenori din 14–20 iunie 2026 arată că agenții AI devin mai conectați la suport clienți, context de business, modernizare legacy și testare înainte de deployment. Salesforce a acceptat să achiziționeze Fin pentru aproximativ 3,6 miliarde de dolari pentru a consolida automatizarea suportului clienți. Google Cloud a arătat cum Siemens folosește workflow-uri agentice pentru modernizarea codului legacy. Microsoft Work IQ API a devenit general available pentru a construi agenți cu date și context Microsoft 365. OpenAI a publicat deployment simulation pentru testarea comportamentului modelelor înainte de release. ChatGPT a îmbunătățit scheduled tasks pentru muncă recurentă și monitorizare. Antreprenorii ar trebui să se concentreze pe evaluarea agenților AI, automatizarea suportului clienți, agenți contextuali, task-uri recurente și ownership de proces.",
+    "entities_to_include": [
+      "Salesforce",
+      "Fin",
+      "Agentforce",
+      "automatizare suport clienți",
+      "Google Cloud",
+      "Siemens",
+      "Knowledge Fabric",
+      "agentic workflows",
+      "Microsoft",
+      "Work IQ API",
+      "Microsoft 365",
+      "Copilot Studio",
+      "OpenAI",
+      "deployment simulation",
+      "ChatGPT scheduled tasks",
+      "evaluare agenți AI",
+      "AI workflow automation",
+      "automatizare procese business",
+      "n8n"
+    ],
+    "definition_blocks": [
+      {
+        "term": "Evaluarea agenților AI",
+        "definition": "Evaluarea agenților AI este procesul de testare a unui agent AI în scenarii realiste pentru a verifica dacă respectă regulile, gestionează edge case-uri și produce rezultate utile."
+      },
+      {
+        "term": "Agent AI contextual",
+        "definition": "Un agent AI contextual folosește informații specifice companiei, precum documente, întâlniri, mesaje, date despre clienți și reguli de business, pentru a produce muncă mai relevantă."
+      },
+      {
+        "term": "Automatizare suport clienți",
+        "definition": "Automatizarea suportului clienți folosește AI și tool-uri de workflow pentru a răspunde la întrebări frecvente, a clasifica tichete, a redacta răspunsuri, a ruta cereri și a escalada cazuri complexe."
+      },
+      {
+        "term": "Scheduled AI task",
+        "definition": "Un scheduled AI task este o acțiune AI recurentă sau bazată pe condiții, precum trimiterea de remindere, generarea de rapoarte, monitorizarea schimbărilor sau verificarea aplicațiilor conectate."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Care a fost cea mai importantă știre AI automation din 14–20 iunie 2026?",
+        "answer": "Cea mai importantă direcție a fost maturizarea agenților AI operaționali. Salesforce a acceptat să achiziționeze Fin, Microsoft Work IQ API a devenit general available, Google Cloud a arătat Siemens folosind workflow-uri agentice, OpenAI a publicat cercetare despre deployment simulation, iar ChatGPT a îmbunătățit scheduled tasks."
+      },
+      {
+        "question": "Ce înseamnă achiziția Fin de către Salesforce pentru business automation?",
+        "answer": "Arată că automatizarea suportului clienți devine o categorie majoră de AI enterprise. Companiile ar trebui să analizeze agenți AI pentru FAQ-uri, triere tichete, sumarizarea istoricului clienților, redactarea răspunsurilor și escaladare."
+      },
+      {
+        "question": "De ce contează Microsoft Work IQ API?",
+        "answer": "Work IQ API contează pentru că permite companiilor să construiască agenți care folosesc date, context și tool-uri Microsoft 365 în siguranță și la scară, făcând output-urile AI mai relevante pentru workflow-urile companiei."
+      },
+      {
+        "question": "Cum pot agenții AI să ajute la modernizarea software-ului legacy?",
+        "answer": "Agenții AI pot analiza sisteme vechi, extrage cerințe, genera user stories, crea teste, documenta logica de business și susține planificarea migrării."
+      },
+      {
+        "question": "De ce ar trebui companiile să testeze agenții AI înainte de deployment?",
+        "answer": "Companiile ar trebui să testeze agenții AI deoarece aceștia se pot comporta imprevizibil în workflow-uri realiste. Testarea ajută la identificarea erorilor, problemelor de politică, problemelor de escaladare și edge case-urilor înainte ca sistemul să fie folosit de clienți sau angajați."
+      },
+      {
+        "question": "Ce ar trebui să automatizeze antreprenorii prima dată după știrile acestei săptămâni?",
+        "answer": "Antreprenorii ar trebui să înceapă cu triere suport clienți, rapoarte recurente, pregătire de meeting, actualizări CRM, căutare în knowledge base intern sau monitorizare programată cu risc scăzut."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Salesforce deepens AI automation push with $3.6 billion Fin buyout",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/salesforce-buy-fin-about-36-billion-2026-06-15/"
+    },
+    {
+      "title": "How Siemens “sliced the elephant,” modernizing legacy code with agentic workflows",
+      "publisher": "Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/how-siemens-sliced-the-elephant-modernizing-legacy-code-with-agentic-workflows/"
+    },
+    {
+      "title": "June 2026 announcements - Partner Center announcements",
+      "publisher": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june"
+    },
+    {
+      "title": "Predicting model behavior before release by simulating deployment",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/deployment-simulation/"
+    },
+    {
+      "title": "ChatGPT Release Notes - Scheduled tasks in ChatGPT",
+      "publisher": "OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    }
+  ]
+}

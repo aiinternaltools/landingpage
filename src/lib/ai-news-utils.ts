@@ -74,16 +74,17 @@ export function signalStrengthLevel(strength: string | undefined): number {
   return 2;
 }
 
-export function collectUniqueSources(stories: AiNewsBriefingStory[]): AiNewsSource[] {
+export function collectUniqueSources(
+  stories: AiNewsBriefingStory[],
+  extra: AiNewsSource[] = [],
+): AiNewsSource[] {
   const seen = new Set<string>();
   const out: AiNewsSource[] = [];
-  for (const story of stories) {
-    for (const source of story.sources) {
-      const key = source.url.trim().toLowerCase();
-      if (seen.has(key)) continue;
-      seen.add(key);
-      out.push(source);
-    }
+  for (const source of [...extra, ...stories.flatMap((s) => s.sources)]) {
+    const key = source.url.trim().toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(source);
   }
   return out;
 }

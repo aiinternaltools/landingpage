@@ -41,6 +41,10 @@
       "aiSocialMediaAssistant": {
         "title": "Asistent AI pentru social media",
         "description": "Transformă ideile din Google Sheets în postări aliniate brandului. AI generează conținut pe canal, tu aprobi și programezi, apoi postările apar automat pe LinkedIn, Instagram, Facebook și X."
+      },
+      "emailAiAgent": {
+        "title": "Agent AI pentru email",
+        "description": "Clasifică fiecare email, răspunde cu cunoștințele tale și transferă către echipă când e nevoie de un om — suport clienți, lead-uri, facturi și furnizori."
       }
     }
   },
@@ -354,6 +358,7 @@
       "newestAtTop": "Cele mai noi sus ·",
       "oneEdition": "1 ediție",
       "editionsCount": "{count} ediții",
+      "readMore": "Citește mai mult",
       "audio": "Audio"
     },
     "article": {
@@ -362,6 +367,8 @@
       "executiveBriefingPrefix": "Briefing executiv AI ·",
       "signalLabel": "Semnal: {strength}",
       "scrollForBriefing": "Derulează pentru briefing-ul complet ↓",
+      "byline": "De {author}",
+      "updatedLabel": "Actualizat",
       "operatorsTake": "Perspectiva operatorului",
       "whatToDoDifferently": "Ce să faci diferit",
       "sourcesNotProvided": "Sursele nu sunt furnizate pentru această ediție.",
@@ -406,13 +413,20 @@
     },
     "sections": {
       "nav": {
+        "quickAnswer": "Răspuns",
         "pulse": "Puls",
         "stories": "Povești",
         "tools": "Instrumente",
         "operatorsTake": "Perspectiva operatorului",
         "actionPlan": "Plan de acțiune",
         "beginner": "Termen",
+        "definitions": "Termeni",
+        "faq": "FAQ",
         "sources": "Surse"
+      },
+      "quickAnswer": {
+        "title": "Răspuns rapid",
+        "description": "Concluzia gata de citat din știrile AI automation ale săptămânii."
       },
       "marketPulse": {
         "title": "Pulsul pieței AI",
@@ -432,6 +446,14 @@
       },
       "beginner": {
         "title": "Termenul AI al săptămânii"
+      },
+      "definitions": {
+        "title": "Definiții cheie",
+        "description": "Termeni în limbaj simplu folosiți în briefing-ul acestei săptămâni."
+      },
+      "faq": {
+        "title": "Întrebări frecvente",
+        "description": "Întrebări comune despre semnalul AI automation al săptămânii."
       },
       "sources": {
         "title": "Surse"

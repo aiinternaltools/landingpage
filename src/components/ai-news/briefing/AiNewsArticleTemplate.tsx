@@ -1,11 +1,14 @@
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
 import { ArticleAudioPlayer } from "@/components/ai-news/ArticleAudioPlayer";
+import { ArticleFaq } from "@/components/ai-news/briefing/ArticleFaq";
 import { BeginnerCorner } from "@/components/ai-news/briefing/BeginnerCorner";
 import { BriefingHero } from "@/components/ai-news/briefing/BriefingHero";
 import { BriefingNav } from "@/components/ai-news/briefing/BriefingNav";
 import { BriefingSection } from "@/components/ai-news/briefing/BriefingSection";
+import { DefinitionBlocks } from "@/components/ai-news/briefing/DefinitionBlocks";
+import { GeoSummary } from "@/components/ai-news/briefing/GeoSummary";
 import { MarketPulse } from "@/components/ai-news/briefing/MarketPulse";
 import { OperatorTake } from "@/components/ai-news/briefing/OperatorTake";
 import { SourcesList } from "@/components/ai-news/briefing/SourcesList";
@@ -16,9 +19,11 @@ import {
   getArticleCta,
   getArticleSections,
 } from "@/components/ai-news/briefing/article-template-sections";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageBackdrop } from "@/components/ui/PageBackdrop";
 import { Button } from "@/components/ui/Button";
 import { collectUniqueSources } from "@/lib/ai-news-utils";
+import { articleJsonLd } from "@/lib/seo";
 
 type AiNewsArticleTemplateProps = {
   article: AiNewsBriefing;
@@ -26,13 +31,15 @@ type AiNewsArticleTemplateProps = {
 
 export async function AiNewsArticleTemplate({ article }: AiNewsArticleTemplateProps) {
   const t = await getTranslations("aiNews");
-  const sources = collectUniqueSources(article.stories);
+  const locale = await getLocale();
+  const sources = collectUniqueSources(article.stories, article.sources);
   const sections = getArticleSections(t);
   const cta = getArticleCta(t);
   const { stories: storiesSection, actionPlan } = sections;
 
   return (
     <>
+      <JsonLd data={articleJsonLd(article, locale)} />
       <section
         aria-label={t("article.articleIntroAria")}
         className="relative flex flex-col overflow-x-hidden border-b border-border max-md:min-h-0 md:min-h-[calc(100dvh-var(--header-height))]"
@@ -51,7 +58,7 @@ export async function AiNewsArticleTemplate({ article }: AiNewsArticleTemplatePr
           </Link>
           <BriefingHero article={article} className="flex-1" />
         </div>
-        <BriefingNav className="relative z-10 mt-auto shrink-0" />
+        <BriefingNav article={article} className="relative z-10 mt-auto shrink-0" />
       </section>
 
       <div className="briefing-article mx-auto w-full min-w-0 max-w-4xl space-y-10 px-4 py-8 sm:space-y-12 sm:px-6 md:space-y-16 md:py-12 lg:px-8">
@@ -62,6 +69,8 @@ export async function AiNewsArticleTemplate({ article }: AiNewsArticleTemplatePr
             duration={article.audio.duration}
           />
         ) : null}
+
+        {article.geo_summary ? <GeoSummary summary={article.geo_summary} /> : null}
 
         <MarketPulse article={article} />
 
@@ -81,6 +90,8 @@ export async function AiNewsArticleTemplate({ article }: AiNewsArticleTemplatePr
           band={actionPlan.band}
         />
         <BeginnerCorner term={article.beginner_term} />
+        <DefinitionBlocks blocks={article.seo.definition_blocks} />
+        <ArticleFaq items={article.seo.faq} />
         <SourcesList sources={sources} />
 
         <div className="card-elevated flex min-w-0 flex-col gap-4 rounded-2xl border-accent/20 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-6 md:p-8">

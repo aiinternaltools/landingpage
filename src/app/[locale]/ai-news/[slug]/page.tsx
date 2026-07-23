@@ -9,6 +9,7 @@ import {
   type LocaleArticles,
 } from "@/lib/ai-news";
 import { routing, type Locale } from "@/i18n/routing";
+import { buildSocialMetadata } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;
@@ -41,14 +42,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
   languages["x-default"] = `/en/ai-news/${slug}`;
 
+  const description =
+    article.geo_summary?.short_answer ?? article.seo.meta_description;
+
   return {
     title: article.seo.meta_title,
-    description: article.seo.meta_description,
+    description,
     keywords: article.seo.keywords,
+    authors: [{ name: "Andrei Alexandru Gabriel" }],
     alternates: {
       canonical: `/${locale}/ai-news/${slug}`,
       languages,
     },
+    ...buildSocialMetadata({
+      title: article.seo.meta_title,
+      description,
+      url: `/${locale}/ai-news/${slug}`,
+      locale,
+      type: "article",
+      publishedTime: article.date_end,
+      modifiedTime: article.date_end,
+    }),
   };
 }
 

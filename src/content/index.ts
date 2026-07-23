@@ -17,6 +17,8 @@ import { contactPage as contactPageEn, contactForm as contactFormEn } from "./co
 import { contactPage as contactPageRo, contactForm as contactFormRo } from "./contact.ro";
 import { aiSocialMediaAssistant as aiSocialMediaAssistantEn } from "./use-cases/ai-social-media-assistant.en";
 import { aiSocialMediaAssistant as aiSocialMediaAssistantRo } from "./use-cases/ai-social-media-assistant.ro";
+import { emailAiAgent as emailAiAgentEn } from "./use-cases/email-ai-agent.en";
+import { emailAiAgent as emailAiAgentRo } from "./use-cases/email-ai-agent.ro";
 import {
   contactUseCaseCustomId,
   contactUseCaseOptionsEn,
@@ -79,6 +81,10 @@ export function getAboutProfile(locale: Locale) {
 
 export function getAiSocialMediaAssistant(locale: Locale) {
   return locale === "ro" ? aiSocialMediaAssistantRo : aiSocialMediaAssistantEn;
+}
+
+export function getEmailAiAgent(locale: Locale) {
+  return locale === "ro" ? emailAiAgentRo : emailAiAgentEn;
 }
 
 export type ContactFormPayload = {

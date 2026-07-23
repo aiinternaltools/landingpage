@@ -26,9 +26,9 @@ function UseCaseCard({
   discoverAria: string;
 }) {
   return (
-    <article className="card-elevated card-elevated-hover group overflow-hidden rounded-2xl">
-      <div className="flex flex-col gap-4 px-6 py-5 sm:px-7 sm:py-6">
-        <div>
+    <article className="card-elevated card-elevated-hover group flex h-full flex-col overflow-hidden rounded-2xl">
+      <div className="flex flex-1 flex-col gap-4 px-6 py-5 sm:px-7 sm:py-6">
+        <div className="flex-1">
           <h3 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-accent sm:text-2xl md:text-[1.65rem] md:leading-snug">
             {title}
           </h3>
@@ -65,7 +65,7 @@ export function UseCasesSection({ landingUseCases }: UseCasesSectionProps) {
         {t("subtitle")}
       </p>
 
-      <ul className="relative mx-auto mt-12 grid max-w-2xl gap-5 md:gap-6">
+      <ul className="relative mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-2 md:gap-6">
         {landingUseCases.map(({ id, title, tagline, href }) => (
           <li key={id}>
             <UseCaseCard

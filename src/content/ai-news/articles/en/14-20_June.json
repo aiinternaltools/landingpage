@@ -1,0 +1,513 @@
+{
+  "week_range": "June 14–20, 2026",
+  "date_start": "2026-06-14",
+  "date_end": "2026-06-20",
+  "audience": "Business owners who want to use AI automation to save time, improve productivity, reduce manual work, and redesign business workflows",
+  "content_positioning": "Weekly AI automation briefing for business owners",
+  "theme": "AI automation moved toward evaluated, context-aware, and business-owned agent workflows",
+  "hook": "This week, AI automation became more enterprise-ready. Salesforce moved deeper into customer-service agents, Google showed how agentic workflows can modernize legacy software, Microsoft made business-context APIs available for agents, and OpenAI focused on testing model behavior before deployment.",
+  "executive_summary": "The week of June 14–20, 2026 showed that AI automation is becoming more mature. Salesforce’s planned acquisition of Fin highlights the value of AI agents in customer service and support automation. Google Cloud’s Siemens case study showed how agentic workflows can modernize legacy code and turn domain knowledge into automation. Microsoft’s Work IQ API reached general availability, giving companies a way to build agents grounded in Microsoft 365 context. OpenAI’s deployment simulation research reinforced that advanced models and agents need realistic testing before release. ChatGPT’s scheduled task improvements showed how recurring work and monitoring are becoming built-in AI assistant capabilities. For business owners, the takeaway is simple: AI automation now needs workflow ownership, context, evaluation, and guardrails.",
+  "primary_angle": "How business owners should move from simple AI tasks to evaluated, context-aware AI workflows",
+  "signal_strength": "high",
+  "theme_of_the_week": "AI automation needs evaluation, context, and business-process ownership",
+  "search_intent": {
+    "primary": "Business owners looking for AI automation news, AI agents for customer service, workflow automation, agent evaluation, and business-context AI",
+    "secondary": [
+      "AI automation news June 2026",
+      "AI agents for customer service",
+      "Salesforce Fin acquisition AI automation",
+      "Google Cloud Siemens agentic workflows",
+      "Microsoft Work IQ API agents",
+      "OpenAI deployment simulation",
+      "ChatGPT scheduled tasks automation",
+      "AI workflow automation for business owners",
+      "AI agent evaluation for business"
+    ]
+  },
+  "geo_summary": {
+    "short_answer": "The most important AI automation news from June 14–20, 2026 is that AI agents became more connected to customer service, enterprise context, software modernization, and deployment testing. Salesforce agreed to acquire Fin for about $3.6B to strengthen AI customer-service automation. Google Cloud showed Siemens using agentic workflows to modernize legacy code. Microsoft Work IQ API reached general availability so businesses can build agents using Microsoft 365 context. OpenAI published deployment simulation research to test model behavior before release. ChatGPT improved scheduled tasks for recurring work and monitoring.",
+    "answer_engine_summary": "For business owners, the key takeaway from June 14–20, 2026 is that AI automation should move from isolated prompts to managed workflows. The best opportunities are customer support automation, recurring monitoring tasks, internal reporting, CRM updates, software modernization, Microsoft 365-based agents, and agent evaluation before deployment. Business owners should define ownership, context sources, success metrics, human approval steps, and risk checks before scaling AI agents.",
+    "recommended_citation_style": "Use official company sources where available, Reuters for acquisition reporting, and practical business interpretation after each story."
+  },
+  "market_pulse": {
+    "summary": "The strongest signal this week was that AI automation is entering real operational systems: customer service platforms, Microsoft 365 context, legacy software modernization, recurring assistant tasks, and pre-deployment model testing. The market is moving beyond AI demos toward agents that must be evaluated, governed, and measured.",
+    "what_changed_this_week": [
+      "Salesforce agreed to buy autonomous AI agent platform Fin for about $3.6B, strengthening Agentforce and customer-service automation.",
+      "Google Cloud showed how Siemens uses agentic workflows and a Knowledge Fabric to automate parts of the software development lifecycle.",
+      "Microsoft Work IQ API reached general availability on June 16, allowing agents and apps to use Microsoft 365 data, context, and tools securely at scale.",
+      "OpenAI published deployment simulation research for predicting model behavior before release using realistic conversation contexts and tool simulations.",
+      "ChatGPT scheduled tasks became easier to manage, faster, and more reliable for recurring work and monitoring."
+    ]
+  },
+  "automation_opportunities": [
+    {
+      "workflow": "Customer service automation",
+      "automation_idea": "Use AI agents to answer common questions, classify tickets, resolve simple issues, escalate complex cases, and improve response speed.",
+      "tools_relevant": [
+        "Salesforce Agentforce",
+        "Fin",
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "n8n",
+        "CRM"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduces support workload, improves response time, and helps teams scale customer service without hiring immediately."
+    },
+    {
+      "workflow": "Microsoft 365 context-aware agents",
+      "automation_idea": "Build AI agents that use company emails, files, meetings, Teams messages, and organizational context to produce better outputs.",
+      "tools_relevant": [
+        "Microsoft Work IQ API",
+        "Microsoft 365 Copilot",
+        "Copilot Studio",
+        "Teams",
+        "SharePoint",
+        "Outlook"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Improves internal productivity because agents can work with company-specific context instead of generic prompts."
+    },
+    {
+      "workflow": "Legacy software modernization",
+      "automation_idea": "Use agentic workflows to analyze old systems, extract requirements, create user stories, generate tests, and assist code migration.",
+      "tools_relevant": [
+        "Google Cloud",
+        "Knowledge Fabric",
+        "Gemini",
+        "OpenAI Codex",
+        "Claude Code",
+        "Cursor"
+      ],
+      "difficulty": "high",
+      "business_impact": "Reduces technical debt and helps businesses modernize old internal systems faster."
+    },
+    {
+      "workflow": "Recurring monitoring and reminders",
+      "automation_idea": "Use scheduled AI tasks to monitor changes, send reminders, generate recurring reports, and check connected apps for updates.",
+      "tools_relevant": [
+        "ChatGPT scheduled tasks",
+        "n8n",
+        "Google Calendar",
+        "Gmail",
+        "Slack",
+        "CRM"
+      ],
+      "difficulty": "low",
+      "business_impact": "Automates small recurring tasks that owners and managers often forget or repeat manually."
+    },
+    {
+      "workflow": "Agent evaluation before deployment",
+      "automation_idea": "Test AI agents with realistic scenarios before putting them into customer-facing or business-critical workflows.",
+      "tools_relevant": [
+        "OpenAI deployment simulation",
+        "agent evals",
+        "simulation datasets",
+        "human review",
+        "test environments"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduces risk before automating sensitive workflows such as support, sales, finance, legal, or operations."
+    }
+  ],
+  "stories": [
+    {
+      "id": "salesforce-fin-acquisition-customer-service-agents",
+      "headline": "Salesforce moved deeper into AI customer-service automation with its Fin acquisition",
+      "published_date": "2026-06-15",
+      "company": "Salesforce, Fin",
+      "category": "Customer Service Automation",
+      "automation_relevance": "Customer service is one of the clearest business use cases for AI agents because it combines repetitive questions, ticket classification, knowledge retrieval, escalation, and measurable response-time improvements.",
+      "what_happened": "Salesforce agreed to acquire autonomous AI agent platform Fin for about $3.6B. The deal strengthens Salesforce’s Agentforce offering and reflects the company’s deeper focus on AI automation in business software.",
+      "why_it_matters": "The acquisition shows that enterprise software companies see AI agents as a core layer for customer-facing workflows, not just add-on chatbots.",
+      "business_relevance": "For business owners, this means customer support automation is becoming mainstream. Even smaller companies should start by automating FAQs, lead qualification, ticket triage, and simple support requests.",
+      "automation_use_cases": [
+        "Answer common support questions automatically.",
+        "Classify and route incoming tickets.",
+        "Summarize customer history before human handoff.",
+        "Draft replies for human approval.",
+        "Escalate complex or sensitive issues to the right person.",
+        "Track recurring customer issues and product/service gaps."
+      ],
+      "impact_level": "act_now_for_support_heavy_businesses",
+      "risks": [
+        "Customer-facing agents need clear escalation rules.",
+        "AI should not make policy exceptions or promises without approval.",
+        "Poor knowledge-base content will create poor support answers."
+      ],
+      "owner_takeaway": "If your business receives repeated customer questions, support automation is one of the best first AI agent use cases.",
+      "sources": [
+        {
+          "title": "Salesforce deepens AI automation push with $3.6 billion Fin buyout",
+          "publisher": "Reuters",
+          "url": "https://www.reuters.com/business/salesforce-buy-fin-about-36-billion-2026-06-15/"
+        }
+      ]
+    },
+    {
+      "id": "google-siemens-agentic-workflows-legacy-code",
+      "headline": "Google Cloud showed how Siemens uses agentic workflows to modernize legacy code",
+      "published_date": "2026-06-16",
+      "company": "Google Cloud, Siemens",
+      "category": "Software Modernization Automation",
+      "automation_relevance": "Legacy software modernization is a high-value automation use case because many companies are slowed down by old systems, undocumented logic, manual testing, and expensive migration projects.",
+      "what_happened": "Google Cloud published a case study explaining how Siemens and Google Cloud created Knowledge Fabric, an AI system for automating parts of the software development lifecycle. The system includes agents such as a user story agent that interviews a product owner and drafts detailed user stories with acceptance criteria linked to existing system context.",
+      "why_it_matters": "This shows how agentic workflows can combine domain expertise, existing system context, and software automation to modernize legacy systems.",
+      "business_relevance": "For business owners, this matters because many automation blockers are caused by old software. AI agents can help document, understand, test, and gradually modernize these systems.",
+      "automation_use_cases": [
+        "Analyze legacy code and business logic.",
+        "Extract requirements from product owners.",
+        "Generate user stories and acceptance criteria.",
+        "Create test cases for old systems.",
+        "Support code migration and modernization.",
+        "Document undocumented internal tools."
+      ],
+      "impact_level": "watch_closely_for_smbs_act_now_for_software_heavy_businesses",
+      "risks": [
+        "Legacy modernization requires domain experts.",
+        "AI-generated code and requirements must be reviewed.",
+        "Old systems may contain hidden business rules that are not obvious from code alone."
+      ],
+      "owner_takeaway": "If old software blocks your business, AI agents can help with documentation, testing, migration planning, and internal tool modernization.",
+      "sources": [
+        {
+          "title": "How Siemens “sliced the elephant,” modernizing legacy code with agentic workflows",
+          "publisher": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/how-siemens-sliced-the-elephant-modernizing-legacy-code-with-agentic-workflows/"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-work-iq-api-ga",
+      "headline": "Microsoft Work IQ API reached GA, making business-context agents easier to build",
+      "published_date": "2026-06-16",
+      "company": "Microsoft",
+      "category": "Context-Aware Enterprise Agents",
+      "automation_relevance": "Business agents become more useful when they understand company context: files, meetings, people, tools, messages, and workflows.",
+      "what_happened": "Microsoft announced that Work IQ API would reach general availability on June 16, 2026, allowing customers to build agents and apps that use Microsoft 365 data, context, and tools securely and at scale.",
+      "why_it_matters": "AI agents need business context to produce useful work. Without access to the right company knowledge, they remain generic assistants.",
+      "business_relevance": "For Microsoft-heavy businesses, Work IQ API points toward agents that can help with meeting prep, internal knowledge retrieval, document drafting, employee support, and workflow automation.",
+      "automation_use_cases": [
+        "Create agents that summarize relevant documents before a meeting.",
+        "Build internal Q&A agents over company knowledge.",
+        "Automate employee request routing.",
+        "Prepare project status updates from Teams, files, and meetings.",
+        "Generate follow-up tasks from business context."
+      ],
+      "impact_level": "act_now_for_microsoft_365_businesses",
+      "risks": [
+        "Agents need permission boundaries before accessing company data.",
+        "Sensitive documents must be governed carefully.",
+        "Context-aware agents require good information hygiene."
+      ],
+      "owner_takeaway": "Your company knowledge is an automation asset. Clean up documents, permissions, and processes before building context-aware agents.",
+      "sources": [
+        {
+          "title": "June 2026 announcements - Partner Center announcements",
+          "publisher": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june"
+        }
+      ]
+    },
+    {
+      "id": "openai-deployment-simulation-agent-evaluation",
+      "headline": "OpenAI highlighted deployment simulation for safer model and agent releases",
+      "published_date": "2026-06-16",
+      "company": "OpenAI",
+      "category": "Agent Evaluation and Risk Management",
+      "automation_relevance": "As businesses deploy AI agents into real workflows, they need to test behavior before release, especially when agents can use tools, interact with users, or take actions.",
+      "what_happened": "OpenAI published research on predicting model behavior before release by simulating deployment. The work uses realistic conversation contexts, external auditing, and tool simulation for agentic trajectories to better estimate undesired model behavior.",
+      "why_it_matters": "AI agents may behave differently in realistic workflows than in simple benchmark tests. Simulation helps expose risks before deployment.",
+      "business_relevance": "For business owners, this means important AI automations should be tested with real-world scenarios before they are used with customers, employees, financial data, or operational systems.",
+      "automation_use_cases": [
+        "Simulate customer support conversations before launching an AI support agent.",
+        "Test edge cases before deploying an AI sales assistant.",
+        "Create red-team scenarios for finance, legal, HR, or security workflows.",
+        "Check whether an agent follows escalation rules.",
+        "Evaluate how an agent behaves when information is missing or ambiguous."
+      ],
+      "impact_level": "act_now_for_business_critical_agents",
+      "risks": [
+        "Untested agents can fail in unpredictable ways.",
+        "Benchmarks alone may not reflect real business use.",
+        "Simulation does not remove the need for human review and monitoring."
+      ],
+      "owner_takeaway": "Before deploying an AI agent, simulate realistic cases and define what good, bad, and unacceptable behavior look like.",
+      "sources": [
+        {
+          "title": "Predicting model behavior before release by simulating deployment",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/deployment-simulation/"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-scheduled-tasks-recurring-automation",
+      "headline": "ChatGPT improved scheduled tasks for recurring work and monitoring",
+      "published_date": "2026-06-17",
+      "company": "OpenAI",
+      "category": "Personal Productivity and Monitoring Automation",
+      "automation_relevance": "Scheduled tasks make AI more useful for recurring work: reminders, regular summaries, monitoring changes, and proactive notifications.",
+      "what_happened": "OpenAI’s ChatGPT release notes said scheduled tasks became easier to find and manage, faster, more reliable, and more useful for notifications. Users can schedule work for exact times or broader windows, and monitoring tasks can search the web and check connected apps for changes.",
+      "why_it_matters": "Many business tasks are not one-off questions. They recur weekly, daily, or when something changes. Scheduled AI tasks turn AI into a lightweight monitoring and reminder layer.",
+      "business_relevance": "Business owners can use scheduled tasks for weekly reports, competitor monitoring, lead follow-up reminders, invoice checks, meeting preparation, and operational alerts.",
+      "automation_use_cases": [
+        "Generate a weekly business summary every Monday.",
+        "Monitor competitor news and notify only when something important changes.",
+        "Remind the owner to review open invoices.",
+        "Prepare a daily meeting brief.",
+        "Check connected apps for important updates.",
+        "Create recurring AI-generated content ideas."
+      ],
+      "impact_level": "act_now",
+      "risks": [
+        "Scheduled tasks should not replace critical business systems.",
+        "Important operational checks still need reliable source systems.",
+        "Notifications can become noise if the task criteria are too broad."
+      ],
+      "owner_takeaway": "Use scheduled AI tasks for low-risk recurring work first: summaries, reminders, monitoring, and preparation.",
+      "sources": [
+        {
+          "title": "ChatGPT Release Notes - Scheduled tasks in ChatGPT",
+          "publisher": "OpenAI Help Center",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ]
+    }
+  ],
+  "tools_to_test": [
+    {
+      "name": "Salesforce Agentforce / Fin-style support agents",
+      "category": "Customer support automation",
+      "best_for": "Businesses with repeated customer questions, high support volume, or slow response times",
+      "time_to_test": "1–2 hours for process mapping; platform evaluation depends on stack",
+      "suggested_test": "Map the top 20 repeated support questions and define which can be answered automatically, which need review, and which must escalate.",
+      "automation_value": "Reduces repetitive support workload and improves first-response time."
+    },
+    {
+      "name": "Microsoft Work IQ API",
+      "category": "Business-context agents",
+      "best_for": "Companies using Microsoft 365 that want agents grounded in emails, meetings, files, and organizational context",
+      "time_to_test": "Technical evaluation required",
+      "suggested_test": "Pick one internal workflow where context matters, such as meeting prep, employee support, or project status updates.",
+      "automation_value": "Makes AI agents more relevant by connecting them to company context."
+    },
+    {
+      "name": "ChatGPT scheduled tasks",
+      "category": "Recurring work automation",
+      "best_for": "Owners and managers who need recurring summaries, reminders, monitoring, and lightweight proactive assistance",
+      "time_to_test": "15–30 minutes",
+      "suggested_test": "Create one weekly task that summarizes AI automation news or one daily task that reminds you to review important business metrics.",
+      "automation_value": "Automates low-risk recurring work without building a full workflow system."
+    },
+    {
+      "name": "OpenAI deployment simulation approach",
+      "category": "Agent testing and evaluation",
+      "best_for": "Businesses preparing customer-facing or business-critical AI agents",
+      "time_to_test": "1–2 hours for scenario design",
+      "suggested_test": "Create 10 realistic test scenarios for a support agent, including missing information, angry customers, refund requests, and edge cases.",
+      "automation_value": "Reduces agent deployment risk before real customers or employees use the system."
+    },
+    {
+      "name": "Google Cloud agentic workflow patterns",
+      "category": "Software modernization automation",
+      "best_for": "Businesses with legacy systems, internal tools, or codebases that slow down operations",
+      "time_to_test": "Technical evaluation required",
+      "suggested_test": "Choose one old internal tool and ask an AI coding agent to document its logic, risks, and modernization plan.",
+      "automation_value": "Helps reduce technical debt and uncover automation opportunities inside old systems."
+    }
+  ],
+  "strategic_insight": {
+    "title": "The real story: AI automation needs process ownership",
+    "content": "This week showed that AI automation is becoming more useful, but also more dependent on business discipline. Salesforce is investing in customer-service agents. Microsoft is giving agents business context. Google is showing agentic workflows for legacy systems. OpenAI is testing deployment behavior before release. ChatGPT is making recurring tasks easier. The common thread is that agents need an owner, a workflow, data access, evaluation, and escalation rules.",
+    "operator_take": "Business owners should not deploy AI agents as experiments with no owner. Every AI automation should have a process owner, a clear use case, access limits, evaluation scenarios, and a metric that proves whether it is working."
+  },
+  "weekly_action_plan": [
+    {
+      "action": "Choose one workflow with a clear owner",
+      "example": "Support triage owned by customer service, weekly reporting owned by operations, CRM updates owned by sales, or invoice review owned by finance"
+    },
+    {
+      "action": "Define the business context required",
+      "example": "FAQs, policies, pricing, customer history, meeting notes, CRM records, documents, or internal SOPs"
+    },
+    {
+      "action": "Create test scenarios before launch",
+      "example": "Normal case, missing information, angry customer, refund request, urgent escalation, incorrect data, and policy exception"
+    },
+    {
+      "action": "Add escalation and approval rules",
+      "example": "AI can draft and classify, but humans approve refunds, legal statements, price changes, system updates, and final customer responses"
+    },
+    {
+      "action": "Measure whether automation works",
+      "example": "Track response time, resolution rate, human handoff rate, error rate, customer satisfaction, and time saved"
+    }
+  ],
+  "beginner_term": {
+    "term": "Agent evaluation",
+    "simple_explanation": "Agent evaluation means testing an AI agent before and after deployment to see whether it behaves correctly, follows rules, handles edge cases, and produces useful outputs.",
+    "business_example": "Before launching an AI support agent, you test it with realistic customer messages: simple questions, missing details, angry complaints, refund requests, and cases that must be escalated to a human."
+  },
+  "recommended_article_angle": {
+    "title": "This Week in AI Automation: Agents Need Context, Testing, and Process Ownership",
+    "subtitle": "From Salesforce’s Fin acquisition to Microsoft Work IQ, Siemens’ agentic workflows, and OpenAI deployment simulation, the week of June 14–20 showed why AI automation must be tested, contextual, and owned by the business.",
+    "tone": "clear, practical, executive, automation-focused, non-technical",
+    "positioning": "Explain every AI news story through the lens of business automation maturity: customer-service agents, business context, legacy modernization, scheduled work, deployment simulation, evaluation, ownership, and measurable ROI."
+  },
+  "seo": {
+    "meta_title": "AI Automation News for Business Owners: June 14–20, 2026",
+    "meta_description": "A practical AI automation briefing for business owners covering Salesforce’s Fin acquisition, Microsoft Work IQ API, Google Cloud Siemens agentic workflows, OpenAI deployment simulation, and ChatGPT scheduled tasks.",
+    "slug": "ai-automation-news-business-owners-june-14-20-2026",
+    "primary_keyword": "AI automation news for business owners",
+    "secondary_keywords": [
+      "AI agents for customer service",
+      "AI workflow automation",
+      "AI automation for small business",
+      "Salesforce Fin acquisition",
+      "Microsoft Work IQ API",
+      "OpenAI deployment simulation",
+      "ChatGPT scheduled tasks",
+      "Google Cloud Siemens agentic workflows",
+      "AI agent evaluation",
+      "business process automation with AI"
+    ],
+    "long_tail_keywords": [
+      "how AI agents automate customer service workflows",
+      "what Salesforce buying Fin means for business automation",
+      "how Microsoft Work IQ helps build context-aware agents",
+      "how OpenAI deployment simulation helps test AI agents",
+      "how ChatGPT scheduled tasks automate recurring work",
+      "how AI agents modernize legacy software",
+      "how business owners should evaluate AI agents before deployment"
+    ],
+    "search_questions": [
+      "What AI automation news mattered for business owners from June 14 to June 20, 2026?",
+      "What does Salesforce buying Fin mean for customer service automation?",
+      "How can Microsoft Work IQ API help business agents?",
+      "How can AI agents modernize legacy software?",
+      "Why should businesses test AI agents before deployment?",
+      "How can ChatGPT scheduled tasks help business owners?",
+      "What is agent evaluation in AI automation?"
+    ],
+    "internal_linking_suggestions": [
+      {
+        "anchor_text": "AI customer service automation examples",
+        "target_type": "use_case_article"
+      },
+      {
+        "anchor_text": "AI automation governance checklist",
+        "target_type": "checklist"
+      },
+      {
+        "anchor_text": "how to build AI workflows with n8n",
+        "target_type": "tutorial"
+      },
+      {
+        "anchor_text": "AI agents for business automation",
+        "target_type": "pillar_page"
+      },
+      {
+        "anchor_text": "how to evaluate AI agents before deployment",
+        "target_type": "guide"
+      }
+    ]
+  },
+  "geo": {
+    "also_known_as": "Generative Engine Optimization",
+    "target_ai_answer": "The most important AI automation news for business owners from June 14–20, 2026 is that AI agents became more tied to customer service, business context, legacy modernization, and deployment testing. Salesforce agreed to acquire Fin for about $3.6B to strengthen customer-service automation. Google Cloud showed how Siemens uses agentic workflows to modernize legacy code. Microsoft Work IQ API reached general availability to help build agents using Microsoft 365 data and context. OpenAI published deployment simulation research for testing model behavior before release. ChatGPT improved scheduled tasks for recurring work and monitoring. Business owners should focus on AI agent evaluation, customer-service automation, context-aware agents, recurring task automation, and process ownership.",
+    "entities_to_include": [
+      "Salesforce",
+      "Fin",
+      "Agentforce",
+      "customer service automation",
+      "Google Cloud",
+      "Siemens",
+      "Knowledge Fabric",
+      "agentic workflows",
+      "Microsoft",
+      "Work IQ API",
+      "Microsoft 365",
+      "Copilot Studio",
+      "OpenAI",
+      "deployment simulation",
+      "ChatGPT scheduled tasks",
+      "AI agent evaluation",
+      "AI workflow automation",
+      "business process automation",
+      "n8n"
+    ],
+    "definition_blocks": [
+      {
+        "term": "Agent evaluation",
+        "definition": "Agent evaluation is the process of testing an AI agent against realistic scenarios to check whether it follows rules, handles edge cases, and produces useful outputs."
+      },
+      {
+        "term": "Context-aware AI agent",
+        "definition": "A context-aware AI agent uses company-specific information such as documents, meetings, messages, customer data, and business rules to perform more relevant work."
+      },
+      {
+        "term": "Customer service automation",
+        "definition": "Customer service automation uses AI and workflow tools to answer common questions, classify tickets, draft replies, route requests, and escalate complex cases."
+      },
+      {
+        "term": "Scheduled AI task",
+        "definition": "A scheduled AI task is a recurring or condition-based AI action, such as sending reminders, generating reports, monitoring changes, or checking connected apps."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What was the most important AI automation news from June 14–20, 2026?",
+        "answer": "The most important news was that AI agents became more operationally mature. Salesforce agreed to acquire Fin, Microsoft Work IQ API reached GA, Google Cloud showed Siemens using agentic workflows, OpenAI published deployment simulation research, and ChatGPT improved scheduled tasks."
+      },
+      {
+        "question": "What does Salesforce buying Fin mean for business automation?",
+        "answer": "It shows that customer-service automation is becoming a major enterprise AI category. Businesses should look at AI agents for FAQs, ticket triage, customer history summaries, response drafting, and escalation."
+      },
+      {
+        "question": "Why does Microsoft Work IQ API matter?",
+        "answer": "Work IQ API matters because it lets businesses build agents that use Microsoft 365 data, context, and tools securely at scale, making AI outputs more relevant to company workflows."
+      },
+      {
+        "question": "How can AI agents help modernize legacy software?",
+        "answer": "AI agents can analyze old systems, extract requirements, generate user stories, create tests, document business logic, and support migration planning."
+      },
+      {
+        "question": "Why should businesses test AI agents before deployment?",
+        "answer": "Businesses should test AI agents because agents may behave unexpectedly in realistic workflows. Testing helps reveal errors, policy failures, escalation problems, and edge cases before customers or employees rely on the system."
+      },
+      {
+        "question": "What should business owners automate first after this week’s news?",
+        "answer": "Business owners should start with customer support triage, recurring reports, meeting preparation, CRM updates, internal knowledge search, or low-risk scheduled monitoring tasks."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Salesforce deepens AI automation push with $3.6 billion Fin buyout",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/salesforce-buy-fin-about-36-billion-2026-06-15/"
+    },
+    {
+      "title": "How Siemens “sliced the elephant,” modernizing legacy code with agentic workflows",
+      "publisher": "Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/how-siemens-sliced-the-elephant-modernizing-legacy-code-with-agentic-workflows/"
+    },
+    {
+      "title": "June 2026 announcements - Partner Center announcements",
+      "publisher": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june"
+    },
+    {
+      "title": "Predicting model behavior before release by simulating deployment",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/deployment-simulation/"
+    },
+    {
+      "title": "ChatGPT Release Notes - Scheduled tasks in ChatGPT",
+      "publisher": "OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    }
+  ]
+}

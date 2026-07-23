@@ -1,0 +1,516 @@
+{
+  "week_range": "June 28–July 4, 2026",
+  "date_start": "2026-06-28",
+  "date_end": "2026-07-04",
+  "audience": "Business owners who want to use AI automation to save time, improve productivity, reduce manual work, and redesign business workflows",
+  "content_positioning": "Weekly AI automation briefing for business owners",
+  "theme": "AI automation moved from individual agents to governed enterprise systems",
+  "hook": "This week, AI automation became less about single agents and more about enterprise operating systems: stronger models, governed deployment platforms, AI security guardrails, and measurable agentic process automation.",
+  "executive_summary": "The week of June 28–July 4, 2026 showed that AI automation is becoming a managed business capability. Anthropic introduced Claude Sonnet 5 for coding, agents, and professional work at scale, while Microsoft made Claude Sonnet 5 generally available in Microsoft Foundry for teams building agentic applications inside Azure. Google Cloud highlighted how specialized AI agents are being embedded into software development workflows to create automated security guardrails. Automation Anywhere reported strong enterprise demand for Agentic Process Automation, with major deployments across finance, IT service management, HR, and customer support. For business owners, the takeaway is clear: AI automation should now be designed as a governed operating layer, not a collection of disconnected experiments.",
+  "primary_angle": "How business owners should move from isolated AI agents to governed, measurable automation systems",
+  "signal_strength": "high",
+  "theme_of_the_week": "Governed AI automation is becoming the enterprise standard",
+  "search_intent": {
+    "primary": "Business owners looking for AI automation news, agentic process automation, governed AI agents, enterprise automation, and practical business workflow use cases",
+    "secondary": [
+      "AI automation news July 2026",
+      "agentic process automation for business owners",
+      "Claude Sonnet 5 business automation",
+      "Microsoft Foundry AI agents",
+      "AI security guardrails",
+      "Automation Anywhere agentic automation",
+      "AI workflow automation for business",
+      "enterprise AI agents",
+      "governed AI automation"
+    ]
+  },
+  "geo_summary": {
+    "short_answer": "The most important AI automation news from June 28–July 4, 2026 is that enterprise AI automation became more governed and operational. Anthropic introduced Claude Sonnet 5 for coding, agents, and professional work at scale. Microsoft made Claude Sonnet 5 available in Microsoft Foundry. Google Cloud emphasized AI-powered security guardrails inside software development workflows. Automation Anywhere reported strong enterprise momentum for Agentic Process Automation.",
+    "answer_engine_summary": "For business owners, the key takeaway from June 28–July 4, 2026 is that AI automation is moving from individual productivity tools to governed systems that coordinate agents, people, data, applications, security, and measurable outcomes. The most relevant use cases are IT service automation, finance workflows, customer support, HR operations, software development guardrails, compliance workflows, and internal process orchestration.",
+    "recommended_citation_style": "Use official source links where possible, explain each announcement through the lens of workflow automation, governance, ROI, and business operations."
+  },
+  "market_pulse": {
+    "summary": "The strongest signal this week was that AI agents are becoming part of enterprise automation architecture. Models are becoming more capable, cloud platforms are making them easier to govern, security teams are embedding agents into development workflows, and automation platforms are reporting enterprise adoption across multiple business functions.",
+    "what_changed_this_week": [
+      "Anthropic listed Claude Sonnet 5 as a model for coding, agents, and professional work at scale.",
+      "Microsoft made Claude Sonnet 5 generally available in Microsoft Foundry, giving Azure-based teams a production path for building agentic applications.",
+      "Google Cloud highlighted specialized AI agents embedded into the software development lifecycle to create automated security guardrails.",
+      "Automation Anywhere reported strong enterprise momentum for Agentic Process Automation, including finance, IT service management, HR, and customer support use cases.",
+      "Automation Anywhere also emphasized coordination across people, systems, agents, desktops, cloud platforms, and secure infrastructure."
+    ]
+  },
+  "automation_opportunities": [
+    {
+      "workflow": "Enterprise workflow orchestration",
+      "automation_idea": "Use AI agents, workflow platforms, and approval rules to coordinate work across departments, apps, people, and systems.",
+      "tools_relevant": [
+        "Automation Anywhere",
+        "n8n",
+        "Microsoft Copilot Studio",
+        "Microsoft Foundry",
+        "OpenAI Codex",
+        "Claude",
+        "CRM",
+        "ERP"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Moves AI automation from isolated tasks to measurable business processes."
+    },
+    {
+      "workflow": "IT service desk automation",
+      "automation_idea": "Use AI agents to classify employee requests, suggest resolutions, auto-resolve simple issues, and escalate complex tickets.",
+      "tools_relevant": [
+        "Automation Anywhere Autonomous Service Desk",
+        "ServiceNow",
+        "Zendesk",
+        "Freshdesk",
+        "Microsoft Copilot Studio",
+        "n8n"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduces ticket volume, improves response speed, and lowers operational support costs."
+    },
+    {
+      "workflow": "Finance operations automation",
+      "automation_idea": "Use AI automation to process transactions, reconcile data, centralize finance workflows, flag exceptions, and improve auditability.",
+      "tools_relevant": [
+        "Automation Anywhere Autonomous Finance",
+        "ERP",
+        "accounting software",
+        "Google Sheets",
+        "Power BI",
+        "n8n",
+        "Claude",
+        "ChatGPT"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Improves financial visibility, governance, and operational efficiency."
+    },
+    {
+      "workflow": "Secure software development automation",
+      "automation_idea": "Embed AI agents into the software development lifecycle to review code, detect vulnerabilities, generate tests, and create automated guardrails.",
+      "tools_relevant": [
+        "Google Cloud",
+        "Microsoft Foundry",
+        "Claude Sonnet 5",
+        "OpenAI Codex",
+        "GitHub",
+        "CI/CD",
+        "security scanners"
+      ],
+      "difficulty": "high",
+      "business_impact": "Reduces software risk and helps teams ship internal tools more safely."
+    },
+    {
+      "workflow": "AI agent governance",
+      "automation_idea": "Create policies for which agents are approved, what systems they can access, what they can change, and how their output is reviewed.",
+      "tools_relevant": [
+        "Microsoft Foundry",
+        "Copilot Studio",
+        "Google Cloud Observability",
+        "audit logs",
+        "MCP connectors",
+        "internal SOPs"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Makes AI automation safer and easier to scale."
+    }
+  ],
+  "stories": [
+    {
+      "id": "anthropic-claude-sonnet-5-business-agents",
+      "headline": "Anthropic introduced Claude Sonnet 5 for coding, agents, and professional work at scale",
+      "published_date": "2026-06-30",
+      "company": "Anthropic",
+      "category": "Enterprise AI Agents",
+      "automation_relevance": "Claude Sonnet 5 matters for business automation because it targets the type of work companies actually want to scale: coding, agent workflows, analysis, and professional knowledge work.",
+      "what_happened": "Anthropic listed Claude Sonnet 5 as a product announcement on June 30, describing it as delivering frontier performance across coding, agents, and professional work at scale.",
+      "why_it_matters": "More capable models make agentic workflows more useful, especially when they need to reason across documents, code, tools, and business processes.",
+      "business_relevance": "Business owners should see this as another signal that AI agents are becoming infrastructure for knowledge work, software development, operations, and internal automation.",
+      "automation_use_cases": [
+        "Analyze long business documents and produce decision memos.",
+        "Build or improve internal tools with AI coding assistance.",
+        "Automate recurring reporting workflows.",
+        "Support finance, legal, HR, and operations teams with document-heavy workflows.",
+        "Create role-specific agents for analysis, planning, and execution."
+      ],
+      "impact_level": "watch_closely",
+      "risks": [
+        "A stronger model does not automatically create a better business workflow.",
+        "Teams still need clear prompts, data boundaries, review steps, and success metrics.",
+        "Model choice should be based on workflow performance, not brand momentum."
+      ],
+      "owner_takeaway": "Do not evaluate AI models in isolation. Test Claude Sonnet 5 against one real business workflow and measure output quality, time saved, and human review effort.",
+      "sources": [
+        {
+          "title": "Introducing Claude Sonnet 5",
+          "publisher": "Anthropic",
+          "url": "https://www.anthropic.com/news"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-foundry-claude-sonnet-5",
+      "headline": "Microsoft made Claude Sonnet 5 available in Microsoft Foundry",
+      "published_date": "2026-06-29",
+      "company": "Microsoft, Anthropic",
+      "category": "Enterprise AI Deployment",
+      "automation_relevance": "This matters because enterprise automation requires more than model access. Businesses need a governed environment where models can be grounded, evaluated, and scaled.",
+      "what_happened": "Microsoft announced Claude Sonnet 5 general availability in Microsoft Foundry, giving enterprises a production-ready path to use Anthropic’s model inside the Azure ecosystem with Foundry Agent Service and Microsoft IQ.",
+      "why_it_matters": "This gives Microsoft-heavy companies another model option for building agentic applications with enterprise controls.",
+      "business_relevance": "For business owners using Microsoft or Azure, this makes it easier to experiment with Claude-powered automation without leaving their existing cloud and governance environment.",
+      "automation_use_cases": [
+        "Build internal agents grounded in business documents.",
+        "Create Microsoft 365-aware workflow assistants.",
+        "Evaluate agent performance before deployment.",
+        "Use Claude inside existing Azure governance and security controls.",
+        "Create agents for customer support, operations, analytics, and internal knowledge search."
+      ],
+      "impact_level": "act_now_for_microsoft_azure_businesses",
+      "risks": [
+        "Enterprise model access still requires technical architecture.",
+        "Bad data permissions can create serious governance problems.",
+        "Agents should be tested before they are connected to customer or financial systems."
+      ],
+      "owner_takeaway": "If your business already uses Microsoft 365 or Azure, look at Foundry as a controlled place to test production-grade AI agents.",
+      "sources": [
+        {
+          "title": "Claude Sonnet 5 Is Now Generally Available in Microsoft Foundry",
+          "publisher": "Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-5-is-now-generally-available-in-microsoft-foundry/4530737"
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-ai-security-guardrails-sdlc",
+      "headline": "Google Cloud highlighted AI agents as automated security guardrails in software development",
+      "published_date": "2026-06-30",
+      "company": "Google Cloud",
+      "category": "AI Security Automation",
+      "automation_relevance": "Security guardrails are a practical automation use case because they reduce risk before code or workflows reach production.",
+      "what_happened": "Google Cloud’s June AI roundup highlighted how Google Cloud Security uses specialized AI agents inside the software development lifecycle to create automated guardrails that protect code at scale.",
+      "why_it_matters": "As companies use AI to build more software and automations, they also need AI-assisted checks to prevent vulnerabilities, poor practices, and unsafe changes.",
+      "business_relevance": "For business owners, this means AI automation should not only speed up work. It should also improve controls, quality, and security.",
+      "automation_use_cases": [
+        "Use AI to review code for security issues.",
+        "Create automated checks before internal tools are deployed.",
+        "Generate tests for AI-built software.",
+        "Flag risky code changes before merge.",
+        "Monitor software development workflows for security gaps."
+      ],
+      "impact_level": "act_now_for_software_teams",
+      "risks": [
+        "AI security checks should complement, not replace, human review.",
+        "False positives and false negatives still need management.",
+        "Security automation needs clear ownership and escalation paths."
+      ],
+      "owner_takeaway": "If AI is helping you build software faster, you also need AI-assisted security and quality guardrails.",
+      "sources": [
+        {
+          "title": "What Google Cloud announced in AI this month",
+          "publisher": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month"
+        }
+      ]
+    },
+    {
+      "id": "automation-anywhere-agentic-process-automation-momentum",
+      "headline": "Automation Anywhere reported strong enterprise momentum for Agentic Process Automation",
+      "published_date": "2026-07-02",
+      "company": "Automation Anywhere",
+      "category": "Agentic Process Automation",
+      "automation_relevance": "This is directly relevant for business owners because it shows enterprise demand moving from AI pilots to function-level automation across finance, IT, HR, and customer support.",
+      "what_happened": "Automation Anywhere reported strong first-quarter fiscal year 2027 results driven by increased enterprise investment in AI-powered automation. The company said enterprises with more than $1 million in ARR grew 25% year over year, and ARR from those customers grew 27%. It also cited examples in finance and IT service management, including auto-resolution of more than 80% of employee service requests in its Autonomous Service Desk solution.",
+      "why_it_matters": "This suggests that large companies are not only testing AI automation. They are committing to outcome-based deployments and expanding successful use cases across departments.",
+      "business_relevance": "Business owners should watch this closely because the same pattern applies to smaller companies: start with one measurable workflow, prove ROI, then expand to adjacent processes.",
+      "automation_use_cases": [
+        "Automate finance operations and transaction workflows.",
+        "Automate IT service desk requests.",
+        "Automate HR support questions and employee requests.",
+        "Automate customer support triage and resolution.",
+        "Coordinate agents, systems, desktops, cloud platforms, and human approvals."
+      ],
+      "impact_level": "act_now",
+      "risks": [
+        "Large automation programs can create complexity if not governed well.",
+        "ROI should be measured by outcomes, not number of agents deployed.",
+        "Cross-functional automation needs ownership, auditability, and process redesign."
+      ],
+      "owner_takeaway": "Start with one business process where AI can produce measurable outcomes, then scale only after the workflow proves value.",
+      "sources": [
+        {
+          "title": "Automation Anywhere Reports Largest Outcome-Based Transaction in Company's History while Gaining Significant Momentum on AI Deployments",
+          "publisher": "PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/automation-anywhere-reports-largest-outcome-based-transaction-in-companys-history-while-gaining-significant-momentum-on-ai-deployments-302817126.html"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-claude-science-auditable-artifacts",
+      "headline": "Anthropic launched Claude Science as an auditable AI workbench",
+      "published_date": "2026-06-30",
+      "company": "Anthropic",
+      "category": "Auditable Knowledge Work Automation",
+      "automation_relevance": "Claude Science is relevant beyond science because it points to a broader business need: AI work should produce auditable artifacts, not just conversational answers.",
+      "what_happened": "Anthropic listed Claude Science as an AI workbench for scientists, describing it as a customizable app that integrates common tools and packages, produces auditable artifacts, and provides flexible access to computing resources.",
+      "why_it_matters": "Many business workflows need traceability. Owners need to know where outputs came from, what tools were used, and how conclusions were produced.",
+      "business_relevance": "This is important for finance, legal, compliance, research, consulting, analytics, and any business process where evidence and review matter.",
+      "automation_use_cases": [
+        "Generate auditable analysis artifacts.",
+        "Document how AI reached a recommendation.",
+        "Create traceable research workflows.",
+        "Support compliance-heavy knowledge work.",
+        "Build AI workflows that produce reviewable outputs, not just final answers."
+      ],
+      "impact_level": "watch_closely",
+      "risks": [
+        "Auditable artifacts still require human review.",
+        "Business workflows need consistent data sources and documentation.",
+        "Teams should avoid relying only on chat history for important decisions."
+      ],
+      "owner_takeaway": "For serious business automation, require artifacts: source files, summaries, logs, assumptions, decisions, and approval records.",
+      "sources": [
+        {
+          "title": "Claude Science, an AI workbench for scientists, is now available",
+          "publisher": "Anthropic",
+          "url": "https://www.anthropic.com/news"
+        }
+      ]
+    }
+  ],
+  "tools_to_test": [
+    {
+      "name": "Automation Anywhere Agentic Process Automation",
+      "category": "Enterprise process automation",
+      "best_for": "Businesses with repeated finance, IT, HR, customer support, or back-office workflows",
+      "time_to_test": "Process mapping required before platform evaluation",
+      "suggested_test": "Choose one repeatable process and define trigger, input data, AI task, approval step, system update, and measurable outcome.",
+      "automation_value": "Helps move from simple AI tasks to end-to-end business process automation."
+    },
+    {
+      "name": "Microsoft Foundry with Claude Sonnet 5",
+      "category": "Governed enterprise agent deployment",
+      "best_for": "Microsoft and Azure-based organizations that want to build agents with enterprise controls",
+      "time_to_test": "Technical evaluation required",
+      "suggested_test": "Build one internal knowledge agent or workflow assistant using approved business documents and permission controls.",
+      "automation_value": "Provides a governed environment for production AI agents."
+    },
+    {
+      "name": "Claude Sonnet 5",
+      "category": "Coding, agents, and professional work",
+      "best_for": "Teams that need AI help with coding, analysis, document-heavy workflows, and professional knowledge work",
+      "time_to_test": "1 hour",
+      "suggested_test": "Test Claude Sonnet 5 on one real workflow: document analysis, internal tool planning, report generation, or process redesign.",
+      "automation_value": "Helps evaluate whether a stronger model improves real workflow performance."
+    },
+    {
+      "name": "Google Cloud AI security guardrails",
+      "category": "Secure software automation",
+      "best_for": "Software teams building internal tools, automations, or AI-assisted code",
+      "time_to_test": "Technical evaluation required",
+      "suggested_test": "Add one AI-assisted security review step before code or automation changes reach production.",
+      "automation_value": "Improves security and quality as AI speeds up development."
+    },
+    {
+      "name": "Audit artifact workflow",
+      "category": "Traceable knowledge-work automation",
+      "best_for": "Finance, legal, compliance, consulting, analytics, and research-heavy businesses",
+      "time_to_test": "30–60 minutes",
+      "suggested_test": "Require every AI-generated report to include sources, assumptions, reviewed files, decisions, and human approval status.",
+      "automation_value": "Makes AI outputs easier to trust, review, and reuse."
+    }
+  ],
+  "strategic_insight": {
+    "title": "The real story: AI automation is becoming an operating layer",
+    "content": "This week showed that the AI automation market is maturing. Anthropic is pushing stronger models and auditable workbenches. Microsoft is making frontier models available inside governed enterprise environments. Google Cloud is embedding AI agents into security guardrails. Automation Anywhere is reporting enterprise demand for outcome-based agentic process automation. The pattern is clear: AI automation is no longer just about tools. It is becoming an operating layer for how work moves through a company.",
+    "operator_take": "Business owners should stop asking only, 'Which AI tool should I use?' The better question is: 'Which business process should become AI-assisted, measurable, governed, and repeatable?'"
+  },
+  "weekly_action_plan": [
+    {
+      "action": "Choose one process, not one tool",
+      "example": "Finance review, IT support, customer support triage, HR requests, weekly reporting, or software quality checks"
+    },
+    {
+      "action": "Define the automation operating model",
+      "example": "Trigger, inputs, AI decision, human approval, system update, audit log, and success metric"
+    },
+    {
+      "action": "Add governance before scaling",
+      "example": "Approved tools, permission limits, data rules, escalation criteria, review frequency, and owner"
+    },
+    {
+      "action": "Measure business outcomes",
+      "example": "Time saved, auto-resolution rate, error reduction, response speed, cost reduction, and customer or employee satisfaction"
+    },
+    {
+      "action": "Create reviewable artifacts",
+      "example": "Every AI-generated business output should include sources, assumptions, draft version, reviewer, and final approval status"
+    }
+  ],
+  "beginner_term": {
+    "term": "Agentic Process Automation",
+    "simple_explanation": "Agentic Process Automation means using AI agents to help run entire business processes, not just individual tasks. These agents can classify, analyze, draft, route, update systems, and escalate work to humans.",
+    "business_example": "In an IT service desk workflow, an AI agent could read an employee request, classify the issue, suggest a fix, resolve simple cases automatically, and escalate complex cases to a human technician."
+  },
+  "recommended_article_angle": {
+    "title": "This Week in AI Automation: Agents Are Becoming Governed Business Systems",
+    "subtitle": "From Claude Sonnet 5 and Microsoft Foundry to Google Cloud security guardrails and Automation Anywhere’s agentic process automation momentum, the week of June 28–July 4 showed why AI automation now needs governance, ROI tracking, and process ownership.",
+    "tone": "clear, practical, executive, automation-focused, non-technical",
+    "positioning": "Explain every AI news story through the lens of governed automation: agentic process automation, enterprise model deployment, AI security guardrails, auditable artifacts, workflow ownership, and measurable ROI."
+  },
+  "seo": {
+    "meta_title": "AI Automation News for Business Owners: June 28–July 4, 2026",
+    "meta_description": "A practical AI automation briefing for business owners covering Claude Sonnet 5, Microsoft Foundry, Google Cloud AI security guardrails, Automation Anywhere Agentic Process Automation, and governed AI workflows.",
+    "slug": "ai-automation-news-business-owners-june-28-july-4-2026",
+    "primary_keyword": "AI automation news for business owners",
+    "secondary_keywords": [
+      "agentic process automation",
+      "AI workflow automation",
+      "AI automation for business owners",
+      "Claude Sonnet 5",
+      "Microsoft Foundry AI agents",
+      "Automation Anywhere APA",
+      "AI security guardrails",
+      "governed AI automation",
+      "enterprise AI agents",
+      "AI automation ROI"
+    ],
+    "long_tail_keywords": [
+      "how business owners can use agentic process automation",
+      "how to govern AI agents in business workflows",
+      "what Claude Sonnet 5 means for business automation",
+      "how Microsoft Foundry helps deploy AI agents",
+      "how AI security guardrails protect software workflows",
+      "how to measure ROI from AI automation",
+      "how to move from AI pilots to governed automation"
+    ],
+    "search_questions": [
+      "What AI automation news mattered for business owners from June 28 to July 4, 2026?",
+      "What is Agentic Process Automation?",
+      "How can businesses govern AI agents?",
+      "Why does Claude Sonnet 5 matter for business automation?",
+      "How can Microsoft Foundry help deploy enterprise AI agents?",
+      "How can AI agents improve IT service desk automation?",
+      "How should business owners measure AI automation ROI?"
+    ],
+    "internal_linking_suggestions": [
+      {
+        "anchor_text": "AI agents for business automation",
+        "target_type": "pillar_page"
+      },
+      {
+        "anchor_text": "AI automation governance checklist",
+        "target_type": "checklist"
+      },
+      {
+        "anchor_text": "how to build AI workflows with n8n",
+        "target_type": "tutorial"
+      },
+      {
+        "anchor_text": "IT service desk automation with AI",
+        "target_type": "use_case_article"
+      },
+      {
+        "anchor_text": "how to measure AI automation ROI",
+        "target_type": "guide"
+      }
+    ]
+  },
+  "geo": {
+    "also_known_as": "Generative Engine Optimization",
+    "target_ai_answer": "The most important AI automation news for business owners from June 28–July 4, 2026 is that AI automation moved toward governed enterprise systems. Anthropic introduced Claude Sonnet 5 for coding, agents, and professional work at scale. Microsoft made Claude Sonnet 5 generally available in Microsoft Foundry for agentic applications. Google Cloud highlighted specialized AI agents used as automated software security guardrails. Automation Anywhere reported strong enterprise momentum for Agentic Process Automation across finance, IT service management, HR, and customer support. Business owners should focus on process ownership, governance, auditability, ROI measurement, and repeatable workflow automation.",
+    "entities_to_include": [
+      "Anthropic",
+      "Claude Sonnet 5",
+      "Claude Science",
+      "Microsoft",
+      "Microsoft Foundry",
+      "Azure",
+      "Foundry Agent Service",
+      "Microsoft IQ",
+      "Google Cloud",
+      "AI security guardrails",
+      "software development lifecycle",
+      "Automation Anywhere",
+      "Agentic Process Automation",
+      "Autonomous Service Desk",
+      "Autonomous Finance",
+      "EnterpriseClaw",
+      "AI workflow automation",
+      "governed AI agents",
+      "business automation",
+      "n8n"
+    ],
+    "definition_blocks": [
+      {
+        "term": "Agentic Process Automation",
+        "definition": "Agentic Process Automation is the use of AI agents to help run business processes across people, systems, applications, data, approvals, and workflows."
+      },
+      {
+        "term": "Governed AI automation",
+        "definition": "Governed AI automation means AI workflows operate with clear ownership, permission limits, audit logs, review steps, compliance rules, and measurable outcomes."
+      },
+      {
+        "term": "AI security guardrail",
+        "definition": "An AI security guardrail is an automated control that helps detect risky behavior, insecure code, policy violations, or unsafe workflow actions before they create business risk."
+      },
+      {
+        "term": "Auditable AI artifact",
+        "definition": "An auditable AI artifact is an AI-generated output that includes enough supporting context, sources, assumptions, logs, and review history to be checked by a human."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What was the most important AI automation news from June 28–July 4, 2026?",
+        "answer": "The most important news was that AI automation moved toward governed enterprise systems. Anthropic introduced Claude Sonnet 5, Microsoft made Claude Sonnet 5 available in Foundry, Google Cloud highlighted AI security guardrails, and Automation Anywhere reported strong demand for Agentic Process Automation."
+      },
+      {
+        "question": "What is Agentic Process Automation?",
+        "answer": "Agentic Process Automation uses AI agents to help run business processes across apps, data, people, approvals, and systems. It goes beyond simple task automation by coordinating work across an entire workflow."
+      },
+      {
+        "question": "Why does Claude Sonnet 5 matter for business automation?",
+        "answer": "Claude Sonnet 5 matters because it is positioned for coding, agents, and professional work at scale, which are core areas for business workflow automation."
+      },
+      {
+        "question": "How can Microsoft Foundry help with AI agents?",
+        "answer": "Microsoft Foundry can help companies build, ground, evaluate, and scale agentic applications inside the Azure ecosystem with enterprise controls."
+      },
+      {
+        "question": "How can AI agents improve service desk automation?",
+        "answer": "AI agents can classify employee requests, suggest fixes, auto-resolve simple issues, escalate complex cases, and track resolution performance."
+      },
+      {
+        "question": "What should business owners automate first after this week’s news?",
+        "answer": "Business owners should start with one measurable process such as IT service requests, finance review, customer support triage, HR support, weekly reporting, or software quality checks."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Introducing Claude Sonnet 5",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/news"
+    },
+    {
+      "title": "Claude Science, an AI workbench for scientists, is now available",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/news"
+    },
+    {
+      "title": "Claude Sonnet 5 Is Now Generally Available in Microsoft Foundry",
+      "publisher": "Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-5-is-now-generally-available-in-microsoft-foundry/4530737"
+    },
+    {
+      "title": "What Google Cloud announced in AI this month",
+      "publisher": "Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month"
+    },
+    {
+      "title": "Automation Anywhere Reports Largest Outcome-Based Transaction in Company's History while Gaining Significant Momentum on AI Deployments",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/automation-anywhere-reports-largest-outcome-based-transaction-in-companys-history-while-gaining-significant-momentum-on-ai-deployments-302817126.html"
+    }
+  ]
+}

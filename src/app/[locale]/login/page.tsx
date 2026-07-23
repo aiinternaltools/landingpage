@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: t("title"),
     description: t("description"),
+    robots: { index: false, follow: false },
     alternates: {
       canonical: `/${locale}/login`,
       languages: {

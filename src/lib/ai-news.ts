@@ -6,6 +6,10 @@ import type {
   AiNewsArticleListItem,
   AiNewsBriefing,
   AiNewsBriefingStory,
+  AiNewsDefinitionBlock,
+  AiNewsFaqItem,
+  AiNewsGeoSummary,
+  AiNewsSearchIntent,
   AiNewsSource,
   AiNewsToolToTest,
   AiNewsWeeklyAction,
@@ -45,6 +49,58 @@ function parseSources(v: unknown): AiNewsSource[] {
       return { title, publisher, url };
     })
     .filter((s): s is AiNewsSource => s !== null);
+}
+
+function parseFaq(v: unknown): AiNewsFaqItem[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .map((item) => {
+      if (!item || typeof item !== "object") return null;
+      const o = item as Record<string, unknown>;
+      const question = asString(o.question);
+      const answer = asString(o.answer);
+      if (!question || !answer) return null;
+      return { question, answer };
+    })
+    .filter((item): item is AiNewsFaqItem => item !== null);
+}
+
+function parseDefinitionBlocks(v: unknown): AiNewsDefinitionBlock[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .map((item) => {
+      if (!item || typeof item !== "object") return null;
+      const o = item as Record<string, unknown>;
+      const term = asString(o.term);
+      const definition = asString(o.definition);
+      if (!term || !definition) return null;
+      return { term, definition };
+    })
+    .filter((item): item is AiNewsDefinitionBlock => item !== null);
+}
+
+function parseGeoSummary(v: unknown): AiNewsGeoSummary | undefined {
+  if (!v || typeof v !== "object") return undefined;
+  const o = v as Record<string, unknown>;
+  const short_answer = asString(o.short_answer);
+  const answer_engine_summary = asString(o.answer_engine_summary);
+  if (!short_answer || !answer_engine_summary) return undefined;
+  return {
+    short_answer,
+    answer_engine_summary,
+    recommended_citation_style: asString(o.recommended_citation_style) ?? undefined,
+  };
+}
+
+function parseSearchIntent(v: unknown): AiNewsSearchIntent | undefined {
+  if (!v || typeof v !== "object") return undefined;
+  const o = v as Record<string, unknown>;
+  const primary = asString(o.primary);
+  if (!primary) return undefined;
+  return {
+    primary,
+    secondary: asStringArray(o.secondary),
+  };
 }
 
 function parseStory(v: unknown): AiNewsBriefingStory | null {
@@ -230,11 +286,16 @@ function parseBriefing(raw: unknown, filename: string): AiNewsBriefing | null {
       title: angleTitle,
       subtitle: angleSubtitle,
     },
+    geo_summary: parseGeoSummary(a.geo_summary),
+    search_intent: parseSearchIntent(a.search_intent),
+    sources: parseSources(a.sources),
     seo: {
       meta_title,
       meta_description,
       slug,
       keywords: asStringArray(seo.keywords),
+      faq: parseFaq(seo.faq),
+      definition_blocks: parseDefinitionBlocks(seo.definition_blocks),
     },
     audio,
   };

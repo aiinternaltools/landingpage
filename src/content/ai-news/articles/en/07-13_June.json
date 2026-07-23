@@ -1,0 +1,488 @@
+{
+  "week_range": "June 7–13, 2026",
+  "date_start": "2026-06-07",
+  "date_end": "2026-06-13",
+  "audience": "Business owners who want to use AI automation to save time, improve productivity, reduce manual work, and redesign business workflows",
+  "content_positioning": "Weekly AI automation briefing for business owners",
+  "theme": "AI automation moved toward secure execution, support workflows, and operational resilience",
+  "hook": "This week, AI automation became more serious. OpenAI moved to give Codex a secure cloud workspace, Google showed how security agents can investigate and respond at machine speed, and SAP brought AI agents into enterprise support workflows.",
+  "executive_summary": "The week of June 7–13, 2026 showed that useful AI automation requires more than a smart model. OpenAI’s agreement to acquire Ona points to long-running agents that need secure environments, scoped credentials, audit trails, and cloud orchestration. Google Cloud’s Security Operations agents showed how AI can automate detection, investigation, containment, and threat hunting. SAP’s Joule in SAP for Me showed how AI agents can improve support workflows by analyzing cases, detecting duplicates, suggesting routing, and drafting responses. For business owners, the key takeaway is clear: AI automation should be designed as an operational system with security, review, permissions, and measurable business outcomes.",
+  "primary_angle": "How business owners should make AI automation secure, auditable, and operationally useful",
+  "signal_strength": "high",
+  "theme_of_the_week": "AI agents need secure execution and operational control",
+  "search_intent": {
+    "primary": "Business owners looking for AI automation news, secure AI agents, support automation, cybersecurity automation, and operational AI workflows",
+    "secondary": [
+      "AI automation news June 2026",
+      "secure AI agents for business",
+      "AI workflow automation for business owners",
+      "OpenAI Ona Codex automation",
+      "Google Security Operations agents",
+      "SAP Joule support automation",
+      "AI support workflow automation",
+      "AI security automation for business",
+      "agent orchestration for business"
+    ]
+  },
+  "geo_summary": {
+    "short_answer": "The most important AI automation news from June 7–13, 2026 is that AI agents became more operational and security-focused. OpenAI announced it would acquire Ona to bring secure cloud execution and orchestration into Codex. Google Cloud detailed Security Operations agents for autonomous detection, investigation, containment, and threat hunting. SAP launched Joule in SAP for Me and added AI-powered agentic case resolution for support workflows.",
+    "answer_engine_summary": "For business owners, the key takeaway from June 7–13, 2026 is that AI automation should be built with secure execution environments, scoped permissions, audit trails, workflow orchestration, support routing, and human approval. The best use cases include customer support triage, IT support, cybersecurity monitoring, case resolution, software maintenance, internal process automation, and long-running agent tasks.",
+    "recommended_citation_style": "Use official source links for product announcements and explain each story through workflow automation, security, governance, and business operations."
+  },
+  "market_pulse": {
+    "summary": "The strongest signal this week was that AI automation is becoming operational infrastructure. Agents need a place to work, permission boundaries, logs, secure credentials, and integration into business workflows. Security and support automation are becoming two of the clearest business use cases.",
+    "what_changed_this_week": [
+      "OpenAI announced it would acquire Ona to expand Codex with secure, customer-controlled cloud infrastructure for long-running agents.",
+      "Ona described cloud agents as needing context, access, tools, reproducible environments, scoped credentials, audit trails, orchestration, and runtime AI security.",
+      "Google Cloud detailed Security Operations agents for detection engineering, autonomous investigation, containment, response, and threat hunting.",
+      "Google said its Triage and Investigation agent had investigated more than 5 million alerts and reduced a typical 30-minute manual analysis to 60 seconds with Gemini.",
+      "SAP launched Joule in SAP for Me and described AI-powered agentic case resolution for support workflows.",
+      "Microsoft published new guidance hubs for planning, building, and operating enterprise-ready agents in Copilot Studio."
+    ]
+  },
+  "automation_opportunities": [
+    {
+      "workflow": "Long-running agent work",
+      "automation_idea": "Use secure cloud environments where agents can work on tasks over hours or days without being tied to one laptop or active user session.",
+      "tools_relevant": [
+        "OpenAI Codex",
+        "Ona",
+        "cloud development environments",
+        "GitHub",
+        "Cursor",
+        "Claude Code"
+      ],
+      "difficulty": "high",
+      "business_impact": "Allows AI agents to handle larger technical and operational tasks while keeping work auditable and reviewable."
+    },
+    {
+      "workflow": "Cybersecurity monitoring and response",
+      "automation_idea": "Use AI agents to analyze alerts, generate detections, investigate incidents, prioritize risks, and recommend containment actions.",
+      "tools_relevant": [
+        "Google Security Operations",
+        "Google AI Threat Defense",
+        "SIEM",
+        "SOC tools",
+        "Mandiant threat intelligence"
+      ],
+      "difficulty": "high",
+      "business_impact": "Reduces manual security analysis time and helps teams respond faster to threats."
+    },
+    {
+      "workflow": "Customer and IT support triage",
+      "automation_idea": "Use AI agents to analyze new cases, detect duplicates, suggest routing, draft responses, and escalate complex issues.",
+      "tools_relevant": [
+        "SAP Joule",
+        "SAP for Me",
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "n8n",
+        "CRM"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Improves support speed and reduces repetitive case-handling work."
+    },
+    {
+      "workflow": "Agent governance and auditability",
+      "automation_idea": "Create rules for what agents can access, what actions they can take, what must be approved, and how logs are reviewed.",
+      "tools_relevant": [
+        "Copilot Studio",
+        "OpenAI Codex",
+        "Ona",
+        "Microsoft Agent guidance hubs",
+        "audit logs",
+        "permission systems"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Makes AI automation safer and easier to scale across teams."
+    },
+    {
+      "workflow": "Software maintenance and vulnerability remediation",
+      "automation_idea": "Use coding agents to run tests, resolve issues, modernize applications, address vulnerabilities, and prepare pull requests for human review.",
+      "tools_relevant": [
+        "OpenAI Codex",
+        "Ona",
+        "GitHub",
+        "CI/CD",
+        "Claude Code",
+        "Cursor"
+      ],
+      "difficulty": "medium",
+      "business_impact": "Reduces technical debt and speeds up maintenance work."
+    }
+  ],
+  "stories": [
+    {
+      "id": "openai-ona-secure-codex-agents",
+      "headline": "OpenAI moved to give Codex a secure cloud workspace for long-running agents",
+      "published_date": "2026-06-11",
+      "company": "OpenAI, Ona",
+      "category": "Secure Agent Execution",
+      "automation_relevance": "This is highly relevant for automation because business agents need secure places to work, not just chat windows. Long-running agents need cloud execution, scoped credentials, audit trails, runtime security, and review workflows.",
+      "what_happened": "OpenAI announced it would acquire Ona, bringing secure cloud execution and orchestration technology into the Codex ecosystem. OpenAI said Codex is used by more than 5 million people each week to research, analyze, build, and automate work, and that the acquisition is intended to help Codex handle sustained work across software and knowledge workflows.",
+      "why_it_matters": "As agents become more capable, their most valuable work may take hours or days. That requires infrastructure where tasks can continue securely, be reviewed, and be controlled by the organization.",
+      "business_relevance": "For business owners, this shows that serious AI automation needs architecture: secure environments, access control, logs, and review steps.",
+      "automation_use_cases": [
+        "Run long software maintenance tasks.",
+        "Automate code review and test generation.",
+        "Modernize legacy applications.",
+        "Create internal tools from business requirements.",
+        "Let agents work on tasks asynchronously while humans review progress and final outputs."
+      ],
+      "impact_level": "act_now_for_technical_teams",
+      "risks": [
+        "Long-running agents need strict permission boundaries.",
+        "Agents working with code or systems require audit logs and human review.",
+        "Businesses should avoid giving agents broad credentials without supervision."
+      ],
+      "owner_takeaway": "If you want AI agents to do real work, you need more than prompts. You need secure execution, scoped access, logs, and review rules.",
+      "sources": [
+        {
+          "title": "OpenAI to acquire Ona",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/openai-to-acquire-ona/"
+        },
+        {
+          "title": "Ona is joining OpenAI",
+          "publisher": "Ona",
+          "url": "https://ona.com/stories/ona-joins-openai"
+        }
+      ]
+    },
+    {
+      "id": "google-security-operations-agents",
+      "headline": "Google showed how security agents can automate detection, investigation, and response",
+      "published_date": "2026-06-09",
+      "company": "Google Cloud",
+      "category": "Cybersecurity Automation",
+      "automation_relevance": "Security is one of the clearest examples of AI automation with business value because alerts, logs, vulnerabilities, and incidents are too numerous for purely manual review.",
+      "what_happened": "Google Cloud detailed how Google Security Operations works with AI Threat Defense to monitor, detect, and respond to AI-powered threats. It described Detection Engineering agents, Triage and Investigation agents, agentic automation for containment, and Threat Hunting agents.",
+      "why_it_matters": "Cybersecurity teams are under pressure because threats move faster than manual processes. AI agents can help analyze large volumes of security data, generate detections, investigate alerts, and recommend containment actions.",
+      "business_relevance": "Even small and medium businesses should care because cyber risk is operational risk. AI security automation can help reduce response time and improve resilience.",
+      "automation_use_cases": [
+        "Automatically triage alerts.",
+        "Generate custom detection rules.",
+        "Investigate suspicious activity across logs and systems.",
+        "Summarize incidents for managers.",
+        "Recommend containment actions for human approval.",
+        "Hunt for hidden threats across historical telemetry."
+      ],
+      "impact_level": "watch_closely_for_smbs_act_now_for_security_teams",
+      "risks": [
+        "Security agents require expert configuration.",
+        "False positives and false negatives still matter.",
+        "Containment actions should have approval rules unless the workflow is carefully controlled."
+      ],
+      "owner_takeaway": "If your business depends on digital systems, start thinking about AI-assisted security monitoring and incident response.",
+      "sources": [
+        {
+          "title": "Detecting and containing AI-powered threats with Google Security Operations agents",
+          "publisher": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/identity-security/detecting-and-containing-powered-threats-with-google-security-operations-agents"
+        }
+      ]
+    },
+    {
+      "id": "sap-joule-support-automation",
+      "headline": "SAP brought Joule into support workflows with agentic case resolution",
+      "published_date": "2026-06-11",
+      "company": "SAP",
+      "category": "Support Workflow Automation",
+      "automation_relevance": "Support workflows are ideal for AI automation because many cases require classification, duplicate detection, routing, summarization, and response drafting.",
+      "what_happened": "SAP launched Joule in SAP for Me and described AI-powered agentic case resolution for support workflows. SAP said AI agents can help analyze new cases, detect duplicates, suggest routing, and draft responses.",
+      "why_it_matters": "This shows how AI agents are moving into operational support, not just internal productivity. The pattern applies beyond SAP: any support-heavy business can automate the first layer of case handling.",
+      "business_relevance": "Business owners can use the same automation logic for customer support, IT support, internal requests, maintenance tickets, HR requests, and vendor issues.",
+      "automation_use_cases": [
+        "Classify new support tickets.",
+        "Detect duplicate requests.",
+        "Route issues to the right person or team.",
+        "Draft support responses.",
+        "Summarize customer history before escalation.",
+        "Track unresolved cases and recurring problems."
+      ],
+      "impact_level": "act_now_for_support_heavy_businesses",
+      "risks": [
+        "Customer-facing responses need tone and accuracy checks.",
+        "Agents should escalate sensitive or complex cases.",
+        "Support automation should not hide recurring product or service issues."
+      ],
+      "owner_takeaway": "Support is one of the best first AI automation use cases. Start with triage and drafts before allowing autonomous resolution.",
+      "sources": [
+        {
+          "title": "SAP Launches Joule in SAP for Me",
+          "publisher": "SAP News Center",
+          "url": "https://news.sap.com/2026/06/sap-launches-joule-in-sap-for-me/"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-agent-guidance-hubs",
+      "headline": "Microsoft emphasized guidance, guardrails, and repeatable agent delivery",
+      "published_date": "2026-06-11",
+      "company": "Microsoft",
+      "category": "Agent Governance and Operations",
+      "automation_relevance": "Microsoft’s guidance hubs reinforce that successful AI agents require planning, architecture, guardrails, and operating discipline, not only a powerful platform.",
+      "what_happened": "Microsoft published guidance resources for planning, building, and operating enterprise-ready agents in Copilot Studio. Microsoft said successful agents require clear choices, practical guardrails, and a way to move from experiments to confident, repeatable delivery.",
+      "why_it_matters": "Many companies fail with AI automation because they build isolated demos. Repeatable business value requires architecture, governance, ownership, and lifecycle management.",
+      "business_relevance": "For business owners, this is a reminder to treat AI automation like an operating system: define goals, design workflows, assign owners, review outputs, and measure impact.",
+      "automation_use_cases": [
+        "Create an agent architecture checklist.",
+        "Define who owns each automation.",
+        "Set approval rules for risky actions.",
+        "Document workflows before automating them.",
+        "Review logs and outcomes regularly.",
+        "Move successful experiments into repeatable production workflows."
+      ],
+      "impact_level": "act_now",
+      "risks": [
+        "Ungoverned agents can create inconsistent outputs.",
+        "Teams may duplicate automations without coordination.",
+        "Automation can scale mistakes if review rules are weak."
+      ],
+      "owner_takeaway": "Before adding more AI agents, create a simple governance checklist: purpose, owner, data access, permissions, approval steps, and success metric.",
+      "sources": [
+        {
+          "title": "Guidance hubs to help you plan, build, and operate agents",
+          "publisher": "Microsoft Copilot Blog",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-resources-and-guidance-to-plan-build-and-operate-enterprise-ready-agents/"
+        }
+      ]
+    }
+  ],
+  "tools_to_test": [
+    {
+      "name": "OpenAI Codex",
+      "category": "Long-running technical automation",
+      "best_for": "Businesses building internal tools, maintaining codebases, fixing bugs, modernizing systems, or automating technical workflows",
+      "time_to_test": "1–2 hours",
+      "suggested_test": "Ask Codex to review one existing automation or script and suggest improvements, tests, and security checks.",
+      "automation_value": "Helps turn technical tasks into reviewable agent work."
+    },
+    {
+      "name": "Google Security Operations agents",
+      "category": "Cybersecurity automation",
+      "best_for": "Security teams and businesses that need faster alert triage, investigation, and threat detection",
+      "time_to_test": "Security team evaluation required",
+      "suggested_test": "Review one high-volume alert category and determine whether AI can summarize, classify, or route it faster.",
+      "automation_value": "Reduces manual security operations work and improves response speed."
+    },
+    {
+      "name": "SAP Joule",
+      "category": "Enterprise support automation",
+      "best_for": "Businesses already using SAP and organizations with structured support or case-management workflows",
+      "time_to_test": "Enterprise evaluation required",
+      "suggested_test": "Identify one recurring case type where AI could detect duplicates, suggest routing, and draft a response.",
+      "automation_value": "Improves support productivity and case handling."
+    },
+    {
+      "name": "Microsoft Copilot Studio",
+      "category": "Agent governance and business process automation",
+      "best_for": "Microsoft-heavy businesses that want to build agents with guidance, guardrails, and repeatable workflows",
+      "time_to_test": "1–2 hours",
+      "suggested_test": "Create a simple internal agent for employee requests, with clear data access and approval rules.",
+      "automation_value": "Helps move from isolated AI experiments to governed business workflows."
+    },
+    {
+      "name": "n8n",
+      "category": "Workflow orchestration",
+      "best_for": "Connecting AI agents to Gmail, Google Sheets, CRMs, Slack, Notion, webhooks, and MCP servers",
+      "time_to_test": "1 hour",
+      "suggested_test": "Build a support triage workflow: new email → AI summary → category → draft reply → human approval.",
+      "automation_value": "Turns AI outputs into practical business processes."
+    }
+  ],
+  "strategic_insight": {
+    "title": "The real story: AI automation now needs operational discipline",
+    "content": "This week showed that AI agents are becoming part of real operations. OpenAI’s Ona acquisition is about giving agents secure cloud execution. Google’s security agents are about autonomous detection and response. SAP’s Joule support workflow is about case resolution. Microsoft’s guidance hubs are about planning and operating agents responsibly. The pattern is clear: AI automation is moving from demos to controlled operations.",
+    "operator_take": "Business owners should stop thinking of AI automation as a clever prompt or a chatbot. The useful version is a controlled workflow: secure environment, business context, defined permissions, human approval, audit logs, and measurable outcome."
+  },
+  "weekly_action_plan": [
+    {
+      "action": "Choose one operational workflow to automate",
+      "example": "Support triage, IT requests, invoice review, CRM updates, security alerts, or weekly reporting"
+    },
+    {
+      "action": "Define where the agent works",
+      "example": "Email inbox, CRM, ticketing system, cloud environment, spreadsheet, internal dashboard, or codebase"
+    },
+    {
+      "action": "Define access boundaries",
+      "example": "The agent can read tickets and draft replies, but cannot delete records, issue refunds, change prices, or send final messages"
+    },
+    {
+      "action": "Add review and auditability",
+      "example": "Log what the agent read, what it changed, what it suggested, and who approved the final action"
+    },
+    {
+      "action": "Measure operational impact",
+      "example": "Track time saved, response speed, accuracy, number of escalations, error rate, and customer satisfaction"
+    }
+  ],
+  "beginner_term": {
+    "term": "Secure agent execution",
+    "simple_explanation": "Secure agent execution means giving an AI agent a controlled environment where it can do work safely, with limited access, logs, review steps, and clear permissions.",
+    "business_example": "Instead of giving an AI agent unrestricted access to your CRM, you allow it to read new leads, summarize them, draft follow-up emails, and ask a salesperson to approve before anything is sent."
+  },
+  "recommended_article_angle": {
+    "title": "This Week in AI Automation: Agents Need Secure Workspaces and Real Guardrails",
+    "subtitle": "From OpenAI’s Ona acquisition to Google’s security agents and SAP’s support automation, the week of June 7–13 showed why AI automation needs execution environments, permissions, audit logs, and human review.",
+    "tone": "clear, practical, executive, automation-focused, non-technical",
+    "positioning": "Explain every AI news story through the lens of secure automation, agent operations, support workflows, cybersecurity, governance, and measurable business value."
+  },
+  "seo": {
+    "meta_title": "AI Automation News for Business Owners: June 7–13, 2026",
+    "meta_description": "A practical AI automation briefing for business owners covering OpenAI’s Ona acquisition, secure Codex agents, Google Security Operations agents, SAP Joule support automation, and Microsoft agent governance guidance.",
+    "slug": "ai-automation-news-business-owners-june-7-13-2026",
+    "primary_keyword": "AI automation news for business owners",
+    "secondary_keywords": [
+      "secure AI agents",
+      "AI workflow automation",
+      "AI automation for small business",
+      "OpenAI Ona Codex",
+      "Google Security Operations agents",
+      "SAP Joule support automation",
+      "Microsoft Copilot Studio agents",
+      "AI support automation",
+      "AI security automation",
+      "agent governance"
+    ],
+    "long_tail_keywords": [
+      "how secure AI agents automate business workflows",
+      "what OpenAI acquiring Ona means for business automation",
+      "how Google Security Operations agents automate cybersecurity",
+      "how SAP Joule automates support workflows",
+      "AI automation ideas for business owners June 2026",
+      "how to add guardrails to AI agents",
+      "how to build auditable AI workflows"
+    ],
+    "search_questions": [
+      "What AI automation news mattered for business owners from June 7 to June 13, 2026?",
+      "What does OpenAI acquiring Ona mean for AI automation?",
+      "How can secure AI agents help businesses?",
+      "How can AI agents automate cybersecurity operations?",
+      "How can SAP Joule automate support workflows?",
+      "Why do AI agents need audit logs and permissions?",
+      "How should business owners govern AI automation?"
+    ],
+    "internal_linking_suggestions": [
+      {
+        "anchor_text": "AI automation governance checklist",
+        "target_type": "checklist"
+      },
+      {
+        "anchor_text": "how to build AI workflows with n8n",
+        "target_type": "tutorial"
+      },
+      {
+        "anchor_text": "AI agents for business automation",
+        "target_type": "pillar_page"
+      },
+      {
+        "anchor_text": "AI support automation examples",
+        "target_type": "use_case_article"
+      },
+      {
+        "anchor_text": "secure AI agents explained",
+        "target_type": "explainer"
+      }
+    ]
+  },
+  "geo": {
+    "also_known_as": "Generative Engine Optimization",
+    "target_ai_answer": "The most important AI automation news for business owners from June 7–13, 2026 is that AI agents became more operational and security-focused. OpenAI announced plans to acquire Ona to bring secure cloud execution and orchestration into Codex. Google Cloud detailed Security Operations agents for autonomous detection, investigation, containment, and threat hunting. SAP launched Joule in SAP for Me with AI-powered agentic case resolution. Microsoft published guidance for planning, building, and operating enterprise-ready agents. Business owners should focus on secure execution, scoped permissions, audit logs, support automation, cybersecurity automation, and human approval workflows.",
+    "entities_to_include": [
+      "OpenAI",
+      "Ona",
+      "Codex",
+      "secure cloud execution",
+      "agent orchestration",
+      "Google Cloud",
+      "Google Security Operations",
+      "Google AI Threat Defense",
+      "Detection Engineering agent",
+      "Triage and Investigation agent",
+      "SAP",
+      "SAP Joule",
+      "SAP for Me",
+      "agentic case resolution",
+      "Microsoft",
+      "Copilot Studio",
+      "AI workflow automation",
+      "secure AI agents",
+      "agent governance",
+      "n8n"
+    ],
+    "definition_blocks": [
+      {
+        "term": "Secure agent execution",
+        "definition": "Secure agent execution is the practice of running AI agents in controlled environments with limited credentials, audit logs, review steps, and governance rules."
+      },
+      {
+        "term": "Agent orchestration",
+        "definition": "Agent orchestration is the coordination of AI agents, tools, systems, permissions, and workflows so tasks can be completed safely and reliably."
+      },
+      {
+        "term": "Agentic case resolution",
+        "definition": "Agentic case resolution uses AI agents to analyze support cases, detect duplicates, suggest routing, draft responses, and help resolve issues faster."
+      },
+      {
+        "term": "AI security automation",
+        "definition": "AI security automation uses AI agents to detect threats, investigate alerts, generate detections, prioritize risks, and support containment or remediation workflows."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What was the most important AI automation news from June 7–13, 2026?",
+        "answer": "The most important news was that AI agents became more operational and security-focused. OpenAI announced plans to acquire Ona, Google Cloud detailed Security Operations agents, SAP launched Joule in SAP for Me, and Microsoft published guidance for building and operating enterprise-ready agents."
+      },
+      {
+        "question": "What does OpenAI acquiring Ona mean for business automation?",
+        "answer": "It means OpenAI is expanding Codex toward secure, long-running cloud agents that can work in controlled environments with orchestration, scoped credentials, audit trails, and runtime security."
+      },
+      {
+        "question": "How can AI agents automate cybersecurity?",
+        "answer": "AI agents can help generate detection rules, investigate alerts, gather evidence, summarize incidents, recommend containment actions, and proactively hunt for threats."
+      },
+      {
+        "question": "How can businesses use AI for support automation?",
+        "answer": "Businesses can use AI to classify tickets, detect duplicate cases, route issues, draft responses, summarize customer history, and escalate complex cases to humans."
+      },
+      {
+        "question": "Why do AI agents need guardrails?",
+        "answer": "AI agents need guardrails because they can access systems, process sensitive data, and take actions. Clear permissions, approval steps, and audit logs reduce operational risk."
+      },
+      {
+        "question": "What should business owners automate first after this week’s AI news?",
+        "answer": "Business owners should start with support triage, internal request routing, security alert summaries, CRM updates, invoice review, or weekly reporting because these workflows are repetitive and easy to supervise."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "OpenAI to acquire Ona",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/openai-to-acquire-ona/"
+    },
+    {
+      "title": "Ona is joining OpenAI",
+      "publisher": "Ona",
+      "url": "https://ona.com/stories/ona-joins-openai"
+    },
+    {
+      "title": "Detecting and containing AI-powered threats with Google Security Operations agents",
+      "publisher": "Google Cloud",
+      "url": "https://cloud.google.com/blog/products/identity-security/detecting-and-containing-powered-threats-with-google-security-operations-agents"
+    },
+    {
+      "title": "SAP Launches Joule in SAP for Me",
+      "publisher": "SAP News Center",
+      "url": "https://news.sap.com/2026/06/sap-launches-joule-in-sap-for-me/"
+    },
+    {
+      "title": "Guidance hubs to help you plan, build, and operate agents",
+      "publisher": "Microsoft Copilot Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-resources-and-guidance-to-plan-build-and-operate-enterprise-ready-agents/"
+    }
+  ]
+}

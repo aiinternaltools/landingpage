@@ -9,6 +9,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageBackdrop } from "@/components/ui/PageBackdrop";
 import { getAllArticleListItems, type LocaleArticles } from "@/lib/ai-news";
 import { routing, type Locale } from "@/i18n/routing";
+import { buildSocialMetadata } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -28,13 +29,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
   languages["x-default"] = "/en/ai-news";
 
+  const title = t("title");
+  const description = t("description");
+
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: {
       canonical: `/${locale}/ai-news`,
       languages,
     },
+    ...buildSocialMetadata({
+      title,
+      description,
+      url: `/${locale}/ai-news`,
+      locale,
+    }),
   };
 }
 

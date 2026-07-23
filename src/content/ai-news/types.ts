@@ -36,6 +36,27 @@ export type AiNewsWeeklyAction = {
   example: string;
 };
 
+export type AiNewsFaqItem = {
+  question: string;
+  answer: string;
+};
+
+export type AiNewsDefinitionBlock = {
+  term: string;
+  definition: string;
+};
+
+export type AiNewsGeoSummary = {
+  short_answer: string;
+  answer_engine_summary: string;
+  recommended_citation_style?: string;
+};
+
+export type AiNewsSearchIntent = {
+  primary: string;
+  secondary: string[];
+};
+
 export type AiNewsBriefing = {
   format: "briefing";
   slug: string;
@@ -68,11 +89,16 @@ export type AiNewsBriefing = {
     title: string;
     subtitle: string;
   };
+  geo_summary?: AiNewsGeoSummary;
+  search_intent?: AiNewsSearchIntent;
+  sources: AiNewsSource[];
   seo: {
     meta_title: string;
     meta_description: string;
     slug: string;
     keywords: string[];
+    faq: AiNewsFaqItem[];
+    definition_blocks: AiNewsDefinitionBlock[];
   };
   audio?: {
     src: string;
