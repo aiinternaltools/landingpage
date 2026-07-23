@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SiteLogo } from "@/components/layout/SiteLogo";
 
@@ -13,8 +11,8 @@ const footerLinks = [
   { href: "/contact", key: "contact" },
 ] as const;
 
-export function Footer() {
-  const t = useTranslations("footer");
+export async function Footer() {
+  const t = await getTranslations("footer");
 
   return (
     <footer className="mt-auto border-t border-border bg-background">

@@ -1,7 +1,7 @@
+import dynamic from "next/dynamic";
 import { Link } from "@/i18n/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
-import { ArticleAudioPlayer } from "@/components/ai-news/ArticleAudioPlayer";
 import { ArticleFaq } from "@/components/ai-news/briefing/ArticleFaq";
 import { BeginnerCorner } from "@/components/ai-news/briefing/BeginnerCorner";
 import { BriefingHero } from "@/components/ai-news/briefing/BriefingHero";
@@ -12,7 +12,6 @@ import { GeoSummary } from "@/components/ai-news/briefing/GeoSummary";
 import { MarketPulse } from "@/components/ai-news/briefing/MarketPulse";
 import { OperatorTake } from "@/components/ai-news/briefing/OperatorTake";
 import { SourcesList } from "@/components/ai-news/briefing/SourcesList";
-import { StoriesTabs } from "@/components/ai-news/briefing/StoriesTabs";
 import { ToolsToTest } from "@/components/ai-news/briefing/ToolsToTest";
 import { WeeklyActionPlan } from "@/components/ai-news/briefing/WeeklyActionPlan";
 import {
@@ -24,6 +23,23 @@ import { PageBackdrop } from "@/components/ui/PageBackdrop";
 import { Button } from "@/components/ui/Button";
 import { collectUniqueSources } from "@/lib/ai-news-utils";
 import { articleJsonLd } from "@/lib/seo";
+
+const ArticleAudioPlayer = dynamic(
+  () =>
+    import("@/components/ai-news/ArticleAudioPlayer").then(
+      (m) => m.ArticleAudioPlayer,
+    ),
+);
+
+const StoriesTabs = dynamic(
+  () =>
+    import("@/components/ai-news/briefing/StoriesTabs").then((m) => m.StoriesTabs),
+  {
+    loading: () => (
+      <div className="h-48 animate-pulse rounded-2xl border border-border bg-muted-bg/40" />
+    ),
+  },
+);
 
 type AiNewsArticleTemplateProps = {
   article: AiNewsBriefing;

@@ -1,10 +1,25 @@
+import dynamic from "next/dynamic";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { AiNewsBriefing } from "@/content/ai-news/types";
-import { ExecutiveSummaryLabel } from "@/components/ai-news/briefing/ExecutiveSummaryLabel";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { formatSignalStrength } from "@/lib/ai-news-utils";
 import type { Locale } from "@/i18n/routing";
 import { SITE_AUTHOR } from "@/lib/site";
+
+const ExecutiveSummaryLabel = dynamic(
+  () =>
+    import("@/components/ai-news/briefing/ExecutiveSummaryLabel").then(
+      (m) => m.ExecutiveSummaryLabel,
+    ),
+  {
+    loading: () => (
+      <div
+        className="h-9 w-full max-w-[14rem] rounded-full border border-border bg-muted-bg/50 sm:ml-auto"
+        aria-hidden
+      />
+    ),
+  },
+);
 
 type BriefingHeroProps = {
   article: AiNewsBriefing;

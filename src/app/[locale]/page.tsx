@@ -7,6 +7,7 @@ import { HowItWorksSection } from "@/components/landing/HowItWorksSection";
 import { UseCasesSection } from "@/components/landing/UseCasesSection";
 import { getLandingUseCases } from "@/content/index";
 import { localeAlternates } from "@/lib/i18n-metadata";
+import { clampMetaDescription } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 
 type PageProps = {
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: t("title"),
-    description: t("description"),
+    description: clampMetaDescription(t("description")),
     alternates: {
       canonical: `/${locale}`,
       languages: {

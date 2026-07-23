@@ -2,14 +2,24 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { EditionTimeline } from "@/components/ai-news/EditionTimeline";
+import dynamic from "next/dynamic";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageBackdrop } from "@/components/ui/PageBackdrop";
 import { getAllArticleListItems, type LocaleArticles } from "@/lib/ai-news";
 import { routing, type Locale } from "@/i18n/routing";
-import { buildSocialMetadata } from "@/lib/seo";
+import { buildSocialMetadata, clampMetaDescription } from "@/lib/seo";
+
+const EditionTimeline = dynamic(
+  () =>
+    import("@/components/ai-news/EditionTimeline").then((m) => m.EditionTimeline),
+  {
+    loading: () => (
+      <div className="h-64 animate-pulse rounded-2xl border border-border bg-muted-bg/40" />
+    ),
+  },
+);
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -30,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   languages["x-default"] = "/en/ai-news";
 
   const title = t("title");
-  const description = t("description");
+  const description = clampMetaDescription(t("description"));
 
   return {
     title,

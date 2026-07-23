@@ -8,7 +8,12 @@ import { Navbar } from "@/components/layout/Navbar";
 import { SetHtmlLang } from "@/components/layout/SetHtmlLang";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { routing, type Locale } from "@/i18n/routing";
-import { buildSocialMetadata, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import {
+  buildSocialMetadata,
+  clampMetaDescription,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/seo";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -23,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
   const titleDefault = t("siteTitleDefault");
-  const description = t("siteDescription");
+  const description = clampMetaDescription(t("siteDescription"));
 
   return {
     metadataBase: new URL("https://aiinternaltools.com"),

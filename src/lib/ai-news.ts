@@ -334,7 +334,31 @@ export function getArticleBySlug(
   slug: string,
   locale: LocaleArticles = "en",
 ): AiNewsArticle | null {
-  return getAllArticles(true, locale).find((a) => a.slug === slug) ?? null;
+  const articlesDir = getArticlesDir(locale);
+  if (!fs.existsSync(articlesDir)) return null;
+
+  // Fast path: match slug in file text before full parse of every edition.
+  for (const filename of fs.readdirSync(articlesDir).filter(isArticleFile)) {
+    const filePath = path.join(articlesDir, filename);
+    let text: string;
+    try {
+      text = fs.readFileSync(filePath, "utf8");
+    } catch {
+      continue;
+    }
+    if (!text.includes(`"slug": "${slug}"`) && !text.includes(`"slug":"${slug}"`)) {
+      continue;
+    }
+    try {
+      const raw = JSON.parse(text) as unknown;
+      const article = parseBriefing(raw, filename);
+      if (article?.slug === slug) return article;
+    } catch (err) {
+      console.warn(`[ai-news] Failed to read ${filename}:`, err);
+    }
+  }
+
+  return null;
 }
 
 export function getPublishedArticleSlugs(locale: LocaleArticles = "en"): string[] {

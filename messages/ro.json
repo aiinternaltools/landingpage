@@ -2,22 +2,22 @@
   "metadata": {
     "siteTitleDefault": "AI Internal Tools — Automatizare AI pentru afaceri operaționale",
     "siteTitleTemplate": "%s · aiinternaltools.com",
-    "siteDescription": "Sisteme AI practice și automatizări pentru echipe operaționale: automatizare de fluxuri, agenți, instrumente interne și asistenți de cunoștințe. Încearcă demo-uri, apoi definește un proiect personalizat.",
+    "siteDescription": "Sisteme AI practice și automatizări pentru echipe operaționale: fluxuri, agenți, instrumente interne și asistenți de cunoștințe.",
     "home": {
       "title": "AI Internal Tools — Automatizare AI pentru afaceri operaționale",
-      "description": "Sisteme AI practice și automatizări pentru echipe operaționale: automatizare de fluxuri, agenți, instrumente interne și asistenți de cunoștințe. Încearcă demo-uri, apoi definește un proiect personalizat."
+      "description": "Sisteme AI practice și automatizări pentru echipe operaționale: fluxuri, agenți, instrumente interne și asistenți de cunoștințe."
     },
     "about": {
       "title": "Despre",
-      "description": "Andrei Alexandru Gabriel — React, Next.js, TypeScript, Supabase, Vercel; AI aplicat (integrări LLM, agenți, RAG), n8n și automatizare de fluxuri. Background în QA aeronautic, doctorat în mentenanță predictivă."
+      "description": "Andrei Alexandru Gabriel — AI aplicat, Next.js și automatizare de fluxuri. Background în QA aeronautic, doctorat în mentenanță predictivă."
     },
     "contact": {
       "title": "Contact",
-      "description": "Contactează-ne pentru un flux de lucru de pe site sau solicită o automatizare personalizată — îți răspundem cu pașii următori clari."
+      "description": "Contactează-ne pentru un flux de pe site sau o automatizare personalizată — îți răspundem cu pașii următori clari."
     },
     "community": {
       "title": "Listă de așteptare Comunitate",
-      "description": "Intră pe lista de așteptare pentru un hub cu instrumente AI aplicate, șabloane și peers. Primii 1.000 de membri fondatori primesc acces gratuit plus Audit Marketing și Audit Automatizare la lansare."
+      "description": "Intră pe lista de așteptare pentru un hub cu instrumente AI aplicate și peers. Membrii fondatori primesc acces și audituri la lansare."
     },
     "login": {
       "title": "Autentificare",
@@ -25,26 +25,26 @@
     },
     "aiNews": {
       "title": "Știri AI",
-      "description": "Știri AI săptămânale pentru antreprenori — semnal filtrat, concluzii practice pentru operațiuni, marketing, productivitate și avantaj competitiv."
+      "description": "Știri AI săptămânale pentru antreprenori — semnal filtrat și concluzii practice pentru operațiuni, marketing și productivitate."
     },
     "marketingAudit": {
       "title": "Audit de marketing",
-      "description": "Audit de marketing bazat pe AI pentru site-ul tău. Descoperă paginile cheie, evaluează mesajele, CRO, SEO, poziționarea și încrederea — cu recomandări acționabile."
+      "description": "Audit de marketing bazat pe AI pentru site-ul tău. Evaluează mesaje, CRO, SEO, poziționare și încredere, cu pași clari."
     },
     "automationAudit": {
       "title": "Audit de automatizare",
-      "description": "Scanare AI a oportunităților de automatizare. Deduce modelul de business, detectează integrările vizibile și recomandă automatizări de fluxuri de lucru."
+      "description": "Scanare AI a oportunităților de automatizare. Deduce modelul de business și recomandă automatizări practice de fluxuri."
     },
     "useCases": {
       "title": "Cazuri de utilizare",
-      "description": "Fluxuri de lucru pe care le automatizăm cel mai des pentru echipe operaționale — de la social media la automatizări personalizate adaptate stack-ului tău.",
+      "description": "Fluxuri pe care le automatizăm cel mai des pentru echipe operaționale — de la social media la automatizări personalizate.",
       "aiSocialMediaAssistant": {
         "title": "Asistent AI pentru social media",
-        "description": "Transformă ideile din Google Sheets în postări aliniate brandului. AI generează conținut pe canal, tu aprobi și programezi, apoi postările apar automat pe LinkedIn, Instagram, Facebook și X."
+        "description": "Transformă ideile din Google Sheets în postări aliniate brandului. AI scrie pe canal; tu aprobi, apoi publici pe LinkedIn, Instagram, Facebook și X."
       },
       "emailAiAgent": {
         "title": "Agent AI pentru email",
-        "description": "Clasifică fiecare email, răspunde cu cunoștințele tale și transferă către echipă când e nevoie de un om — suport clienți, lead-uri, facturi și furnizori."
+        "description": "Clasifică fiecare email, răspunde cu cunoștințele tale și transferă către echipă când e nevoie de un om."
       }
     }
   },

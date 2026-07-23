@@ -8,6 +8,26 @@ import {
   absoluteUrl,
 } from "@/lib/site";
 
+/** SERP-safe length: prefer 130–160 characters. */
+export const META_DESCRIPTION_MAX = 160;
+
+/**
+ * Truncate a meta description to the optimal SERP length without cutting mid-word.
+ * Keeps GEO short answers out of meta tags — use seo.meta_description instead.
+ */
+export function clampMetaDescription(
+  text: string,
+  max = META_DESCRIPTION_MAX,
+): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+
+  const slice = normalized.slice(0, max - 1);
+  const lastSpace = slice.lastIndexOf(" ");
+  const clipped = (lastSpace > 100 ? slice.slice(0, lastSpace) : slice).trimEnd();
+  return `${clipped.replace(/[.,;:–—-]+$/, "")}…`;
+}
+
 type OpenGraphOpts = {
   title: string;
   description: string;
@@ -29,6 +49,7 @@ export function buildSocialMetadata({
   modifiedTime,
   images = [DEFAULT_OG_IMAGE],
 }: OpenGraphOpts): Pick<Metadata, "openGraph" | "twitter"> {
+  const safeDescription = clampMetaDescription(description);
   const ogImages = images.map((src) => ({
     url: absoluteUrl(src),
     alt: title,
@@ -41,7 +62,7 @@ export function buildSocialMetadata({
       url: absoluteUrl(url),
       siteName: SITE_NAME,
       title,
-      description,
+      description: safeDescription,
       images: ogImages,
       ...(type === "article"
         ? {
@@ -54,7 +75,7 @@ export function buildSocialMetadata({
     twitter: {
       card: "summary_large_image",
       title,
-      description,
+      description: safeDescription,
       images: ogImages.map((img) => img.url),
     },
   };

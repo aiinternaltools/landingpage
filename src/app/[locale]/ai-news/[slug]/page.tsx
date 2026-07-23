@@ -9,7 +9,7 @@ import {
   type LocaleArticles,
 } from "@/lib/ai-news";
 import { routing, type Locale } from "@/i18n/routing";
-import { buildSocialMetadata } from "@/lib/seo";
+import { buildSocialMetadata, clampMetaDescription } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;
@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
   languages["x-default"] = `/en/ai-news/${slug}`;
 
-  const description =
-    article.geo_summary?.short_answer ?? article.seo.meta_description;
+  // Keep SERP meta short; geo_summary stays in page HTML + JSON-LD only.
+  const description = clampMetaDescription(article.seo.meta_description);
 
   return {
     title: article.seo.meta_title,

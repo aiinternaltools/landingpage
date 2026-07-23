@@ -2,14 +2,14 @@
   "metadata": {
     "siteTitleDefault": "AI Internal Tools — AI automation for operational businesses",
     "siteTitleTemplate": "%s · aiinternaltools.com",
-    "siteDescription": "Practical AI systems and automations for operational teams: workflow automation, agents, internal tools, and knowledge assistants. Try demos, then scope custom work.",
+    "siteDescription": "Practical AI systems and automations for operational teams: workflow automation, agents, internal tools, and knowledge assistants.",
     "home": {
       "title": "AI Internal Tools — AI automation for operational businesses",
-      "description": "Practical AI systems and automations for operational teams: workflow automation, agents, internal tools, and knowledge assistants. Try demos, then scope custom work."
+      "description": "Practical AI systems and automations for operational teams: workflow automation, agents, internal tools, and knowledge assistants."
     },
     "about": {
       "title": "About",
-      "description": "Andrei Alexandru Gabriel — React, Next.js, TypeScript, Supabase, Vercel; applied AI (LLM integrations, agents, RAG), n8n and workflow automation. Aviation QA background, PhD predictive maintenance."
+      "description": "Andrei Alexandru Gabriel — applied AI, Next.js, and workflow automation. Aviation QA background with PhD work in predictive maintenance."
     },
     "contact": {
       "title": "Contact",
@@ -17,7 +17,7 @@
     },
     "community": {
       "title": "Community Waitlist",
-      "description": "Join the waitlist for an operator hub with applied AI tools, templates, and peers. Founding 1,000 members get free access plus Marketing Audit and Automation Audit at launch."
+      "description": "Join the waitlist for an operator hub with applied AI tools and peers. Founding members get free access plus audits at launch."
     },
     "login": {
       "title": "Sign in",
@@ -25,26 +25,26 @@
     },
     "aiNews": {
       "title": "AI News",
-      "description": "Weekly AI news for business owners—filtered signal, practical takeaways for operations, marketing, productivity, and competitive advantage."
+      "description": "Weekly AI news for business owners—filtered signal and practical takeaways for operations, marketing, and productivity."
     },
     "marketingAudit": {
       "title": "Marketing Audit",
-      "description": "AI-powered marketing audit for your website. Discovers key pages, scores messaging, CRO, SEO, positioning, and trust — with actionable recommendations."
+      "description": "AI-powered marketing audit for your website. Scores messaging, CRO, SEO, positioning, and trust with clear next steps."
     },
     "automationAudit": {
       "title": "Automation Audit",
-      "description": "AI-powered automation opportunity scan. Infers business model, detects visible integrations, and recommends workflow automations."
+      "description": "AI-powered automation opportunity scan. Infers your business model and recommends practical workflow automations."
     },
     "useCases": {
       "title": "Use Cases",
       "description": "Workflows we automate most often for operational teams — from social media to custom automations tailored to your stack.",
       "aiSocialMediaAssistant": {
         "title": "AI Social Media Assistant",
-        "description": "Turn Google Sheets ideas into on-brand social posts. AI generates content per channel, you approve and schedule, then posts go live automatically on LinkedIn, Instagram, Facebook, and X."
+        "description": "Turn Google Sheets ideas into on-brand posts. AI drafts per channel; you approve, then publish to LinkedIn, Instagram, Facebook, and X."
       },
       "emailAiAgent": {
         "title": "Email AI Agent",
-        "description": "Classify every email, reply with your knowledge, and hand off to your team when a human should take over — customer support, leads, invoices, and suppliers."
+        "description": "Classify every email, reply with your knowledge, and hand off to your team when a human should take over."
       }
     }
   },

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { localeAlternates } from "@/lib/i18n-metadata";
+import { clampMetaDescription } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 
 type PageProps = {
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: t("title"),
-    description: t("description"),
+    description: clampMetaDescription(t("description")),
     robots: { index: false, follow: false },
     alternates: {
       canonical: `/${locale}/login`,

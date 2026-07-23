@@ -16,6 +16,7 @@ const sizeConfig = {
 
 export function SiteLogo({ size = "nav", priority = false }: SiteLogoProps) {
   const { className } = sizeConfig[size];
+  const sizes = size === "nav" ? "112px" : "80px";
 
   return (
     <Image
@@ -23,6 +24,7 @@ export function SiteLogo({ size = "nav", priority = false }: SiteLogoProps) {
       alt="AI Internal Tools"
       width={653}
       height={445}
+      sizes={sizes}
       priority={priority}
       className={className}
     />
